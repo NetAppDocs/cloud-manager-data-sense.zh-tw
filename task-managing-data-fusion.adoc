@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-managing-data-fusion.html 
+keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
+summary: 我們稱為「Data Fusion Efor」的一項功能、可讓您掃描組織的資料、找出資料庫中的唯一識別碼是否存在於檔案或其他資料庫中、基本上您可以自行列出Cloud Data Sense掃描中所識別的「個人資料」清單。這可讓您完整瞭解所有檔案中可能敏感的資料所在位置。 
+---
+= 使用 Data Fusion 功能新增個人資料識別碼
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+我們稱為「Data Fusion SURE__」的功能可讓您掃描貴組織的資料、找出資料庫中的唯一識別碼是否存在於檔案或其他資料庫中、基本上您自己的「個人資料」清單是在Cloud Data Sense掃描中識別出來的。這可讓您完整瞭解可能敏感的資料在 _all_ 檔案中的位置。
+
+由於您正在掃描自己的資料庫、因此無論資料儲存在何種語言中、都會在未來的Cloud Data Sense掃描中用來識別資料。
+
+
+NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃描時可用。只有對應掃描的資料來源不會顯示檔案層級的詳細資料。
+
+
+
+== 從資料庫建立自訂的個人資料識別碼
+
+您可以在資料庫表格中選取特定欄或欄、以選擇Cloud Data Sense在掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。
+
+image:diagram_compliance_data_fusion.png["圖表顯示如何使用資料庫的內容做為來源、以識別包含相同資料的檔案。"]
+
+如您所見、在兩個磁碟區和一個 S3 儲存區中找到兩個獨特的客戶 ID 。也會識別資料庫表格中的任何相符項目。
+
+您必須擁有 link:task-scanning-databases.html#adding-the-database-server["新增至少一個資料庫伺服器"^] 在您新增資料Fusion 來源之前、請先將雲端資料感測功能移至雲端資料感測。
+
+. 在「組態」頁面中、按一Fusion 下來源資料所在資料庫中的*管理Data S還原*。
++
+image:screenshot_compliance_manage_data_fusion.png["選取「管理資料 Fusion 」按鈕以新增來源欄的快照。"]
+
+. 在下 Fusion 一頁按一下 * 「 Add Data Source" （新增資料來源） * 。
+. 在 _ 新增資料 Fusion 來源 _ 頁面：
++
+.. 從下拉式功能表中選取資料庫架構。
+.. 在該架構中輸入表格名稱。
+.. 輸入含有您要使用之唯一識別碼的欄或欄。
++
+新增多個欄時、請在個別行中輸入每個欄名稱或表格檢視名稱。
+
++
+image:screenshot_compliance_add_data_fusion.png["識別資料 Fusion 來源的架構、表格和欄的快照。"]
+
+
+
+. 按一下「 * 新增資料 Fusion 來源 * 」。
++
+「資料Fusion 不整清單」頁面會顯示您已設定要掃描Cloud Data Sense的資料庫來源欄。
+
++
+image:screenshot_compliance_data_fusion_list.png["您已設定資料 Fusion 功能的所有資料來源參考資料的快照。"]
+
+
+
+下次掃描後、結果會將此新資訊納入儀表板的「個人」結果區段、以及「個人資料」篩選器的「調查」頁面。您新增的每個來源欄都會顯示在篩選清單中、例如「 Customer.Customer ID 」。
+
+
+
+== 刪除資料 Fusion 來源
+
+如果您在某個時候決定不使用特定的資料 Fusion 來源來掃描檔案、您可以從「資料 Fusion 」清單頁面中選取來源列、然後按一下「 * 刪除資料 Fusion 來源 * 」。
+
+image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fusion 的快照來源。"]

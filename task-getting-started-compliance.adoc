@@ -1,0 +1,217 @@
+---
+sidebar: sidebar 
+permalink: task-getting-started-compliance.html 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
+summary: 請完成幾個步驟、Cloud Volumes ONTAP 使用Cloud Data Sense開始掃描您的內部和內部部署ONTAP 的各個方面。 
+---
+= Cloud Data Sense for Cloud Volumes ONTAP 功能的入門指南、適用於內部部署ONTAP 和內部部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、Cloud Volumes ONTAP 使用Cloud Data Sense開始掃描您的內部和內部部署ONTAP 的各個方面。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+在掃描磁碟區之前、您必須先在Cloud Manager中將系統新增為工作環境：
+
+* 對於供應功能的系統、這些工作環境應該已經可在 Cloud Manager 中使用 Cloud Volumes ONTAP
+* 對於內部部署 ONTAP 的不全系統、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Cloud Manager 必須探索 ONTAP 整個叢集"^]
+
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+按一下「*資料感應*」、選取「*組態*」索引標籤、然後啟動特定工作環境中磁碟區的法規遵循掃描。
+
+[role="quick-margin-para"]
+雲端資料感測功能已經啟用、請確定它可以存取所有磁碟區。
+
+* Cloud Data Sense執行個體需要網路連線至Cloud Volumes ONTAP 每個子網路或內部ONTAP 的支援系統。
+* 適用於此功能的安全群組Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。
+* 請確定這些連接埠已開放給Data Sense執行個體：
++
+** NFS：連接埠111和2049。
+** 適用於CIFS：連接埠139和445。
+
+
+* NFS Volume匯出原則必須允許從Data Sense執行個體存取。
+* Data Sense需要Active Directory認證來掃描CIFS磁碟區。
++
+按一下* Compliance *>* Configuration *>* Edit CIFS Credential*、然後提供認證資料。
+
+
+
+[role="quick-margin-para"]
+選取或取消選取您要掃描的磁碟區、Cloud Data Sense將會開始或停止掃描。
+
+
+
+== 探索您要掃描的資料來源
+
+如果您要掃描的資料來源尚未在 Cloud Manager 環境中、您可以將其新增至繪圖。
+
+您的 NetApp 系統應該已經可在 Cloud Manager 的畫版中使用。 Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Cloud Manager 會探索這些叢集"^]。
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+如果您要掃描Cloud Volumes ONTAP 可ONTAP 透過網際網路存取的內部功能不全的功能、您可以 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+
+如果您正在掃描ONTAP 安裝在沒有網際網路連線的黑暗站台上的內部部署的資訊系統、您需要 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要將Cloud Manager Connector部署在同一個內部部署位置。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 在您的工作環境中實現雲端資料的意義
+
+您可以在Cloud Volumes ONTAP AWS、Azure和GCP等系統上、以及內部部署ONTAP 的叢集上啟用Cloud Data Sense。
+
+. 在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
++
+image:screenshot_cloud_compliance_we_scan_config.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
+
+. 選取您要在每個工作環境中掃描磁碟區的方式。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
++
+** 若要對應所有磁碟區、請按一下*對應所有磁碟區*。
+** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
+** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
++
+請參閱 <<Enabling and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
+
+
+
+. 在確認對話方塊中、按一下*核准*、讓Data Sense開始掃描您的磁碟區。
+
+
+Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
+
+
+
+== 驗證Cloud Data Sense是否可存取磁碟區
+
+請檢查您的網路、安全性群組和匯出原則、確保Cloud Data Sense能夠存取磁碟區。您必須提供資料認證、以利資料認證、讓IT能夠存取CIFS磁碟區。
+
+.步驟
+. 請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含Cloud Volumes ONTAP 適用於下列ONTAP 叢集的Volume或內部的叢集。
+. 確保Cloud Volumes ONTAP 適用於此功能的安全群組允許來自Data Sense執行個體的傳入流量。
++
+您可以從Data Sense執行個體的IP位址開啟流量的安全性群組、也可以開啟虛擬網路內部所有流量的安全性群組。
+
+. 確認下列連接埠已開放給Data Sense執行個體：
++
+** NFS：連接埠111和2049。
+** 適用於CIFS：連接埠139和445。
+
+
+. 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。
+. 如果您使用CIFS、請提供Data Sense搭配Active Directory認證、以便掃描CIFS磁碟區。
++
+.. 在Cloud Manager頂端、按一下* Data Sense *。
+.. 單擊 * Configuration （配置） * 選項卡。
++
+image:screenshot_cifs_credentials.gif["「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。"]
+
+.. 針對每個工作環境、按一下*編輯CIFS認證*、然後輸入Data Sense存取系統上CIFS磁碟區所需的使用者名稱和密碼。
++
+認證資料可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提升權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
+
++
+輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。
+
++
+image:screenshot_cifs_status.gif["顯示組態頁面的快照、以及Cloud Volumes ONTAP 成功提供CIFS認證的一個更新系統。"]
+
+
+
+. 在「_Configuration」頁面上、按一下「*檢視詳細資料*」以檢閱每個CIFS和NFS磁碟區的狀態、並修正任何錯誤。
++
+例如、下圖顯示四個磁碟區；其中一個因為Data Sense執行個體與磁碟區之間的網路連線問題而無法掃描Cloud Data Sense。
+
++
+image:screenshot_compliance_volume_details.gif["掃描組態中「檢視詳細資料」頁面的快照、顯示四個磁碟區；其中一個因為Data Sense與Volume之間的網路連線而無法掃描。"]
+
+
+
+
+
+== 啟用及停用磁碟區的法規遵循掃描
+
+您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
+
+image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
+
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 在磁碟區上啟用純對應掃描 | 在Volume（Volume）區域中、按一下*地圖* 
+
+
+| 啟用磁碟區的完整掃描 | 在Volume（Volume）區域中、按一下*地圖與分類* 
+
+
+| 停用在Volume上掃描 | 在Volume（Volume）區域中、按一下* Off（關閉）* 
+
+
+|  |  
+
+
+| 在所有磁碟區上啟用純對應掃描 | 在標題區域中、按一下*地圖* 
+
+
+| 在所有磁碟區上啟用完整掃描 | 在標題區域中、按一下*地圖與分類* 
+
+
+| 停用所有Volume上的掃描 | 在標題區域中、按一下*關* 
+|===
+
+NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。在標題區域中設為*自訂*或*關閉*時、您必須在工作環境中新增的每個新磁碟區上啟動對應和/或完整掃描。
+
+
+
+== 正在掃描資料保護磁碟區
+
+根據預設、不會掃描資料保護（DP）磁碟區、因為這些磁碟區並未對外公開、而且Cloud Data Sense無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。
+
+一開始、磁碟區清單會將這些磁碟區識別為「 _Type 」 * 「 DP* 」、「 _Status 」 * 「 Not 掃描」 * 、「 _required Action 」 * 「 Enable Access to DP Volumes 」（啟用對 DP 磁碟區的存取）。
+
+image:screenshot_cloud_compliance_dp_volumes.png["顯示「啟用 DP 磁碟區存取」按鈕的快照、可供您選擇掃描資料保護磁碟區。"]
+
+如果您要掃描這些資料保護磁碟區：
+
+. 按一下頁面頂端的*「Enable Access to DP Volumes」（啟用DP磁碟區存取）*。
+. 檢閱確認訊息、然後再按一下 * 「 Enable Access to DP Volumes （啟用 DP 磁碟區存取）」 * 。
++
+** 原始 ONTAP 資料來源系統中最初建立為 NFS Volume 的磁碟區將會啟用。
+** 最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入Active Directory認證資料、以便Cloud Data Sense能夠掃描CIFS磁碟區、您可以使用這些認證資料、也可以指定不同的管理認證資料集。
++
+image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料保護磁碟區選項的快照。"]
+
+
+
+. 啟動您要掃描的每個 DP Volume <<Enabling and disabling compliance scans on volumes,啟用其他磁碟區的方式相同>>。
+
+
+一旦啟用、Cloud Data Sense便會從每個啟用掃描的DP磁碟區建立NFS共用區。共用匯出原則僅允許從Data Sense執行個體存取。
+
+*附註：*如果您在一開始啟用DP磁碟區存取時沒有CIFS資料保護磁碟區、之後再新增部分資料、則「組態」頁面頂端會出現*「啟用CIFS DP*存取」按鈕。按一下此按鈕並新增 CIFS 認證、以啟用對這些 CIFS DP 磁碟區的存取。
+
+
+NOTE: Active Directory認證資料只會在第一個CIFS DP Volume的儲存VM中註冊、因此會掃描該SVM上的所有DP磁碟區。任何位於其他SVM上的磁碟區都不會登錄Active Directory認證、因此不會掃描這些DP磁碟區。

@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-file-shares.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
+summary: 請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud Data Sense共享區。這些檔案共用區可位於內部部署或雲端。 
+---
+= 正在掃描檔案共用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud Data Sense共享區。這些檔案共用區可位於內部部署或雲端。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。
+
+[role="quick-margin-para"]
+新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。
+
+
+
+== 檢閱檔案共用需求
+
+請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+
+* 共享區可在任何地方代管、包括雲端或內部部署。這些是位於非NetApp儲存系統上的檔案共用。
+* Data Sense執行個體與共用區之間必須有網路連線。
+* 請確定這些連接埠已開放給Data Sense執行個體：
++
+** NFS：連接埠111和2049。
+** 適用於CIFS：連接埠139和445。
+
+
+* 您需要以「<host_name>//<share_path>'格式新增的共用清單。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。
+* 若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果Cloud Data Sense需要掃描任何需要提高權限的資料、則首選管理認證。
+
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+如果您要掃描可透過網際網路存取的非NetApp NFS或CIFS檔案共用、您可以 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署Data Sense、並可存取網際網路"^]。
+
+如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要將Cloud Manager Connector部署在同一個內部部署位置。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 建立檔案共用的群組
+
+您必須先新增共用「群組」的檔案、才能新增檔案共用。此群組是您要掃描之檔案共用的容器、群組名稱會做為這些檔案共用的工作環境名稱。
+
+您可以混合使用同一個群組中的NFS和CIFS共用、不過群組中的所有CIFS檔案共用都必須使用相同的Active Directory認證。如果您打算新增使用不同認證的CIFS共用、則必須針對每組獨特的認證建立個別的群組。
+
+.步驟
+. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增檔案共用群組*」。
++
+image:screenshot_compliance_add_fileshares_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。"]
+
+. 在「新增檔案共用群組」對話方塊中、輸入共用群組的名稱、然後按一下*繼續*。
+
+
+新的「檔案共用群組」會新增至工作環境清單。
+
+
+
+== 新增檔案共用至群組
+
+您可以將檔案共用新增至檔案共用群組、以便Cloud Data Sense掃描這些共用中的檔案。您可以使用「<host_name>//<share_path>」格式新增共用。
+
+您可以新增個別檔案共用、也可以提供要掃描之檔案共用的行分隔清單。一次最多可新增100個共用。
+
+在單一群組中同時新增NFS和CIFS共用時、您需要執行兩次程序、一次新增NFS共用、然後再次新增CIFS共用。
+
+.步驟
+. 在「工作環境」頁面中、按一下「檔案共用」群組的「*組態*」按鈕。
++
+image:screenshot_compliance_fileshares_add_shares.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
+. 如果這是第一次新增此檔案共用群組的檔案共用、請按一下*「Add Your First Shares」（新增您的第一個共用）*。
++
+image:screenshot_compliance_fileshares_add_initial_shares.png["顯示「Add Your First Shares（新增第一個共用）」按鈕的快照、可將初始共用新增至群組。"]
+
++
+如果您要將檔案共用新增至現有群組、請按一下*「Add Shares」（新增共用）*。
+
++
+image:screenshot_compliance_fileshares_add_more_shares.png["顯示「新增共用」按鈕的快照、可將更多共用新增至群組。"]
+
+. 選取您要新增之檔案共用的傳輸協定、新增您要掃描的檔案共用區（每行一個檔案共用區）、然後按一下*繼續*。
++
+新增CIFS（SMB）共用時、您必須輸入Active Directory認證、以提供共用的讀取存取權。首選管理認證。
+
++
+image:screenshot_compliance_fileshares_add_file_shares.png["「新增檔案共用」頁面的快照、您可以在其中新增要掃描的共用。"]
+
++
+確認對話方塊會顯示已新增的共用數。
+
++
+如果對話方塊列出任何無法新增的共用、請擷取此資訊、以便您解決問題。在某些情況下、您可以使用修正後的主機名稱或共用名稱重新新增共用區。
+
+. 在每個檔案共用區上啟用純對應掃描、或是對應與分類掃描。
++
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 啟用檔案共用上的純對應掃描 | 按一下*地圖* 
+
+
+| 啟用檔案共用區的完整掃描 | 按一下*地圖與分類* 
+
+
+| 停用掃描檔案共用區 | 按一下「*關*」 
+|===
+
+
+Cloud Data Sense會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。
+
+
+
+== 從法規遵循掃描移除檔案共用區
+
+如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。只要按一下「組態」頁面中的「*移除共用*」即可。
+
+image:screenshot_compliance_fileshares_remove_share.png["螢幕快照顯示如何移除單一檔案共用區以掃描其檔案。"]

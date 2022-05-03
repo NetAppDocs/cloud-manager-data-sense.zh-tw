@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-responding-to-dsar.html 
+keywords: dsar, data subject access request, search, search for name, report, gdpr, data privacy laws, data subject, compliance 
+summary: 搜尋受試者的全名或已知識別碼（例如電子郵件地址）、然後下載報告、即可回應資料受試者存取要求（ DSAR ）。本報告旨在協助貴組織遵守 GDPR 或類似資料隱私權法律。 
+---
+= 回應資料主體存取要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+搜尋受試者的全名或已知識別碼（例如電子郵件地址）、然後下載報告、即可回應資料受試者存取要求（ DSAR ）。本報告旨在協助貴組織遵守 GDPR 或類似資料隱私權法律。
+
+
+NOTE: 只有在您選擇對資料來源執行完整分類掃描時、才能使用DSAR功能。只有對應掃描的資料來源無法提供檔案層級的詳細資料。
+
+
+NOTE: NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。
+
+
+
+== 什麼是資料主體存取要求？
+
+歐洲 GDPR 等隱私權法規賦予資料當事人（例如客戶或員工）存取其個人資料的權利。當資料主體要求此資訊時、這稱為 DSAR （資料主體存取要求）。組織必須「不受不當延誤」地回應這些要求、最遲在收到後一個月內回應。
+
+
+
+== Cloud Data Sense如何協助您回應DSAR？
+
+當您執行資料主旨搜尋時、Cloud Data Sense會尋找其中含有該人員名稱或識別碼的所有檔案、儲存區、OneDrive和SharePoint帳戶。Data Sense會檢查最新的預先索引資料、找出名稱或識別碼。它不會啟動新的掃描。
+
+搜尋完成後、您就可以下載資料主旨存取要求報告的檔案清單。報告會彙總資料的深入見解、並將其納入法律條款、以便您寄回給該人員。
+
+
+NOTE: 目前資料庫不支援資料主旨搜尋。
+
+
+
+== 搜尋資料主題並下載報告
+
+搜尋資料主旨的完整名稱或已知識別碼、然後下載檔案清單報告或 DSAR 報告。您可以搜尋 link:reference-private-data-categories.html#types-of-personal-data["任何個人資訊類型"^]。
+
+
+NOTE: 搜尋資料主題名稱時、支援英文、德文和西班牙文。稍後將新增更多語言支援。
+
+.步驟
+. 在Cloud Manager頂端、按一下* Data Sense *。
+. 按一下 * 資料主題 * 。
+. 搜尋資料主旨的完整名稱或已知識別碼。
++
+以下範例顯示名稱 _John doe_ 的搜尋：
+
++
+image:screenshot_dsar_search.gif["顯示搜尋 DSAR 名稱「 John Doe 」的快照。"]
+
+. 請選擇下列其中一個可用選項：
++
+** * 下載 DSAR 報告 * ：您可傳送至資料主旨的存取要求正式回應。此報告會根據Cloud Data Sense在資料主題上找到的資料、並設計為作為範本、提供自動產生的資訊。您應先填寫表單並在內部審查、再將其傳送至資料主旨。
+** * 調查結果 * ：此頁面可讓您搜尋、排序、擴充特定檔案的詳細資料、以及下載檔案清單、藉此調查資料。
++
+
+NOTE: 如果結果超過 10 、 000 個、則檔案清單中只會出現前 10 、 000 個結果。
+
+
+
+

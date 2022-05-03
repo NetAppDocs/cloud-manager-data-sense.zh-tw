@@ -1,0 +1,119 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-object-storage.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, Data Sense 
+summary: 請完成幾個步驟、以Cloud Data Sense直接掃描物件儲存區內的資料。Data Sense可從任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務掃描資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。 
+---
+= 掃描使用S3傳輸協定的物件儲存設備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、以Cloud Data Sense直接掃描物件儲存區內的資料。Data Sense可從任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務掃描資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+您需要有端點URL才能連線至物件儲存服務。
+
+[role="quick-margin-para"]
+您需要從物件儲存供應商取得存取金鑰和秘密金鑰、以便Cloud Data Sense能夠存取儲存區。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+將物件儲存服務新增至Cloud Data Sense。
+
+[role="quick-margin-para"]
+選取您要掃描的儲存區、Cloud Data Sense將開始掃描。
+
+
+
+== 檢閱物件儲存需求
+
+請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+
+* 您需要有端點URL才能連線至物件儲存服務。
+* 您需要從物件儲存供應商取得存取金鑰和秘密金鑰、以便讓Data Sense能夠存取儲存區。
+* 若要支援Azure Blob、您必須使用 link:https://min.io/["MinIO服務"^]。
+
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+如果您要掃描S3物件儲存設備的資料、而且可以透過網際網路存取 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署Data Sense、並可存取網際網路"^]。
+
+如果您要掃描安裝在無法存取網際網路之黑暗站台上的S3物件儲存設備資料、則必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要將Cloud Manager Connector部署在同一個內部部署位置。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 將物件儲存服務新增至Cloud Data Sense
+
+新增物件儲存服務。
+
+.步驟
+. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增物件儲存服務*」。
++
+image:screenshot_compliance_add_object_storage_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。"]
+
+. 在「新增物件儲存服務」對話方塊中、輸入物件儲存服務的詳細資料、然後按一下*繼續*。
++
+.. 輸入您要用於工作環境的名稱。此名稱應反映您要連線的物件儲存服務名稱。
+.. 輸入端點URL以存取物件儲存服務。
+.. 輸入存取金鑰和秘密金鑰、讓Cloud Data Sense能夠存取物件儲存區中的儲存區。
++
+image:screenshot_compliance_add_object_storage.png["對話方塊的快照、您可在其中輸入值以存取物件儲存服務。"]
+
+
+
+
+
+新的物件儲存服務會新增至工作環境清單。
+
+
+
+== 啟用及停用物件儲存桶上的法規遵循掃描
+
+在物件儲存服務上啟用Cloud Data Sense之後、下一步是設定您要掃描的儲存區。Data Sense會探索這些儲存區、並在您所建立的工作環境中顯示這些儲存區。
+
+.步驟
+. 在「組態」頁面中、按一下「物件儲存服務」工作環境中的*組態*。
++
+image:screenshot_compliance_object_storage_config.png["按一下工作環境的「組態」以選擇您要掃描的儲存區的快照。"]
+
+. 在您的庫位上啟用純對應掃描、或是對應和分類掃描。
++
+image:screenshot_compliance_object_storage_select_buckets.png["選取您要掃描之物件儲存區的快照。"]
+
++
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 在儲存區上啟用僅對應掃描 | 按一下*地圖* 
+
+
+| 啟用庫位的完整掃描 | 按一下*地圖與分類* 
+
+
+| 停用儲存區上的掃描 | 按一下「*關*」 
+|===
+
+
+Cloud Data Sense會開始掃描您啟用的儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。

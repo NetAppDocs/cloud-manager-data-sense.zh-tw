@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-data.html 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+summary: 控制與組織儲存資源資料相關的成本。Cloud Data Sense可識別系統中的過時資料、非商業資料、重複檔案和非常大的檔案數量、讓您決定要移除或分層將部分檔案移至較便宜的物件儲存設備。 
+---
+= 檢視組織中儲存資料的治理詳細資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+控制與組織儲存資源資料相關的成本。Cloud Data Sense可識別系統中的過時資料、非商業資料、重複檔案和非常大的檔案數量、讓您決定要移除或分層將部分檔案移至較便宜的物件儲存設備。
+
+此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前檢視資料大小、以及是否有任何資料包含敏感資訊。
+
+
+
+== 管理儀表板
+
+「治理」儀表板提供相關資訊、讓您提高效率、並控制儲存在儲存資源上的資料相關成本。
+
+image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense管理儀表板的快照。"]
+
+
+
+=== 節省商機
+
+您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。按一下每個項目、即可在「調查」頁面中檢視篩選後的結果。
+
+* *過時資料*：3年前上次修改的資料。
+* *非商業資料*：根據類別或檔案類型、被視為與商業無關的資料。這包括：
++
+** 應用程式資料
+** 音訊
+** 可執行檔
+** 映像
+** 記錄
+** 影片
+** 雜項（一般「其他」類別）
+
+
+* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-controlling-private-data.html#viewing-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
+
+
+
+
+=== 結果最多的原則
+
+按一下「_Policy_」區域中的原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。
+
+按一下 link:task-org-private-data.html#controlling-your-data-using-policies["請按這裡"] 以深入瞭解原則。
+
+
+
+=== 資料總覽
+
+快速概覽正在掃描的所有資料。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 link:task-generating-compliance-reports.html#data-mapping-report["資料對應報告"] 以取得完整詳細資料。
+
+
+
+=== 依資料敏感度列出的主要資料儲存庫
+
+「_依敏感度等級_排名的資料儲存庫」區域最多可列出包含最敏感項目的前四個資料儲存庫（工作環境和資料來源）。每個工作環境的長條圖分為：
+
+* 非個人資料
+* 個人資料
+* 敏感的個人資料
+
+
+您可以將游標停留在每個區段上、查看每個類別中的項目總數。
+
+按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。
+
+
+
+=== 依開放權限類型列出的資料
+
+「_開啟權限_」區域會顯示所有要掃描之檔案所存在的每種權限類型的百分比。此圖表顯示下列權限類型：
+
+* 無開放存取權
+* 開放給組織使用
+* 開放給大眾使用
+* 不明存取
+
+
+您可以將游標移到每個區段上、查看每個類別中的檔案總數。按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。
+
+
+
+=== 資料的存留期和資料圖表的大小
+
+您可能想要調查_age_和_Siz__圖表中的項目、看看是否有任何您應該刪除的資料、或將其分層以降低物件儲存成本。
+
+您可以將游標停留在圖表中的某個點上、以查看該類別中資料的年齡或大小詳細資料。按一下以檢視根據該年齡或大小範圍篩選的所有檔案。
+
+* *資料圖表的存留期*：根據資料建立時間、上次存取時間或上次修改時間來分類資料。
+* *資料圖表大小*：根據大小來分類資料。
+
+
+
+
+=== 最常識別的資料分類
+
+「_Classification」區域提供最能辨識的清單 link:task-controlling-private-data.html#viewing-files-by-categories["類別"^]、 link:task-controlling-private-data.html#viewing-files-by-file-types["檔案類型"^]和 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"^] 在掃描資料中。
+
+
+
+==== 類別
+
+類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
+
+請參閱 link:task-controlling-private-data.html#viewing-files-by-categories["依類別檢視檔案"^] 以取得更多資訊。
+
+
+
+==== 檔案類型
+
+檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。
+
+請參閱 link:task-controlling-private-data.html#viewing-files-by-file-types["檢視檔案類型"^] 以取得更多資訊。
+
+
+
+==== AIP標籤
+
+如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。
+
+請參閱 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。

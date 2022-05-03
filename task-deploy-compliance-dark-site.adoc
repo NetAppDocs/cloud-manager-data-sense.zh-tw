@@ -1,0 +1,351 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-dark-site.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
+summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該站台無法存取網際網路。這類安裝最適合安全的站台。 
+---
+= 在內部部署Cloud Data Sense、無需存取網際網路
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該站台無法存取網際網路。這類安裝最適合安全的站台。
+
+請注意、您也可以 link:task-deploy-compliance-onprem.html["將Data Sense部署在可存取網際網路的內部部署站台"]。
+
+
+
+== 支援的資料來源
+
+以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列本機資料來源：
+
+* 內部部署ONTAP 的作業系統
+* 資料庫架構
+* 非NetApp NFS或CIFS檔案共用
+* 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
+
+
+如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱 <<SharePoint and OneDrive special requirements,SharePoint和OneDrive的特殊需求>> 以取得詳細資料。
+
+目前不支援掃描Cloud Volumes ONTAP 功能支援使用支援功能的功能包括：支援支援功能的功能、支援Azure NetApp Files 功能的功能包括執行功能的功能、支援功能的功能包括執行功能的功能、支援功能的功能ONTAP
+
+
+
+== 限制
+
+大多數的Data Sense功能都能在部署於無法存取網際網路的站台上運作。不過、某些需要網際網路存取的功能則不受支援、例如：
+
+* 管理Microsoft Azure資訊保護（AIP）標籤
+* 當某些關鍵原則傳回結果時、會傳送電子郵件警示給Cloud Manager使用者
+* 為不同使用者設定Cloud Manager角色（例如、Account Admin或Compliance Viewer）
+* 使用Cloud Sync 還原複製與同步來源檔案
+* 接收使用者意見反應
+* 從Cloud Manager自動升級軟體
++
+Cloud Manager Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 link:whats-new.html["Cloud Data Sense版本說明"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 <<Upgrade Data Sense software,升級您的Data Sense軟體>>。
+
+
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["部署Connector"^] 現在就在Linux主機上。
+
+[role="quick-margin-para"]
+確保您的Linux系統符合 <<Prepare the Linux host system,主機需求>>、並已安裝所有必要的軟體、而且您的離線環境符合所需 <<Verify Cloud Manager and Data Sense prerequisites,權限與連線能力>>。
+
+[role="quick-margin-para"]
+從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Cloud Data Sense執行個體。
+
+[role="quick-margin-para"]
+Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。
+
+
+
+== 安裝Cloud Manager Connector
+
+如果您的離線內部部署站台上尚未安裝Cloud Manager Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["部署Connector"^] 在離線站台的Linux主機上。
+
+
+
+== 準備Linux主機系統
+
+資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
+
+* 作業系統： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版
++
+** 可以使用版本 7.8 、但 Linux 核心版本必須為 4.14 或更新版本
+** 作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）
+
+
+* 磁碟：SSD搭載500 GiB、可在/、或上使用
++
+** 100 GiB可在/op
+** 400 GiB可在/var
+** 5 GiB、位於/tmp
+
+
+* RAM：64 GB（交換記憶體必須在主機上停用）
+* CPU：16核心
++
+請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
+
+
+
+在安裝Data Sense之前、您必須先在主機上安裝下列軟體：
+
+* Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+* Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
+
+
+
+
+== 驗證Cloud Manager和Data Sense必要條件
+
+在部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。
+
+* 確保Cloud Manager擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。
+* 確保Cloud Manager Connector可以存取Data Sense執行個體。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。
++
+此連線可部署Data Sense執行個體、並可讓您檢視法規遵循與治理資訊。
+
++
+請確定連接埠 8080 已開啟、以便在 Cloud Manager 中查看安裝進度。
+
+* 確保雲端資料認證能夠持續運作。Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。
+* 確保網頁瀏覽器連線至Cloud Data Sense。啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取Cloud Manager介面。
++
+Data Sense執行個體使用私有IP位址、確保其他人無法存取索引資料。因此、您用來存取 Cloud Manager 的網頁瀏覽器必須連線至該私有 IP 位址。該連線可能來自與Data Sense執行個體位於同一個網路內的主機。
+
+
+
+
+
+== SharePoint和OneDrive的特殊需求
+
+當Cloud Manager和Data Sense部署於無法存取網際網路的網站時、您可以透過網際網路存取部分選定端點、來掃描SharePoint和OneDrive帳戶中的本機檔案。
+
+[cols="50,50"]
+|===
+| 端點 | 目的 
+
+
+| \login.microsoft.com \graph.microsoft.com | 與Microsoft伺服器通訊、以登入所選的線上服務。 
+
+
+| \https://cloudmanager.cloud.netapp.com | 與Cloud Manager服務（包括NetApp帳戶）進行通訊。 
+|===
+只有在初始連線至這些外部服務時、才需要存取_cloudmanager.cloud.netapp.com_。
+
+
+
+== 部署資料感測
+
+對於一般組態、您將在單一主機系統上安裝軟體。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["請參閱此處的步驟"]。
+
+對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["請參閱此處的步驟"]。
+
+
+
+=== 一般組態的單一主機安裝
+
+在離線環境中的單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。
+
+.您需要的是 #8217 ；需要的是什麼
+* 確認您的Linux系統符合 <<Prepare the Linux host system,主機需求>>。
+* 確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 請確定您擁有Linux系統的root權限。
+* 確認您的離線環境符合所需 <<Verify Cloud Manager and Data Sense prerequisites,權限與連線能力>>。
+
+
+.步驟
+. 在網際網路設定的系統上、從下載Cloud Data Sense軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* DataSense-offline bund-<版本>.tar.gz*。
+. 將安裝程式套件複製到您打算在黑暗站台中使用的Linux主機。
+. 在主機上解壓縮安裝程式套件、例如：
++
+[source, cli]
+----
+tar -xzf DataSense-offline-bundle-v1.10.0.tar.gz
+----
++
+這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer_。.tar.gz*。
+
+. 啟動Cloud Manager、然後按一下* Data Sense *（資料感測）索引標籤。
+. 按一下「*啟動資料感應*」。
++
+image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud Data Sense的螢幕快照。"]
+
+. 按一下「*部署*」以啟動內部部署精靈。
++
+image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部部署Cloud Data Sense的螢幕快照。"]
+
+. 在_部署內部部署資料感測_對話方塊中、複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
++
+「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq --暗房」
+
+. 在主機上解壓縮安裝檔案、例如：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
+. 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
++
+[cols="50a,50"]
+|===
+| 根據提示輸入參數： | 輸入完整命令： 
+
+
+ a| 
+.. 貼上您從步驟7複製的資訊：「Udo ./install.sh -a <account_id>-c <agent_id>-t <tokent>--lidsite」
+.. 輸入Data Sense主機機器的IP位址或主機名稱、以便連接器執行個體存取。
+.. 輸入Cloud Manager Connector主機機器的IP位址或主機名稱、以便Data Sense執行個體存取。
+
+| 或者、您也可以事先建立整個命令、提供必要的主機參數：「Udo ./install.sh -A <account_id>-c <agent_id>-t <tokent>-host <ds_host>--manager-host <cm_host>--ne-proxy--dimsite」 
+|===
++
+變數值：
+
++
+** _Account_id_ = NetApp 帳戶 ID
+** _agent_id_ = 連接器 ID
+** _tokon_ = JWT 使用者權杖
+** _DS_host_= Data Sense Linux系統的IP位址或主機名稱。
+** _cm_host_= Cloud Manager Connector系統的IP位址或主機名稱。
+
+
+
+
+Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安裝可能需要 10 到 20 分鐘。
+
+如果主機與連接器執行個體之間有連接埠8080的連線、您會在Cloud Manager的Data Sense（資料感測）索引標籤中看到安裝進度。
+
+在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
+
+您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
+
+
+
+=== 適用於大型組態的多主機安裝
+
+對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
+
+在離線環境中的多部內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。
+
+.您需要的是 #8217 ；需要的是什麼
+* 確認Manager和掃描儀節點的所有Linux系統都符合 <<Prepare the Linux host system,主機需求>>。
+* 確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 請確定您擁有Linux系統的root權限。
+* 確認您的離線環境符合所需 <<Verify Cloud Manager and Data Sense prerequisites,權限與連線能力>>。
+* 您必須擁有要使用的掃描器節點主機的IP位址。
+* 必須在所有主機上啟用下列連接埠和傳輸協定：
++
+[cols="15,20,55"]
+|===
+| 連接埠 | 通訊協定 | 說明 
+
+
+| 2377 | TCP | 叢集管理通訊 
+
+
+| 7946 | TCP、udp | 節點間通訊 
+
+
+| 4789 | UDP | 重疊網路流量 
+
+
+| 50 | 電子穩定程序 | 加密的IPsec覆疊網路（ESP）流量 
+
+
+| 111. | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+
+
+| 2049 | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+|===
+
+
+.步驟
+. 請依照中的步驟1至8進行 link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["單一主機安裝"] 在管理器節點上。
+. 如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。
++
+除了可用於單一主機安裝的變數之外、還會使用新的選項*- n <node_ip>*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。
+
++
+例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -A <account_id>-c <agent_id>-t <tokent>-host <ds_host>--manager-host <cm_host>*-n <node_IP1>、<node_IP2>、<node_IP3>*--ne-proxy-site。
+
+. 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：
++
+「Udo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212」
+
+. 在*每個*掃描儀節點主機上：
++
+.. 將Data Sense安裝程式檔案（* cc_OnPrem_installer_<版本>.tar.gz*）複製到主機機器。
+.. 解壓縮安裝程式檔案。
+.. 貼上並執行您在步驟3中複製的命令。
++
+在所有掃描儀節點上完成安裝、並已加入管理器節點之後、管理器節點的安裝也會完成。
+
+
+
+
+
+Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可能需要15至25分鐘。
+
+在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和本機 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
+
+您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
+
+
+
+== 升級Data Sense軟體
+
+由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。
+
+.開始之前
+* Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝1.9.x版、則只能升級至1.10.x如果您落後幾個主要版本、就必須多次升級軟體。
+* 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["請參閱連接器升級步驟"^]。
+
+
+.步驟
+. 在網際網路設定的系統上、從下載Cloud Data Sense軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* DataSense-offline bund-<版本>.tar.gz*。
+. 將軟體套裝組合複製到安裝Data Sense的Linux主機、
+. 將主機上的軟體套裝組合解壓縮、例如：
++
+[source, cli]
+----
+tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
+----
++
+這會擷取安裝檔案* cc_OnPrem_installer_.tar.gz*。
+
+. 在主機上解壓縮安裝檔案、例如：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
++
+這會擷取升級指令碼* start_dimite_upgrade.sh*和任何必要的協力廠商軟體。
+
+. 在主機上執行升級指令碼、例如：
++
+[source, cli]
+----
+start_darksite_upgrade.sh
+----
+
+
+Data Sense軟體會在您的主機上進行升級。更新可能需要5到10分鐘的時間。
+
+請注意、如果您已在多個主機系統上部署Data Sense來掃描非常大型的組態、則不需要在掃描器節點上進行升級。
+
+您可以檢查Data Sense UI頁面底部的版本、確認軟體是否已更新。

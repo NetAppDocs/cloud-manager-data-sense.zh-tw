@@ -1,0 +1,180 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-anf.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
+summary: 完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。 
+---
+= Cloud Data Sense for Azure NetApp Files 功能入門
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+在掃描Azure NetApp Files 完所有資料之前、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["必須設定 Cloud Manager 才能探索組態"^]。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。
+
+[role="quick-margin-para"]
+雲端資料感測功能已經啟用、請確定它可以存取所有磁碟區。
+
+* Cloud Data Sense執行個體需要網路連線至每Azure NetApp Files 個子網路。
+* 請確定這些連接埠已開放給Data Sense執行個體：
++
+** NFS：連接埠111和2049。
+** 適用於CIFS：連接埠139和445。
+
+
+* NFS Volume匯出原則必須允許從Data Sense執行個體存取。
+* Data Sense需要Active Directory認證來掃描CIFS磁碟區。
++
+按一下* Compliance *>* Configuration *>* Edit CIFS Credential*、然後提供認證資料。
+
+
+
+[role="quick-margin-para"]
+選取或取消選取您要掃描的磁碟區、Cloud Data Sense將會開始或停止掃描。
+
+
+
+== 探索Azure NetApp Files 您要掃描的整個系統
+
+如果Azure NetApp Files 您要掃描的這個系統尚未在Cloud Manager中做為工作環境、您現在可以將它新增到繪圖中。
+
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["瞭解如何在Azure NetApp Files Cloud Manager中探索此功能"^]。
+
+
+
+== 部署Cloud Data Sense執行個體
+
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+掃描Azure NetApp Files 完等量磁碟區時、必須將Data Sense部署在雲端、而且必須部署在您要掃描的磁碟區所在的相同區域。
+
+*附註：*掃描Azure NetApp Files 完整個過程中、目前不支援在內部部署位置部署Cloud Data Sense。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 在您的工作環境中實現雲端資料的意義
+
+您可以在Azure NetApp Files 您的功能區上啟用Cloud Data Sense。
+
+. 在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
++
+image:screenshot_cloud_compliance_anf_scan_config.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
+
+. 選取您要在每個工作環境中掃描磁碟區的方式。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
++
+** 若要對應所有磁碟區、請按一下*對應所有磁碟區*。
+** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
+** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
++
+請參閱 <<Enabling and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
+
+
+
+. 在確認對話方塊中、按一下*核准*、讓Data Sense開始掃描您的磁碟區。
+
+
+Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
+
+
+
+== 驗證Cloud Data Sense是否可存取磁碟區
+
+請檢查您的網路、安全性群組和匯出原則、確保Cloud Data Sense能夠存取磁碟區。您必須提供資料認證、以利資料認證、讓IT能夠存取CIFS磁碟區。
+
+.步驟
+. 請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含Azure NetApp Files 供使用的Volume。
++
+
+NOTE: 對本產品而言、Cloud Data Sense只能掃描與Cloud Manager位於同一區域的磁碟區。Azure NetApp Files
+
+. 確認下列連接埠已開放給Data Sense執行個體：
++
+** NFS：連接埠111和2049。
+** 適用於CIFS：連接埠139和445。
+
+
+. 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。
+. 如果您使用CIFS、請提供Data Sense搭配Active Directory認證、以便掃描CIFS磁碟區。
++
+.. 在Cloud Manager頂端、按一下* Data Sense *。
+.. 單擊 * Configuration （配置） * 選項卡。
++
+image:screenshot_cifs_credentials.gif["「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。"]
+
+.. 針對每個工作環境、按一下*編輯CIFS認證*、然後輸入Data Sense存取系統上CIFS磁碟區所需的使用者名稱和密碼。
++
+認證資料可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提升權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
+
++
+輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。
+
++
+image:screenshot_cifs_status.gif["顯示組態頁面的快照、以及Cloud Volumes ONTAP 成功提供CIFS認證的一個更新系統。"]
+
+
+
+. 在「_Configuration」頁面上、按一下「*檢視詳細資料*」以檢閱每個CIFS和NFS磁碟區的狀態、並修正任何錯誤。
++
+例如、下圖顯示四個磁碟區；其中一個因為Data Sense執行個體與磁碟區之間的網路連線問題而無法掃描Cloud Data Sense。
+
++
+image:screenshot_compliance_volume_details.gif["掃描組態中「檢視詳細資料」頁面的快照、顯示四個磁碟區；其中一個因為Data Sense與Volume之間的網路連線而無法掃描。"]
+
+
+
+
+
+== 啟用及停用磁碟區的法規遵循掃描
+
+您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
+
+image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
+
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 在磁碟區上啟用純對應掃描 | 在Volume（Volume）區域中、按一下*地圖* 
+
+
+| 啟用磁碟區的完整掃描 | 在Volume（Volume）區域中、按一下*地圖與分類* 
+
+
+| 停用在Volume上掃描 | 在Volume（Volume）區域中、按一下* Off（關閉）* 
+
+
+|  |  
+
+
+| 在所有磁碟區上啟用純對應掃描 | 在標題區域中、按一下*地圖* 
+
+
+| 在所有磁碟區上啟用完整掃描 | 在標題區域中、按一下*地圖與分類* 
+
+
+| 停用所有Volume上的掃描 | 在標題區域中、按一下*關* 
+|===
+
+NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。在標題區域中設為*自訂*或*關閉*時、您必須在工作環境中新增的每個新磁碟區上啟動對應和/或完整掃描。

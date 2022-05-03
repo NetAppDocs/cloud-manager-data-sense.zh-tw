@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-databases.html 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, Data Sense 
+summary: 請完成幾個步驟、開始使用Cloud Data Sense掃描資料庫架構。 
+---
+= 正在掃描資料庫架構
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、開始使用Cloud Data Sense掃描資料庫架構。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+請確定您的資料庫受到支援、而且您擁有連線至資料庫所需的資訊。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+新增您要存取的資料庫伺服器。
+
+[role="quick-margin-para"]
+選取您要掃描的架構。
+
+
+
+== 檢閱先決條件
+
+請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+
+
+
+=== 支援的資料庫
+
+Cloud Data Sense可從下列資料庫掃描架構：
+
+* Amazon關係資料庫服務（Amazon RDS）
+* MongoDB
+* MySQL
+* Oracle
+* PostgreSQL
+* SAP HANA
+* SQL Server （ MSSQL ）
+
+
+
+CAUTION: 必須在資料庫中啟用 * 統計資料收集功能。
+
+
+
+=== 資料庫需求
+
+任何可連線至Cloud Data Sense執行個體的資料庫都可以掃描、無論其位於何處。您只需要下列資訊即可連線至資料庫：
+
+* IP 位址或主機名稱
+* 連接埠
+* 服務名稱（僅用於存取 Oracle 資料庫）
+* 允許對架構進行讀取存取的認證
++
+選擇使用者名稱和密碼時、請務必選擇對您要掃描的所有架構和表格具有完整讀取權限的名稱和密碼。我們建議您建立具有所有必要權限的Cloud Data Sense系統專屬使用者。
+
+
+
+* 附註： * 對於 MongoDB 、必須具備唯讀管理角色。
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+如果您要掃描可透過網際網路存取的資料庫架構、您可以 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署Data Sense、並可存取網際網路"^]。
+
+如果您要掃描安裝在無法存取網際網路的暗點中的資料庫架構、則必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要將Cloud Manager Connector部署在同一個內部部署位置。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 新增資料庫伺服器
+
+新增架構所在的資料庫伺服器。
+
+. 在「工作環境組態」頁面中、按一下「 * 新增資料來源 * 」 > 「 * 新增資料庫伺服器 * 」。
++
+image:screenshot_compliance_add_db_server_button.png["「掃描組態」頁面的快照、您可以按一下「新增資料庫伺服器」按鈕。"]
+
+. 輸入識別資料庫伺服器所需的資訊。
++
+.. 選取資料庫類型。
+.. 輸入連接埠和要連線至資料庫的主機名稱或 IP 位址。
+.. 對於 Oracle 資料庫、請輸入服務名稱。
+.. 輸入認證資料、讓Cloud Data Sense能夠存取伺服器。
+.. 按一下「 * 新增 DB 伺服器 * 」。
++
+image:screenshot_compliance_add_db_server_dialog.png["「新增資料庫伺服器」頁面的快照、方便您識別資料庫。"]
+
+
+
+
+
+資料庫會新增至工作環境清單。
+
+
+
+== 啟用及停用資料庫架構的法規遵循掃描
+
+您可以隨時停止或開始完整掃描架構。
+
+
+TIP: 沒有選項可選取資料庫架構的純對應掃描。
+
+. 在「_Configuration」頁面中、按一下您要設定之資料庫的*組態*按鈕。
++
+image:screenshot_compliance_db_server_config.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
+. 將滑桿向右移動、選取您要掃描的架構。
++
+image:screenshot_compliance_select_schemas.png["「掃描組態」頁面的快照、您可以在其中選擇要掃描的架構。"]
+
+
+
+Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「狀態」欄中、以及修正錯誤所需的動作。

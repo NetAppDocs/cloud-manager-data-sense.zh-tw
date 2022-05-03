@@ -1,0 +1,163 @@
+---
+settings:
+  name: Cloud Data Sense
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 所有Cloud Manager文件
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: Cloud Data Sense文件
+    url: "/index.html"
+  - title: 版本資訊
+    url: "/whats-new.html"
+  - title: 開始使用
+    entries:
+    - title: 深入瞭解Cloud Data Sense
+      url: "/concept-cloud-compliance.html"
+    - title: 部署Cloud Data Sense
+      entries:
+      - title: 部署於雲端
+        url: "/task-deploy-cloud-compliance.html"
+      - title: 部署內部部署並可存取網際網路
+        url: "/task-deploy-compliance-onprem.html"
+      - title: 部署內部部署、無需存取網際網路
+        url: "/task-deploy-compliance-dark-site.html"
+    - title: 啟動資料來源的掃描
+      entries:
+      - title: 不只是內部和內部的Cloud Volumes ONTAP ONTAP
+        url: "/task-getting-started-compliance.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
+      - title: Amazon FSX for ONTAP Sf
+        url: "/task-scanning-fsx.html"
+      - title: Amazon S3 儲存桶
+        url: "/task-scanning-s3.html"
+      - title: 資料庫架構
+        url: "/task-scanning-databases.html"
+      - title: OneDrive 帳戶
+        url: "/task-scanning-onedrive.html"
+      - title: SharePoint帳戶
+        url: "/task-scanning-sharepoint.html"
+      - title: 檔案共用
+        url: "/task-scanning-file-shares.html"
+      - title: 物件儲存
+        url: "/task-scanning-object-storage.html"
+    - title: 整合Active Directory
+      url: "/task-add-active-directory-datasense.html"
+    - title: 設定授權
+      url: "/task-licensing-datasense.html"
+    - title: 常見問題集
+      url: "/faq-cloud-compliance.html"
+  - title: 使用Cloud Data Sense
+    entries:
+    - title: 檢視資料的治理詳細資料
+      url: "/task-controlling-governance-data.html"
+    - title: 檢視資料的法規遵循詳細資料
+      url: "/task-controlling-private-data.html"
+    - title: 組織您的私有資料
+      url: "/task-org-private-data.html"
+    - title: 管理您的私有資料
+      url: "/task-managing-highlights.html"
+    - title: 新增自訂個人資料識別碼
+      url: "/task-managing-data-fusion.html"
+    - title: 產生報告
+      url: "/task-generating-compliance-reports.html"
+    - title: 回應 DSAR
+      url: "/task-responding-to-dsar.html"
+    - title: 私有資料類別
+      url: "/reference-private-data-categories.html"
+    - title: 從Data Sense移除資料來源
+      url: "/task-managing-compliance.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/task-support-registration.html"
+    - title: 取得協助
+      url: "/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 深入瞭解Cloud Data Sense
+      url: concept-cloud-compliance.html
+    - title: 新增功能
+      url: whats-new.html
+    - title: 在雲端部署Data Sense
+      url: task-deploy-cloud-compliance.html
+    - title: 透過網際網路在內部部署Data Sense
+      url: task-deploy-compliance-onprem.html
+    - title: 無需網際網路、即可在內部部署Data Sense
+      url: task-deploy-compliance-dark-site.html
+    - title: 整合Active Directory
+      url: task-add-active-directory-datasense.html
+    - title: 設定授權
+      url: task-licensing-datasense.html
+  - title: 啟動資料來源的掃描
+    links:
+    - title: 資料量Cloud Volumes ONTAP
+      url: task-getting-started-compliance.html
+    - title: 內部部署ONTAP 的功能
+      url: task-getting-started-compliance.html
+    - title: 資料量 Azure NetApp Files
+      url: task-scanning-anf.html
+    - title: Amazon FSX for ONTAP Sf6 Volume
+      url: task-scanning-fsx.html
+    - title: Amazon S3 儲存桶
+      url: task-scanning-s3.html
+    - title: 一般S3儲存桶
+      url: task-scanning-object-storage.html
+    - title: 非NetApp檔案共用
+      url: task-scanning-file-shares.html
+    - title: 資料庫架構
+      url: task-scanning-databases.html
+    - title: OneDrive 帳戶
+      url: task-scanning-onedrive.html
+    - title: SharePoint帳戶
+      url: task-scanning-sharepoint.html
+  - title: 管理私有資料
+    links:
+    - title: 使用AIP標籤將資料分類
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 找到不合規的資料時、請建立電子郵件警示
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: 新增您自己的自訂個人資料識別碼
+      url: task-managing-data-fusion.html
+    - title: 將標記和擁有者套用至需要注意的檔案
+      url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
+    - title: 回應資料主旨存取要求
+      url: task-responding-to-dsar.html
+    - title: 複製來源檔案
+      url: task-managing-highlights.html#copying-source-files
+    - title: 移動來源檔案
+      url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
+    - title: 刪除來源檔案
+      url: task-managing-highlights.html#deleting-source-files
+  - title: 檢視資料的詳細資料
+    links:
+    - title: 建立原則以檢視您的熱門搜尋
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: 檢視包含私人資訊的檔案
+      url: task-controlling-private-data.html
+    - title: 檢視儲存設備中重複的檔案
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: 產生法規遵循報告
+      url: task-generating-compliance-reports.html
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central使用案例
+      url: https://cloud.netapp.com/netapp-cloud-data-sense
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
+product-family: {}

@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-onedrive.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
+summary: 請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDrive資料夾中的檔案。 
+---
+= 正在掃描 OneDrive 帳戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDrive資料夾中的檔案。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+請確認您擁有登入 OneDrive 帳戶的管理認證。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+使用管理使用者認證、登入您要存取的 OneDrive 帳戶、以便將其新增為新的工作環境。
+
+[role="quick-margin-para"]
+從您要掃描的OneDrive帳戶新增使用者清單、然後選取掃描類型。您一次最多可新增 100 位使用者。
+
+
+
+== 檢閱OneDrive要求
+
+請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+
+* 您必須擁有 OneDrive for Business 帳戶的管理登入認證、才能提供所有使用者檔案的讀取存取權。
+* 您需要一份以行分隔的電子郵件地址清單、列出您要掃描 OneDrive 資料夾的所有使用者。
+
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+資料感測可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描本機OneDrive檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
+
+
+
+== 新增 OneDrive 帳戶
+
+新增使用者檔案所在的 OneDrive 帳戶。
+
+.步驟
+. 在「工作環境組態」頁面中、按一下「 * 新增資料來源 * 」 > 「 * 新增 OneDrive 帳戶 * 」。
++
+image:screenshot_compliance_add_onedrive_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增 OneDrive 」按鈕。"]
+
+. 在「新增 OneDrive 帳戶」對話方塊中、按一下 * 「登入 OneDrive* 」。
+. 在顯示的Microsoft頁面中、選取OneDrive帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。
+
+
+OneDrive 帳戶會新增至工作環境清單。
+
+
+
+== 將 OneDrive 使用者新增至法規遵循掃描
+
+您可以新增個別OneDrive使用者或所有OneDrive使用者、以便Cloud Data Sense掃描他們的檔案。
+
+.步驟
+. 在「_Configuration」頁面中、按一下OneDrive帳戶的*組態*按鈕。
++
+image:screenshot_compliance_onedrive_add_users.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
+. 如果這是第一次新增此 OneDrive 帳戶的使用者、請按一下 * 「 Add your first OneDrive used* （新增您的第一個 OneDrive 使用者 * ）」。
++
+image:screenshot_compliance_onedrive_add_initial_users.png["顯示「新增第一個OneDrive使用者」按鈕的快照、可將初始使用者新增至帳戶。"]
+
++
+如果您要從OneDrive帳戶新增其他使用者、請按一下*「新增OneDrive使用者*」。
+
++
+image:screenshot_compliance_onedrive_add_more_users.png["顯示「新增 OneDrive 使用者」按鈕的快照、可將更多使用者新增至帳戶。"]
+
+. 為您要掃描檔案的使用者新增電子郵件地址（每行一個電子郵件地址（每個工作階段最多 100 個）、然後按一下 * 新增使用者 * 。
++
+image:screenshot_compliance_onedrive_add_email_addresses.png["「新增 OneDrive 使用者」頁面的快照、您可以在其中新增要掃描的使用者。"]
+
++
+確認對話方塊會顯示已新增的使用者人數。
+
++
+如果對話方塊列出任何無法新增的使用者、請擷取此資訊、以便您解決問題。在某些情況下、您可以使用修正後的電子郵件地址重新新增使用者。
+
+. 啟用使用者檔案的純對應掃描、或對應與分類掃描。
++
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 啟用使用者檔案的純對應掃描 | 按一下*地圖* 
+
+
+| 啟用使用者檔案的完整掃描 | 按一下*地圖與分類* 
+
+
+| 停用掃描使用者檔案 | 按一下「*關*」 
+|===
+
+
+Cloud Data Sense會開始掃描您所新增使用者的檔案、結果會顯示在儀表板和其他位置。
+
+
+
+== 將OneDrive使用者從法規遵循掃描中移除
+
+如果使用者離開公司或變更其電子郵件地址、您可以隨時將個別 OneDrive 使用者的檔案掃描完畢。只要按一下「組態」頁面中的「 * 移除 OneDrive 使用者 * 」即可。
+
+image:screenshot_compliance_onedrive_remove_user.png["顯示如何移除單一使用者檔案的快照。"]

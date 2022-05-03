@@ -1,0 +1,373 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense' 
+summary: 瞭解Cloud Data意義上的新功能。 
+---
+= Cloud Data Sense的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解Cloud Data意義上的新功能。
+
+
+
+== 2022年4月5日
+
+
+
+=== Data Sense可識別四種新類型的澳洲個人資料
+
+Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
+
+
+
+=== 現在全域Active Directory伺服器可以是LDAP伺服器
+
+除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["如需詳細資料、請前往此處"]。
+
+
+
+== 2022年3月15日
+
+
+
+=== 新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案
+
+已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以指定使用者名稱或群組名稱、或是部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在
+
+
+
+=== Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限
+
+Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。
+
+
+
+=== Data Sense可識別兩種其他類型的個人資料
+
+* 法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。
+* 密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料>密碼*」在「調查」窗格中搜尋包含密碼的檔案。
+
+
+
+
+=== 支援在黑暗站台部署OneDrive和SharePoint資料時掃描
+
+當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["您必須允許存取下列端點。"]
+
+
+
+=== 此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能
+
+
+
+== 2022年2月9日
+
+
+
+=== 新增掃描Microsoft SharePoint線上帳戶的支援
+
+現在您可以將SharePoint線上帳戶新增至Data Sense、以便從SharePoint網站掃描文件和檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html["瞭解如何掃描SharePoint帳戶"]。
+
+
+
+=== Data Sense可將檔案從資料來源複製到目標位置、並同步處理這些檔案
+
+如果您正在移轉資料、而且想要追蹤檔案的任何最後變更、這項功能就很有幫助。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] 將資料從來源複製及同步至目標的功能。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["瞭解如何複製及同步檔案"]。
+
+
+
+=== 為DSAR報告提供新的語言支援
+
+目前支援使用德文和西班牙文搜尋資料主體名稱、以建立資料主體存取要求（DSAR）報告。本報告旨在協助貴組織遵守GDPR或類似的資料隱私權法律。
+
+
+
+=== Data Sense可識別三種其他類型的個人資料
+
+Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和法文驅動程式授權號碼。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["請參閱「Data Sense」在掃描中識別的所有個人資料類型清單"]。
+
+
+
+=== 安全性群組連接埠已變更、以便與連接器進行Data Sense通訊
+
+Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠80、用於往返Data Sense執行個體的傳入和傳出流量、以提高安全性。這兩個連接埠目前仍為開啟狀態、因此您不會看到任何問題、但您應該更新任何舊版連接器部署中的安全性群組、因為連接埠80將在未來的版本中被淘汰。
+
+
+
+== 2022年1月2日
+
+
+
+=== 能夠整合全域Active Directory、以識別檔案擁有者和權限
+
+現在、您可以將全域Active Directory與Cloud Data Sense整合、以強化Data Sense針對檔案擁有者及哪些使用者和群組有權存取檔案的結果。
+
+除了您輸入的Active Directory認證資料、以便Data Sense能夠掃描來自特定資料來源的CIFS磁碟區之外、這項新的整合功能還能為其他使用者和系統提供額外的整合功能。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["瞭解如何設定全域Active Directory"]。
+
+
+
+=== 資料感應「原則」現在可用於刪除檔案
+
+Data Sense可自動刪除符合您在原則中定義之查詢的檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#deleting-source-files-automatically-using-policies["瞭解如何建立自訂原則"]。
+
+
+
+== 2021年12月16日
+
+
+
+=== 資料感測功能可在黑暗的站台中掃描資料
+
+Cloud Manager（連接器）和Cloud Data Sense均可部署在內部部署站台、但無法存取網際網路。現在、您的安全網站可以使用Cloud Manager來管理內部ONTAP 的支援叢集、在叢集之間複寫資料、以及使用Cloud Data Sense從這些叢集掃描資料。
+
+link:task-deploy-compliance-dark-site.html["瞭解如何在無法存取網際網路的站台上部署Cloud Data Sense"^]。
+
+
+
+== 2021年11月28日
+
+
+
+=== Data Sense可用於從ONTAP 某個作業系統複製磁碟區
+
+您可以使用Data Sense來複製ONTAP 一個實體磁碟區、但只能在新的複製磁碟區中包含來源磁碟區中選取的檔案。如果您正在移轉資料、想要排除某些檔案、或想要建立磁碟區的複本以供測試、這項功能很有幫助。
+
+link:task-managing-highlights.html#cloning-volume-data-to-a-new-volume["瞭解如何複製磁碟區"]。
+
+
+
+=== 適用於Cloud Manager的GCP Marketplace訂閱現已包含對Cloud Data Sense的支援
+
+。 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["適用於Cloud Manager的GCP Marketplace訂閱"^] 現在支援Cloud Data Sense。現在您可以使用這份隨用隨付（PAYGO）訂閱、掃描Cloud Volumes ONTAP 部署在Google Cloud儲存設備上的__LW_YGO]系統中的資料、以及使用NetApp的BYOL授權。
+
+
+
+=== 能夠檢視您長期執行的法規遵循行動狀態
+
+當您從「調查結果」窗格對許多檔案執行動作時、例如刪除50個檔案、程序可能需要一些時間。現在您可以監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。
+
+link:task-managing-highlights.html#viewing-the-status-of-your-compliance-actions["瞭解如何檢視持續法規遵循行動的狀態"]。
+
+
+
+=== Data Sense可識別兩種其他類型的個人資料
+
+Data Sense現在可以在檔案中找到個人資料類型「British Passport"（英國護照）」和「National Health Service（NHS）Number（美國國家醫療服務（NHS）編號）」。 link:reference-private-data-categories.html#types-of-personal-data["請參閱Data Sense在掃描中找到的所有個人資料類型清單"]。
+
+
+
+=== 「新篩選器」可顯示屬於特定工作環境類型的檔案
+
+在「資料調查」頁面中篩選資料時、已新增「工作環境類型」的篩選器。這可讓您篩選Cloud Volumes ONTAP 出適用於下列項目的結果：支援各種功能的不全系統、ONTAP 適用於各種系統的FSX、內部部署ONTAP 的不全系統等等。
+
+
+
+== 2021年11月7日
+
+
+
+=== 現在、您可以選擇在工作環境中對應或分類個別磁碟區
+
+過去您可以對應所有磁碟區、或是對應及分類每個工作環境中的所有磁碟區。現在、您可以選擇對應_OR來對應及分類個別磁碟區。此選項可用於Cloud Volumes ONTAP 支援下列項目：SFFEM Volume、ANF Volume、on prem ONTAP 、以及ONTAP 適用於Sfx6 Volume的FSX。
+
+
+
+=== Data Sense可將檔案從資料來源複製到目的地NFS共用區
+
+您可以將Data Sense正在掃描的任何來源檔案複製到目的地NFS共用區。如果您想要複製特定資料並將其移至不同的NFS位置、這項功能就很有幫助。 link:task-managing-highlights.html#copying-source-files-to-an-nfs-share["深入瞭解"]。
+
+
+
+=== 能夠掃描FSX上ONTAP 的資料保護磁碟區、以利執行不需使用的檔案系統
+
+現在、您可以在FSXfor ONTAP Sfor Solidffile系統上掃描資料保護磁碟區。 link:task-scanning-fsx.html#scanning-data-protection-volumes["深入瞭解"]。
+
+
+
+=== 新的篩選器、可在Data Sense首次發現檔案時、依日期範圍顯示檔案
+
+「調查」頁面中名為「探索時間」的新篩選器、可讓您在Data Sense首次探索檔案時、依日期範圍檢視檔案。探索到的時間也已新增至「檔案詳細資料」頁面、以及以CSV格式輸出檔案的報告。
+
+
+
+=== SOC 2類型2認證
+
+一家獨立認證的公共會計公司和服務稽核員審查了Cloud Data Sense、並根據適用的信任服務準則、確認已達成SOC 2類報告。
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]。
+
+
+
+== 2021年10月4日
+
+
+
+=== 支援NetApp的BYOL授權
+
+除了透過雲端供應商的市場取得Data Sense授權、現在您可以向NetApp購買自帶授權（BYOL）、以便在Cloud Manager帳戶中的所有工作環境和資料來源中使用。
+
+link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["深入瞭解全新Cloud Data Sense BYOL授權"]。
+
+
+
+=== 支援Google Cloud Platform
+
+現在Cloud Data Sense可以掃描Cloud Volumes ONTAP 部署在GCP上的各種支援系統中的資料。資料感應必須部署在GCP上、而且連接器必須部署在GCP或內部部署上。與Connector相關的GCP服務帳戶需要最新權限、才能將Cloud Data Sense部署至GCP。
+
+
+
+=== 能夠掃描FSX上 的CIFS Volume、以利ONTAP 支援不順暢的檔案系統
+
+Data Sense現在可以掃描來自FSX的CIFS Volume、以供ONTAP 支援各種系統。 link:task-scanning-fsx.html["瞭解如何掃描Amazon FSXfor ONTAP SfundVolume"]。
+
+
+
+== 2021年9月2日
+
+
+
+=== 能夠掃描FSX上的NFS磁碟區ONTAP 、以供支援不全檔案系統之用
+
+新增支援在Amazon FSX for ONTAP Sf系 上掃描NFS磁碟區上的資料。 link:task-scanning-fsx.html["瞭解如何為您的FSX ONTAP for Sf哪些 系統設定掃描"]。
+
+
+
+=== 資料感應「狀態」項目已變更為「標記」項目
+
+使用Data Sense將「狀態」資訊新增至檔案的功能、已將術語變更為「標記」。這些是檔案層級標籤、請勿與可套用至磁碟區、EC2執行個體、虛擬機器等的資源層級標籤混淆 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["深入瞭解檔案層級標記"]。
+
+
+
+== 2021年8月1日
+
+
+
+=== 一次管理多個檔案的檔案設定
+
+在舊版的Cloud Data Sense中、您可以一次對一個檔案執行下列動作：新增狀態標記、指派使用者、以及新增AIP標籤。現在、您可以從「資料調查」頁面選取多個檔案、並在多個檔案上執行這些動作。
+
+
+
+=== 管理儀表板會根據資料建立時間或上次存取時間來顯示資料
+
+在「管理」儀表板中檢視資料的存留期時、除了根據上次修改的時間來檢視資料之外、現在您可以根據資料建立時間或上次存取時間（讀取時間）來檢視資料。此資訊也會在資料對應報告中提供。
+
+
+
+=== 掃描大型組態時、能夠使用多部主機來提供額外的處理能力
+
+部署內部部署Data Sense時、現在您可以在計畫掃描包含數PB資料的組態時、將掃描軟體安裝在其他內部部署主機上。這些額外的_掃描儀節點_可在掃描非常大的組態時提供更高的處理能力。
+
+瞭解如何操作 link:task-deploy-compliance-onprem.html#multi-host-installation-for-large-configurations["在多個主機上部署Data Sense軟體"]。
+
+
+
+== 2021年7月7日
+
+
+
+=== Data Sense可將檔案從資料來源移至目的地NFS共用區
+
+新功能可讓您實現 link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["將Data Sense正在掃描的任何來源檔案移至任何NFS共用區"]。這可讓您將敏感或安全性相關的檔案移至特殊區域、以便進行更多分析。
+
+
+
+=== 能夠快速分類資料、而非執行完整分類掃描
+
+您現在可以選擇將資料快速對應至類別、而非執行完整分類掃描。如此一來、您就能 link:task-generating-compliance-reports.html#data-mapping-report["檢視資料對應報告"] 當您不需要執行完整掃描的特定資料來源時、請從「管理儀表板」取得資料總覽。
+
+
+
+=== 能夠將檔案指派給Cloud Manager使用者
+
+現在您可以了 link:task-org-private-data.html#assigning-users-to-manage-certain-files["將檔案指派給特定Cloud Manager使用者"] 如此一來、該人員就能對需要在檔案上執行的任何後續行動負責。此功能可與現有功能搭配使用、將自訂標記新增至檔案。
+
+「調查」頁面中的新篩選器也可讓您輕鬆檢視「指派給」欄位中有相同人員的所有檔案。
+
+
+
+=== 能夠使用較小的Cloud Data Sense執行個體
+
+有些掃描需求較小的使用者要求能夠使用較小的Cloud Data Sense執行個體。現在您可以了。使用這些較小的執行個體時有一些限制 link:concept-cloud-compliance.html#using-a-smaller-instance-type["請先瞭解這些限制"]。
+
+
+
+=== 執行慢速掃描的能力
+
+資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["瞭解方法"]。
+
+
+
+=== Data Sense會追蹤上次存取檔案的時間
+
+上次存取時間值已新增至「檔案詳細資料」頁面、以及您以CSV格式輸出的報告、以便您查看使用者上次存取檔案的時間。
+
+
+
+== 2021年6月7日
+
+
+
+=== Cloud Compliance已重新命名為Cloud Data Sense。
+
+雲端法規遵循已於本次發行時重新命名為* Cloud Data Sense *。由於產品中包含所有新的治理和其他功能、因此法規遵循名稱並未推廣完整的功能組合。
+
+
+
+=== 您可從「管理儀表板」取得新的「完整資料對應」報告
+
+您可從「管理儀表板」取得全新的「完整資料對應」報告、概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。
+
+此報告提供總覽頁面、摘要說明您所有的工作環境和資料來源、然後提供每個工作環境的明細資料。 link:task-generating-compliance-reports.html#generating-the-data-mapping-report["請到這裡"] 以取得更多詳細資料。
+
+
+
+=== 「調查」頁面中的新篩選器、可檢視所有重複的檔案
+
+「資料調查」頁面中的新篩選器可讓您檢視儲存系統中所有重複檔案的清單。這有助於識別可節省儲存空間的區域、或識別具有特定權限或敏感資訊的檔案、而您不想在儲存設備之間複製這些檔案。 link:task-controlling-private-data.html#viewing-all-duplicated-files["瞭解如何檢視所有重複的檔案"]。
+
+
+
+=== Data Sense可將自訂標記新增至組織檔案
+
+您可以將自訂標記新增至Data Sense正在掃描的檔案。標記不會以新增AIP標籤的相同方式新增至檔案。Cloud Manager使用者剛看到標記、因此您可以指出檔案是否需要刪除、或是因為某種原因而檢查。 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["瞭解如何套用及檢視檔案中的標記"]。
+
+「調查」頁面中的新篩選器可讓您輕鬆檢視已指派標記的所有檔案。
+
+
+
+=== 能夠掃描.dcm和.dicom檔案
+
+Cloud Data Sense可在兩種其他檔案類型中掃描個人識別資訊（PII）：.dcm和.dicom。
+
+
+
+=== Data Sense現在會追蹤檔案的其他屬性
+
+檔案大小、建立日期和上次修改日期值已新增至您以CSV格式輸出的報告。「建立日期」也是一種新的篩選條件、可用來縮小「調查」頁面搜尋結果範圍。
+
+
+
+== 2021年5月5日
+
+
+
+=== 能夠掃描儲存在Azure Blob上的資料
+
+使用時、現在支援掃描儲存在Azure Blob上的資料 https://min.io/["MinIO服務"^]。請參閱 link:task-scanning-object-storage.html["掃描使用S3傳輸協定的物件儲存設備"] 以取得詳細資料。
+
+
+
+=== 其他類型的個人資料可透過Data Sense識別
+
+Cloud Data Sense現在可以在檔案中找到奧地利SSN。

@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-sharepoint.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, data sense 
+summary: 請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶中的檔案。 
+---
+= 掃描SharePoint帳戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶中的檔案。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+請確定您擁有登入SharePoint帳戶的管理認證、而且您有要掃描之SharePoint網站的URL。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+使用管理使用者認證、登入您要存取的SharePoint帳戶、將其新增為新的資料來源/工作環境。
+
+[role="quick-margin-para"]
+在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您一次最多可以新增100個URL。
+
+
+
+== 檢閱SharePoint需求
+
+請檢閱下列先決條件、確定您已準備好在SharePoint帳戶上啟用Cloud Data Sense。
+
+* 您必須擁有SharePoint帳戶的管理員登入認證、才能提供對所有SharePoint網站的讀取存取權。
+* 您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。
+
+
+
+
+== 部署Cloud Data Sense執行個體
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+資料感測可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描您的本機SharePoint檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
+
+
+
+== 新增SharePoint帳戶
+
+新增使用者檔案所在的SharePoint帳戶。
+
+.步驟
+. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增SharePoint Online帳戶*」。
++
+image:screenshot_compliance_add_sharepoint_button.png["「掃描組態」頁面的快照、您可以按一下「新增SharePoint」按鈕。"]
+
+. 在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。
+. 在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。
+
+
+SharePoint帳戶會新增至工作環境清單。
+
+
+
+== 將SharePoint網站新增至法規遵循掃描
+
+您可以新增個別SharePoint網站或帳戶中的所有SharePoint網站、以便Cloud Data Sense掃描相關檔案。
+
+.步驟
+. 在「_Configuration」頁面中、按一下SharePoint帳戶的*組態*按鈕。
++
+image:screenshot_compliance_sharepoint_add_sites.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
+. 如果這是第一次新增此SharePoint帳戶的網站、請按一下*「新增您的第一個SharePoint網站」*。
++
+image:screenshot_compliance_sharepoint_add_initial_sites.png["顯示「新增您的第一個SharePoint網站」按鈕的快照、可新增要掃描的初始網站。"]
+
++
+如果您要從SharePoint帳戶新增其他使用者、請按一下*「新增SharePoint網站」*。
+
++
+image:screenshot_compliance_sharepoint_add_more_sites.png["顯示「新增SharePoint網站」按鈕的快照、可將更多網站新增至帳戶。"]
+
+. 新增您要掃描其檔案的網站URL -每行一個URL（每個工作階段最多100個）、然後按一下*「Add Sites」（新增網站）*。
++
+image:screenshot_compliance_sharepoint_add_site.png["「新增SharePoint網站」頁面的快照、您可以在其中新增要掃描的網站。"]
+
++
+確認對話方塊會顯示已新增的站台數量。
+
++
+如果對話方塊列出任何無法新增的網站、請擷取此資訊、以便您解決問題。在某些情況下、您可以使用修正的URL重新新增網站。
+
+. 在SharePoint網站的檔案上啟用純對應掃描、或對應及分類掃描。
++
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 啟用檔案的純對應掃描 | 按一下*地圖* 
+
+
+| 啟用檔案的完整掃描 | 按一下*地圖與分類* 
+
+
+| 停用檔案掃描 | 按一下「*關*」 
+|===
+
+
+Cloud Data Sense會開始掃描您新增之SharePoint網站中的檔案、結果會顯示在儀表板和其他位置。
+
+
+
+== 將SharePoint網站從法規遵循掃描中移除
+
+如果您日後移除SharePoint網站、或決定不掃描SharePoint網站中的檔案、您可以隨時移除個別SharePoint網站的檔案掃描功能。只要按一下「組態」頁面中的「*移除SharePoint Site*」即可。
+
+image:screenshot_compliance_sharepoint_remove_site.png["螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。"]
