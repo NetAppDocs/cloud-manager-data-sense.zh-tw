@@ -207,7 +207,7 @@ image:screenshot_cloud_compliance_filter.gif["顯示如何篩選特定工作環�
 
 image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整結果時可用篩選器的快照。"]
 
-* 最上層索引標籤可讓您檢視檔案（非結構化資料）、目錄（非結構化資料）或資料庫（結構化資料）的資料。
+* 最上層的索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。
 * 每欄頂端的控制項可讓您依照數字或字母順序來排序結果。
 * 左窗格篩選器可讓您從下列屬性中選取、以精簡結果：
 +
@@ -219,7 +219,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 原則 | 選取原則。行動 link:task-org-private-data.html#controlling-your-data-using-policies["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
 
 
-| 開啟權限 | 選取權限類型 
+| 開啟權限 | 選取資料內及資料夾/共用內的權限類型 
 
 
 | 使用者/群組權限 | 選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱 
@@ -291,3 +291,5 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 指派給 | 選取指派檔案的人員名稱 
 |===
 
+
+請注意、「目錄」層級目前不支援按鈕列和原則中可用的動作。
