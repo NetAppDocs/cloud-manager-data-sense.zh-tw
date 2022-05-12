@@ -41,7 +41,7 @@ Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資
 * 非NetApp CIFS檔案共用（非NFS檔案共用）
 
 
-不支援從使用簡易儲存服務（S3）傳輸協定的資料庫架構、OneDrive帳戶、SharePoint帳戶、Amazon S3帳戶或物件儲存設備識別使用者和權限資訊。
+不支援從資料庫架構、OneDrive帳戶、SharePoint帳戶、Google雲端硬碟帳戶、Amazon S3帳戶、 或使用簡易儲存服務（S3）傳輸協定的物件儲存設備。
 
 
 

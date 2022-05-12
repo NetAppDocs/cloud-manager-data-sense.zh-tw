@@ -86,7 +86,6 @@
   <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">使用AIP標籤分類資料</block>
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。Data Sense可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已經存在時變更標籤。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、.PPTX、.XLS、 XLSX：</block>
-  <block id="94e370427e602a43807ec3f64f30ed98" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive和SharePoint帳戶、檔案大小上限為4 MB。</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。</block>
   <block id="96f521b8aea6752795f47a3b35a11055" category="list-text">如果您已將Data Sense執行個體部署在內部部署位置、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">將AIP標籤整合到工作區中</block>
@@ -422,7 +421,6 @@
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">使用簡易儲存服務（S3）傳輸協定的物件儲存設備</block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint和OneDrive的特殊需求</block>
   <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 以取得詳細資料。</block>
-  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">目前不支援掃描Cloud Volumes ONTAP 功能支援使用支援功能的功能包括：支援支援功能的功能、支援Azure NetApp Files 功能的功能包括執行功能的功能、支援功能的功能包括執行功能的功能、支援功能的功能ONTAP</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="5ba5b8eb3222cd77297eb876e3219895" category="paragraph">大多數的Data Sense功能都能在部署於無法存取網際網路的站台上運作。不過、某些需要網際網路存取的功能則不受支援、例如：</block>
   <block id="1d7a14d61308aecb5be9316e1481f947" category="list-text">管理Microsoft Azure資訊保護（AIP）標籤</block>
@@ -446,7 +444,6 @@
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備Linux主機系統</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
   <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">作業系統： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</block>
-  <block id="46123563d68443141506bf3d78c3f494" category="list-text">可以使用版本 7.8 、但 Linux 核心版本必須為 4.14 或更新版本</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">磁碟：SSD搭載500 GiB、可在/、或上使用</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB可在/op</block>
@@ -871,7 +868,6 @@
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶中的檔案。</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">您必須具有「帳戶管理」或「工作區管理」角色、才能複製及同步檔案。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。</block>
-  <block id="7b3543922066dce10c949a9abf066434" category="list-text">您一次最多可以複製200、000個檔案。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link-macro">快速入門說明</block>
   <block id="77129c83b2501b2eb47ff0a1fa67f801" category="list-text">您需要啟動Cloud Sync 「還原」服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。請從開始檢閱Cloud Sync 《不整合需求 <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">請注意Cloud Sync 、如果您在雲端部署資料代理程式、則該服務會針對您的同步關係另行收取服務費用。</block>
@@ -970,7 +966,6 @@
   <block id="a08520118359e571f24b420e7729b107" category="paragraph"><block ref="a08520118359e571f24b420e7729b107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">搜尋、排序、展開特定檔案的詳細資料、按一下 * 調查結果 * 查看遮罩資訊、或下載檔案清單、即可調查資料。</block>
   <block id="7cdf7364a52ab6af797f1b1dcae76247" category="inline-image-macro">按一下「調查結果」後的詳細資訊快照。</block>
-  <block id="f15ac2c837cbe49b31996c52ce5c37a0" category="paragraph"><block ref="f15ac2c837cbe49b31996c52ce5c37a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">檢視含有敏感個人資料的檔案</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">GDPR 第 9 和第 10 條</block>
   <block id="9c0bd6a9f0ddda0f88659e943db1d4cd" category="paragraph">Cloud Data Sense會自動識別特殊類型的敏感個人資訊、如隱私權法規所定義<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。例如、關於個人健康、族群或性取向的資訊。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。</block>
@@ -1040,26 +1035,20 @@
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">顯示如何篩選特定工作環境的調查結果的快照。</block>
   <block id="7675f7474f9e9ad03c6a7bb35d2d9fad" category="paragraph"><block ref="7675f7474f9e9ad03c6a7bb35d2d9fad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c99fdc0d05bf34d6834c6ef3cd92bb3" category="inline-image-macro">下載按鈕</block>
-  <block id="e84736b559c4ef7f3b483914bae557de" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。如果您想要在精簡內容之後、將 CSV 版本的內容另存為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">在調查頁面中調整結果時可用篩選器的快照。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="74993bbafe4b984432b5e67863ee7f44" category="list-text">最上層索引標籤可讓您檢視來自檔案（非結構化資料）或來自資料庫（結構化資料）的資料。</block>
   <block id="812ce4d3a07734d12cdaa3ed2010e22f" category="list-text">每欄頂端的控制項可讓您依照數字或字母順序來排序結果。</block>
   <block id="5818e7b5278ce95470fc0dac0a45bdab" category="list-text">左窗格篩選器可讓您從下列屬性中選取、以精簡結果：</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">篩選器</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">詳細資料</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="cell">原則</block>
-  <block id="7adb9b231b12815dedfc107fcb40b5c0" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建自己的策略。</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">開啟權限</block>
   <block id="2aff327e20fff98134c5877bf3331ccd" category="cell">選取權限類型</block>
   <block id="11103ebc3d212c95261e2603bcb74624" category="cell">使用者/群組權限</block>
-  <block id="f9a449cccae7f4d38f9fc63747b1825c" category="cell">輸入使用者名稱或群組名稱、或部分名稱</block>
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">檔案擁有者</block>
   <block id="041e6d70f8356e275da0ead58dccdf88" category="cell">輸入檔案擁有者名稱</block>
   <block id="b021df6aac4654c454f46c77646e745f" category="cell">標籤</block>
-  <block id="bc73c235250705df5ea511cf347930d9" category="cell">選取AIP標籤</block>
   <block id="d9104233b7c0bd37d4c7d710debdd552" category="cell">工作環境類型</block>
-  <block id="0714c3638ff113c3bead5ccfc27618c6" category="cell">選取工作環境類型。請注意、OneDrive和SharePoint的分類為「Cloud Apps」。</block>
   <block id="424c7d928317581f5f55ac74c144b45a" category="cell">工作環境名稱</block>
   <block id="e9a13f10d7b028f52966f59cde41518f" category="cell">選擇特定的工作環境</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">儲存儲存庫</block>
@@ -1096,14 +1085,8 @@
   <block id="ee3ae9516151c6012c7652565dfd0088" category="cell">選取檔案是否在儲存庫中重複</block>
   <block id="116279f96a5a5a07b36a9ed5e3b30ae8" category="cell">檔案雜湊</block>
   <block id="eb173689f884b625c2ebc512044eaa1f" category="cell">輸入檔案的雜湊以尋找特定檔案、即使名稱不同也沒問題</block>
-  <block id="d05d49a7556b8fdfb215a2510d35768b" category="cell">選取標記或標記</block>
   <block id="0056a7841e032922f086add6ff46bdf7" category="cell">指派給</block>
   <block id="91b1c67fd436922743b5db9b97cac01a" category="cell">選取指派檔案的人員名稱</block>
-  <block id="8686a90c9592c1b4cd699631b64bc27d" category="list-text">「篩選器」窗格頂端的_Policies篩選器會列出提供常用篩選組合的自訂篩選器、例如儲存的資料庫查詢或「我的最愛」清單。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看預定義策略的列表，並查看如何創建自己的自定義策略。</block>
-  <block id="b6b354a759e6ea4d86bdf3ac9228dc29" category="section-title">每份檔案清單報告中所包含的內容（ CSV 檔案）</block>
-  <block id="d4858e45de10e73646f9756a49830578" category="paragraph">在每個「調查」頁面中、您可以按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕下載檔案清單（CSV格式）、其中包含已識別檔案的詳細資料。如果Data Sense同時掃描結構化（資料庫表格）和非結構化（檔案）資料、則下載的ZIP檔案中會包含兩份報告。</block>
-  <block id="c609c6add6a1a754e843133f9f7268b4" category="paragraph">如果結果超過 10 、 000 項、則清單中只會出現前 10 、 000 項。</block>
-  <block id="1a1a3b68acbf686586fd8c4d47f4f62f" category="paragraph">*非結構化資料報告*包含下列資訊：</block>
   <block id="34082694d21dbdcfc31e6e32d9fb2b9f" category="list-text">檔案名稱</block>
   <block id="8c16f0464e311229da94de789324309e" category="list-text">位置類型</block>
   <block id="e39236d23fb63bab78a9ca2abc0cc5e9" category="list-text">工作環境名稱</block>
@@ -1120,7 +1103,6 @@
   <block id="e434b22cf42d4154041547acb051334e" category="list-text">敏感的個人資訊</block>
   <block id="a73443e5b5980c135e04b4b123ccd99f" category="list-text">刪除偵測日期</block>
   <block id="e81282c4a2e1620d17b120b1420664da" category="paragraph">刪除偵測日期可識別檔案刪除或移動的日期。這可讓您識別敏感檔案的移動時間。刪除的檔案不屬於儀表板或「調查」頁面上顯示的檔案編號數。這些檔案只會出現在 CSV 報告中。</block>
-  <block id="2fbc3b8876555d0879990e55a37ce09c" category="paragraph">*結構化資料報告*包含下列資訊：</block>
   <block id="613fa33e083d96576cb50cbe059fc43e" category="list-text">DB表格名稱</block>
   <block id="24588d9873aeb10a7d918f9f39a921ad" category="list-text">儲存儲存庫（例如架構）</block>
   <block id="ab8a843d390e68d7263eb4d3758cbb94" category="list-text">欄數</block>
@@ -1296,7 +1278,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">為每個雲端供應商部署的執行個體類型</block>
   <block id="92e07e6381d83aef31f2714b015ef6df" category="list-text">若要在雲端上安裝Cloud Data Sense、必須部署雲端執行個體、這會導致雲端供應商在部署雲端執行個體時收取費用。請參閱 <block ref="ff92646c6b674f4f14795f72b3d7a155" category="inline-xref-macro-rx"></block>。如果您在內部部署系統上安裝Data Sense、則不需支付任何費用。</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">為每個雲端供應商部署的執行個體類型</block>
-  <block id="452acc708bda26e157f53750f7abfdf4" category="list-text">Cloud Data Sense需要部署Connector。在許多情況下、由於 Cloud Manager 中使用的其他儲存設備和服務、您已經擁有 Connector 。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">資料傳輸成本</block>
   <block id="14aeecf5ef82e6232639978162b42963" category="paragraph">資料傳輸成本取決於您的設定。如果Cloud Data Sense執行個體和資料來源位於相同的可用度區域和區域、則不會產生資料傳輸成本。但是如果Cloud Volumes ONTAP 資料來源（例如、不支援的系統或S3時段）位於_不同_可用度區域或區域、則您的雲端供應商會向您收取資料傳輸成本。如需詳細資料、請參閱以下連結：</block>
   <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS ： Amazon EC2 定價</block>
@@ -1354,7 +1335,6 @@
   <block id="3a7d96d307a8facb682992a53315a953" category="paragraph">您可以在磁碟區層級、儲存庫層級、資料庫架構層級、OneDrive使用者層級和SharePoint網站層級啟用和停用掃描。</block>
   <block id="07319052a199a3efec9e35f531ee2368" category="section-title">對應掃描與分類掃描之間有何差異</block>
   <block id="983e489afa45ba4e28274c8e167697df" category="paragraph">Cloud Data Sense可讓您在選定的工作環境和資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
-  <block id="061b37bde927a0263d25cb3af54f51f6" category="paragraph">許多使用者喜歡這項功能、因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能在這些資料來源或磁碟區上進行分類掃描。</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">下表顯示部分差異：</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分類</block>
@@ -1434,7 +1414,6 @@
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
   <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案</block>
-  <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以指定使用者名稱或群組名稱、或是部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
   <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。</block>
   <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">Data Sense可識別兩種其他類型的個人資料</block>
@@ -1447,26 +1426,21 @@
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022年2月9日</block>
   <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">新增掃描Microsoft SharePoint線上帳戶的支援</block>
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link">瞭解如何掃描SharePoint帳戶</block>
-  <block id="592c8c1b273df763193797348c862319" category="paragraph">現在您可以將SharePoint線上帳戶新增至Data Sense、以便從SharePoint網站掃描文件和檔案。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
   <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">Data Sense可將檔案從資料來源複製到目標位置、並同步處理這些檔案</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">如果您正在移轉資料、而且想要追蹤檔案的任何最後變更、這項功能就很有幫助。此動作使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link">瞭解如何複製及同步檔案</block>
-  <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
   <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">為DSAR報告提供新的語言支援</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">目前支援使用德文和西班牙文搜尋資料主體名稱、以建立資料主體存取要求（DSAR）報告。本報告旨在協助貴組織遵守GDPR或類似的資料隱私權法律。</block>
   <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">Data Sense可識別三種其他類型的個人資料</block>
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link">請參閱「Data Sense」在掃描中識別的所有個人資料類型清單</block>
-  <block id="0f774c5b2a7839e95c43788f441f3dd3" category="paragraph">Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和法文驅動程式授權號碼。<block ref="388ce18cfcb7cb3d159655ecca4c4330" category="inline-link-rx"></block>。</block>
   <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">安全性群組連接埠已變更、以便與連接器進行Data Sense通訊</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠80、用於往返Data Sense執行個體的傳入和傳出流量、以提高安全性。這兩個連接埠目前仍為開啟狀態、因此您不會看到任何問題、但您應該更新任何舊版連接器部署中的安全性群組、因為連接埠80將在未來的版本中被淘汰。</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022年1月2日</block>
   <block id="39ad63f56fe19489716d253d535f6033" category="section-title">能夠整合全域Active Directory、以識別檔案擁有者和權限</block>
   <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">現在、您可以將全域Active Directory與Cloud Data Sense整合、以強化Data Sense針對檔案擁有者及哪些使用者和群組有權存取檔案的結果。</block>
   <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link">瞭解如何設定全域Active Directory</block>
-  <block id="129f0bf953b701155233395846412fc3" category="paragraph">除了您輸入的Active Directory認證資料、以便Data Sense能夠掃描來自特定資料來源的CIFS磁碟區之外、這項新的整合功能還能為其他使用者和系統提供額外的整合功能。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。<block ref="158a238f28caf554b0fac060cc222c85" category="inline-link-rx"></block>。</block>
   <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">資料感應「原則」現在可用於刪除檔案</block>
   <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link">瞭解如何建立自訂原則</block>
-  <block id="0a42fac75db1d1ad5a957d27f1b0093d" category="paragraph">Data Sense可自動刪除符合您在原則中定義之查詢的檔案。<block ref="fa669ca41a532c138aee3aeaad4c4f3f" category="inline-link-rx"></block>。</block>
   <block id="096a1667ae412a6b3dd6d7318a0fb8d4" category="section-title">2021年12月16日</block>
   <block id="4fda7be69eb097891068c14360cba258" category="section-title">資料感測功能可在黑暗的站台中掃描資料</block>
   <block id="3c6e7a50358ad493c1281cc6aa27309a" category="paragraph">Cloud Manager（連接器）和Cloud Data Sense均可部署在內部部署站台、但無法存取網際網路。現在、您的安全網站可以使用Cloud Manager來管理內部ONTAP 的支援叢集、在叢集之間複寫資料、以及使用Cloud Data Sense從這些叢集掃描資料。</block>
@@ -1589,7 +1563,6 @@
   <block id="7ac3f196b9e28d091dfd9aee0f1b0667" category="admonition">對本產品而言、Cloud Data Sense只能掃描與Cloud Manager位於同一區域的磁碟區。Azure NetApp Files</block>
   <block id="00c8262a1f25b11a02833b07a8236234" category="summary">Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。</block>
   <block id="59da637a5daa4fdc3901cb939fca6c7e" category="doc">檢視法規遵循報告</block>
-  <block id="e5e9c2aa07bcb333c74a2cbbebc5e1bf" category="paragraph">根據預設、Cloud Data Sense儀表板會顯示所有工作環境和資料庫的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="admonition">本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">隱私權風險評估報告</block>
   <block id="0536072d2717a92a8a5a62bad5ca5809" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如 GDPR 和 CCPA 等隱私權法規要求。報告包含下列資訊：</block>
@@ -1684,7 +1657,6 @@
   <block id="26b847443fa0cba1e0e89bc161a96dc4" category="paragraph">您可以篩選Cloud Data Sense Compliance儀表板的內容、以查看所有工作環境和資料庫、或只是特定工作環境的法規遵循資料。</block>
   <block id="a3b67f96a0c9278d4984faae4a248582" category="inline-image-macro">選取您要執行之報告的工作環境的螢幕擷取畫面。</block>
   <block id="71750f5e2f8e92320feced026981497e" category="paragraph"><block ref="71750f5e2f8e92320feced026981497e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data Sense可在您的磁碟區、Amazon S3儲存區、資料庫、OneDrive資料夾和SharePoint帳戶中識別許多類型的私有資料。請參閱下列類別。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">私有資料類別</block>
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">如果您需要Cloud Data Sense來識別其他私有資料類型、例如其他國家ID號碼或醫療識別碼、請寄送電子郵件至ng-contact-data-sense@netapp.com並附上您的要求。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人資料類型</block>
@@ -1819,7 +1791,6 @@
   <block id="ba2688508d4961c3340fa3a979e0a164" category="section-title">檔案類型</block>
   <block id="a6d39edac7ad8808a1149d2de26446f1" category="paragraph">Cloud Data Sense會掃描所有檔案以取得類別和中繼資料深入資訊、並在儀表板的「檔案類型」區段中顯示所有檔案類型。</block>
   <block id="855ab7337551d041e32c86c7471a82ca" category="paragraph">但當Data Sense偵測到個人識別資訊（PII）、或執行DSAR搜尋時、僅支援下列檔案格式：</block>
-  <block id="161eee98e9862ba9c60339f657e01941" category="paragraph">.CSV、.dcm、.dicom、.dDOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 .XLS和.XLSX.+</block>
   <block id="80890af19007fc709ba59342ca8b0385" category="section-title">找到資訊的準確度</block>
   <block id="66cbc8e381ee6ef1aaa69ea500386a6b" category="paragraph">根據我們的測試結果、下表顯示Data Sense發現的資訊準確度。我們將其細分為 _精密度 _ 和 _Recall _ ：</block>
   <block id="be5edab59de4ea30531374e506b03822" category="list-text">精確性</block>
@@ -1858,7 +1829,6 @@
   <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。</block>
-  <block id="54de3b41ee409b9df73f596156a37b7e" category="paragraph">在使用ONTAP 上述任何Cloud Connector時、均可掃描內部的支援系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾和SharePoint帳戶。</block>
   <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">請注意、您也可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">多個連接器</block>
   <block id="8e952431e2e27533e34593f63c959513" category="paragraph">如您所見、您可能需要使用某些情況<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
@@ -1968,7 +1938,6 @@
   <block id="a0d932b5085e493a71dbcdcc11a705b4" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">有關Cloud Data Sense的常見問題集</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">什麼是雲端資料意義？</block>
-  <block id="78cd4073686a357a1a0009c73f9c928f" category="paragraph">Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、協助組織瞭解資料內容、並識別儲存系統中的敏感資料。這些系統Azure NetApp Files 可以是不完整的組態、Amazon FSX for ONTAP the Sfor the Sfor the、Cloud Volumes ONTAP 支援各種系統的支援（以AWS、Azure或GCP代管）、Amazon S3鏟斗、內部ONTAP 作業系統、 非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive帳戶及SharePoint帳戶。</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。</block>
   <block id="d6a75f271c34ca45be980272b9847d51" category="section-title">為什麼我應該使用Cloud Data Sense？</block>
   <block id="f8ae17057d50237f6762d4039f49a6e3" category="paragraph">Cloud Data Sense可協助您運用資料、協助您：</block>
@@ -1981,39 +1950,26 @@
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">遵守新的及即將推出的資料隱私權法規。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">深入瞭解Cloud Data Sense的使用案例</block>
   <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
-  <block id="bf3527d322233a78048212ed974c2a90" category="section-title">使用Cloud Data Sense可以掃描哪些類型的資料？</block>
-  <block id="444099feeb332311f4c8a8a6f54a5d2b" category="paragraph">Cloud Data Sense支援透過NFS和CIFS傳輸協定掃描非結構化資料、這些傳輸協定是Cloud Volumes ONTAP 由以下項目所管理：效益分析、Azure NetApp Files 支援ONTAP 使用Amazon FSX for Sf0、內部ONTAP 支援的不全系統資料、以及非NetApp檔案共用。Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。</block>
-  <block id="e5eab1ca43d62b305089ca2cba946ffe" category="paragraph">Data Sense也可以掃描儲存在Amazon S3儲存區和一般S3物件儲存區中的資料。</block>
-  <block id="e754ec91642ab661318605944bba61da" category="paragraph">此外、Data Sense可掃描位於任何位置的資料庫、以及OneDrive和SharePoint帳戶的使用者檔案。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">瞭解掃描的運作方式</block>
-  <block id="d4eeb3467c18664e9f2f1757aa90f43f" category="paragraph"><block ref="19d4d0096ea9aedeade81d64b9d08457" category="inline-link-macro-rx"></block>。</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">支援哪些雲端供應商？</block>
   <block id="3244b6ac61b9c2142eb1bf1aac45735f" category="paragraph">Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。</block>
-  <block id="fd73cf01f5ade494e6d01c222c55793d" category="section-title">如何存取Cloud Data Sense？</block>
-  <block id="2b58b3b62ad70f13cc43625e6ea919ba" category="paragraph">Cloud Data Sense是透過Cloud Manager進行操作與管理。您可以從Cloud Manager的* Data Sense *（資料感測）標籤存取Data Sense（資料感測）功能。</block>
   <block id="0139d044fd0b961e3b07aa66f52b5e57" category="section-title">雲端資料感測如何運作？</block>
-  <block id="a792efa7fa28f8e416e2d3d8ef1471d6" category="paragraph">Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫和OneDrive帳戶上的資料、並為找到的資料洞見建立索引。</block>
   <block id="197b9359d5eb91a4bad52b6e13342baf" category="inline-link-macro">深入瞭解Cloud Data Sense的運作方式</block>
   <block id="428c1d3f0ce473e653a96441ff156c7f" category="paragraph"><block ref="6aa08568cbc533e43d34ee014a159a69" category="inline-link-macro-rx"></block>。</block>
   <block id="507eddf0133d6696604714a129b07a0a" category="section-title">Cloud Data合理的成本是多少？</block>
-  <block id="f57b7b015c57f640c21f8b45d58eb9c8" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="96e962ef0775cfff1c6fd6a71c485c8e" category="section-title">Cloud Data Sense需要哪種類型的執行個體或VM？</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">何時 <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
   <block id="ef56cc072a6aac56c9a359e54f9bf51e" category="list-text">在AWS中、Cloud Data Sense可在具有500 GB GP2磁碟的m5.4x大型 執行個體上執行。</block>
   <block id="c50ed3e22a4bfeee9406b38e0c990d7d" category="list-text">在Azure中、Cloud Data Sense可在具有512 GB磁碟的Standard_D16s_v3 VM上執行。</block>
   <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">在GCP中、Cloud Data Sense可在具有512 GB標準持續磁碟的n2-Standard-16 VM上執行。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">在內部部署Cloud Data Sense</block>
-  <block id="66b2fe919777c8106abe9e4f030123fd" category="paragraph">您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切都一樣運作、您也可以透過 Cloud Manager 繼續管理掃描組態和結果。請參閱 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 以取得系統需求和安裝詳細資料。</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">在無法存取網際網路的內部部署網站上部署Data Sense</block>
-  <block id="859d2ccf50c642ee73b6b7ed0293c06c" category="paragraph">此外、您也可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="9504bf4697695cdeb232f8ceb18c09c6" category="section-title">Cloud Data Sense多久掃描一次我的資料？</block>
   <block id="681be99f122d2951a2c8370626fa6637" category="paragraph">資料經常變更、因此Cloud Data Sense可持續掃描資料、不會對資料造成任何影響。雖然初次掃描資料可能需要較長時間、但後續掃描只會掃描遞增變更、如此可縮短系統掃描時間。</block>
   <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
   <block id="a577dc74a01118296df38bec260c945a" category="inline-link-macro">瞭解如何降低掃描速度</block>
   <block id="48e4169c479861f2d03d44869de5a342" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 <block ref="5557fc40765f42f5191ab2e5a0e219b3" category="inline-link-macro-rx"></block>。</block>
   <block id="c28a9031bf06c99071258d18b345a7d4" category="section-title">Cloud Data Sense是否提供報告？</block>
-  <block id="f3af98e0d715f65a774e8b5ce1e41f08" category="paragraph">是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。</block>
-  <block id="59c664c61ebab86476ef97b4388a4e15" category="paragraph">下列報告適用於Data Sense：</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">隱私權風險評估報告</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">提供資料的隱私見解和隱私權風險分數。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">資料主旨存取要求報告</block>
@@ -2032,12 +1988,9 @@
   <block id="8c1896ebd0bea05ef3c8e18467a9ca07" category="inline-link-macro">瞭解對應與分類掃描之間的差異。</block>
   <block id="fa07ec52541c98901015394277e86a73" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="7dda8a42e8b908f8c520b46d25b02f04" category="inline-link-macro-rx"></block></block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">支援哪些檔案類型？</block>
-  <block id="ba85068bc4ee4bbb36417fb582bc90f4" category="paragraph">當Data Sense偵測到個人識別資訊（PII）、或執行DSAR搜尋時、僅支援下列檔案格式：.CSV、.dcm、.dicom、.DOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 XLS和.XLSX。</block>
   <block id="a3b503a46334e3fb2ab7ae78049e483b" category="section-title">如何啟用雲端資料感測？</block>
-  <block id="87da9ab19a5ad3680d2f0b950ff98123" category="paragraph">首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境和資料庫上啟用服務。</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">瞭解如何開始使用</block>
   <block id="4971e76b33cd221cbe44ae11708dcf1a" category="paragraph"><block ref="63c04392b8948e626a251971bdfb13c0" category="inline-link-macro-rx"></block>。</block>
-  <block id="56cccd0fb390060a75639f67b90006aa" category="admonition">啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。</block>
   <block id="a6c3d6913f02e92798d0e42e2ff92b62" category="section-title">如何停用Cloud Data Sense？</block>
   <block id="4c0a2c9670f1474a8413f5c72bb8acfc" category="paragraph">您可以從「Data Sense組態」頁面、停用「Cloud Data Sense」、從掃描個別工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。</block>
   <block id="7a833d41d59abd430a8a21760722d14a" category="paragraph"><block ref="57d1ac548ab885ff197c8b0634f5bdfc" category="inline-link-macro-rx"></block>。</block>
@@ -2045,8 +1998,6 @@
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？</block>
   <block id="2de4e78513aa5bfeb890fe4ddc3ec775" category="paragraph">您可能想要在ONTAP 將冷資料分層儲存至物件儲存的功能區系統上啟用Cloud Data Sense。如果啟用資料分層、Data Sense會掃描磁碟上的所有資料、並將冷資料階層化至物件儲存設備。</block>
   <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">法規遵循掃描不會將冷資料加熱、而是維持冷態並分層至物件儲存設備。</block>
-  <block id="62d5057db793bb8f5e79fc52d6bf1900" category="section-title">我可以使用Cloud Data Sense來掃描內部部署ONTAP 的效能數據儲存嗎？</block>
-  <block id="7beb9e9f8f168f5ef88971dd5be87973" category="paragraph">是的。只要您在ONTAP Cloud Manager中發現內部使用的叢集是工作環境、就能掃描Volume資料。</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data Sense可以傳送通知給我的組織嗎？</block>
   <block id="a1f9ef921821eddddbc2db0a418bf2f3" category="paragraph">是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給Cloud Manager使用者（每日、每週或每月）、以便取得通知來保護資料。深入瞭解 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>。</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。</block>
@@ -2061,7 +2012,6 @@
   <block id="a4d3498bfb4708ef940bb7704acbd0aa" category="paragraph">是的、Cloud Data Sense與Cloud Manager完全整合。Cloud Manager 使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。</block>
   <block id="a7bfd66e1935af8f12cb8a19f3000290" category="paragraph">此外、如果您想要讓特定使用者在不管理「資料感應」設定的情況下、只檢視「資料感應」掃描結果、您可以將「_Cloud Compliance Viewer_」角色指派給這些使用者。</block>
   <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>。</block>
-  <block id="b9d7f2c52667928f57e7870c3d7dfcff" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</block>
   <block id="f1e1cd7c712964c306723b5d8a7b0615" category="doc">從Cloud Data感應移除資料來源</block>
   <block id="8f34757b26c51100dd5a08a099969517" category="section-title">停用工作環境的法規遵循掃描</block>
   <block id="10ddf41b6229b35fd788349ce9ca2dc2" category="paragraph">當您停用掃描時、Cloud Data Sense不再掃描工作環境中的資料、也會從Data Sense執行個體移除已建立索引的法規遵循洞見（工作環境本身的資料不會刪除）。</block>
@@ -2074,9 +2024,6 @@
   <block id="c129bc0408ce8224fad586d944537ce4" category="list-text">在「_Configuration」頁面中、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下「 * 移除資料庫伺服器 * 」。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">「掃描組態」頁面中「移除 DB 伺服器」按鈕的快照。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a1159b67ca1645cb2ca1e5ed40754d0" category="section-title">從Cloud Data感應移除OneDrive或SharePoint帳戶</block>
-  <block id="684b435f7254b27e6af61d13cecb0736" category="paragraph">如果您不想再從特定OneDrive帳戶或特定SharePoint帳戶掃描使用者檔案、可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。</block>
-  <block id="f87a3387188c705cce37b4f9a29c7a9f" category="list-text">在「_Configuration」頁面中、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下「*移除OneDrive帳戶*」或「*移除SharePoint帳戶*」。</block>
   <block id="9a7ec6e6b57682d3f33ce7ea4bef0f5a" category="inline-image-macro">「掃描組態」頁面中「移除 OneDrive 」按鈕的快照。</block>
   <block id="1bd56f7fb7715259e9afebe5fa03e87f" category="paragraph"><block ref="1bd56f7fb7715259e9afebe5fa03e87f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c6852fcc39c16d9167a10bb916b459" category="list-text">從確認對話方塊中按一下 * 刪除帳戶 * 。</block>
@@ -2113,7 +2060,6 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX ONTAP</block>
   <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
-  <block id="b73af05fa76cf73f03025fa51eb8655a" category="paragraph">不支援從使用簡易儲存服務（S3）傳輸協定的資料庫架構、OneDrive帳戶、SharePoint帳戶、Amazon S3帳戶或物件儲存設備識別使用者和權限資訊。</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">連線至Active Directory伺服器</block>
   <block id="f0c4b852ec6811b9151a600864775755" category="paragraph">在您部署Data Sense並啟動資料來源掃描之後、就可以將Data Sense與Active Directory整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory認證可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提高權限的資料。認證資料儲存在Cloud Data Sense執行個體上。</block>
@@ -2158,8 +2104,6 @@
   <block id="b4a5c69342b3680972974939d1add5af" category="paragraph">使用管理使用者認證、登入您要存取的 OneDrive 帳戶、以便將其新增為新的工作環境。</block>
   <block id="6a0c37bc5c98bec1f8cf3b1552d3d9fe" category="paragraph">從您要掃描的OneDrive帳戶新增使用者清單、然後選取掃描類型。您一次最多可新增 100 位使用者。</block>
   <block id="338e56fa931ac748f865fb417e3f80cf" category="section-title">檢閱OneDrive要求</block>
-  <block id="6401be6f38d9325e9401705ef39197e8" category="list-text">您必須擁有 OneDrive for Business 帳戶的管理登入認證、才能提供所有使用者檔案的讀取存取權。</block>
-  <block id="316ac43c3476515e2672d78b5f7e054e" category="list-text">您需要一份以行分隔的電子郵件地址清單、列出您要掃描 OneDrive 資料夾的所有使用者。</block>
   <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">資料感測也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描本機OneDrive檔案。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="ff916f8aafd3dd060eaa015e5b21c9c7" category="section-title">新增 OneDrive 帳戶</block>
   <block id="7a461f87d3978d33f6acd8b612c58b19" category="paragraph">新增使用者檔案所在的 OneDrive 帳戶。</block>
@@ -2203,7 +2147,6 @@
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Data Sense執行個體。</block>
   <block id="acea4bac0de5cdb68692b9a3de1cdb56" category="paragraph">Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。</block>
   <block id="da7bf2e7dc8499e5ac0775b3710a0ae4" category="list-text">在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的連接器。</block>
-  <block id="b4cf84575c9343350447cd475e3708be" category="paragraph">內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾及SharePoint帳戶、均可使用下列任何一種Cloud Connector進行掃描。</block>
   <block id="6eca1a824e059bf4f2eb266bd39b58c5" category="list-text">作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）</block>
   <block id="99d2310654d20771b9bddf3c5bbb5573" category="list-text">Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。</block>
   <block id="5225652eff69d3e0f7880ed73e7fa226" category="list-text">主機上必須安裝下列軟體。如果主機上尚未存在、安裝程式會為您安裝軟體：</block>
@@ -2350,7 +2293,6 @@
   <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">資料量 Azure NetApp Files</block>
   <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">Amazon FSX for ONTAP Sf6 Volume</block>
   <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">一般S3儲存桶</block>
-  <block id="68fb1cee0137c1f6fc37e8a457f262f5" category="sidebar">管理私有資料</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">使用AIP標籤將資料分類</block>
   <block id="40af1406afc061038f5851961a636714" category="sidebar">找到不合規的資料時、請建立電子郵件警示</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">新增您自己的自訂個人資料識別碼</block>
@@ -2369,4 +2311,164 @@
   <block id="cc81b1698333ba727fd5bde305c3cf08" category="sidebar">Cloud Central使用案例</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Google雲端硬碟帳戶</block>
+  <block id="c09551e40902e02251ee901bd86a597a" category="list-text">Cloud Data Sense需要部署Cloud Manager Connector。在許多情況下、由於 Cloud Manager 中使用的其他儲存設備和服務、您已經擁有 Connector 。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
+  <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。</block>
+  <block id="16e954ea4b2a186e8af05353fc80e766" category="section-title">雲端資料感應服務</block>
+  <block id="a2f50def832b70c62c50463d59218053" category="paragraph">下列問題可讓您大致瞭解Cloud Data Sense。</block>
+  <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">請參閱下列完整清單</block>
+  <block id="c7cb2708717b7d786836e068c85a1040" category="paragraph">Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至Cloud Manager畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。 <block ref="baabd945a4a07a6a42dc21a2d03105c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">將資料從舊系統移轉至雲端。</block>
+  <block id="929a567aeb50b6bfed31d080645db9d2" category="paragraph">Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。</block>
+  <block id="d7f674bb407247f888d30ade7b86a73a" category="section-title">Cloud Data Sense支援哪些部署模式？</block>
+  <block id="bf804f144530d65026fe3d0982584bc2" category="paragraph">Cloud Data Sense通常是使用SaaS模式來部署、在這種模式中、服務是透過Cloud Manager介面來啟用。Cloud Data Sense可部署在幾乎任何位置的系統上進行掃描和報告、包括內部部署、雲端和混合式環境。對於安全的安裝、Cloud Manager和Cloud Data Sense可部署在「暗站」模式中、此模式是以套件形式安裝在內部部署環境中、不需要外部網路連線。</block>
+  <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？</block>
+  <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。</block>
+  <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。下列報告適用於Data Sense：</block>
+  <block id="a39a4df8314a27ad3dd4677975511322" category="paragraph">首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</block>
+  <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">在資料來源上啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。</block>
+  <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">來源系統和資料類型的類型</block>
+  <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">下列問題與可掃描的儲存設備類型及掃描的資料類型有關。</block>
+  <block id="53603d1a728f100ed9ec53da6f3de981" category="section-title">哪些資料來源可以透過Data Sense進行掃描？</block>
+  <block id="08ece2b3a533d5b9f3fb6a576d49dcd8" category="paragraph">Cloud Data Sense可掃描已新增至Cloud Manager畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種資料來源。</block>
+  <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）</block>
+  <block id="3ea2a425923f5c3bd5e4de2e3212bca6" category="section-title">如果我在沒有網際網路存取的網站上安裝Data Sense、我可以掃描哪些資料來源？</block>
+  <block id="d6340d13b9b8fa586b95920b3d4151c7" category="paragraph">Data Sense只能掃描內部部署站台本機資料來源的資料。此時、Data Sense可掃描「暗」站台中的下列本機資料來源：</block>
+  <block id="5d2a6ac41e016a1ed1f3c36703a62b05" category="paragraph">Cloud Data Sense會掃描所有檔案以取得類別和中繼資料深入資訊、並在儀表板的「檔案類型」區段中顯示所有檔案類型。</block>
+  <block id="0d983a3293d47707e149486248cfeb13" category="paragraph">當Data Sense偵測到個人識別資訊（PII）、或執行DSAR搜尋時、僅支援下列檔案格式：</block>
+  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph">.CSV、.dcm、.dicom、.dDOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 .XLS、.XLSX、文件、工作表及Slides +</block>
+  <block id="a4b574ec2aae043304e74de4dda53997" category="section-title">Cloud Data Sense擷取哪些類型的資料和中繼資料？</block>
+  <block id="8c7161d49db0382c6961b311eef905a5" category="paragraph">Cloud Data Sense可讓您對資料來源執行一般的「對應」掃描或完整的「分類」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
+  <block id="720afdfb61af450cb24ecd2ff70d9559" category="list-text">資料對應掃描：</block>
+  <block id="f115a278ea0212572398753377dc2287" category="paragraph">Data Sense只會掃描中繼資料。這對整體資料管理與治理、快速專案範圍規劃、大型產業和優先順序都很有幫助。資料對應是以中繼資料為基礎、視為*快速*掃描。</block>
+  <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速掃描之後、您可以產生資料對應報告。本報告概述儲存在企業資料來源中的資料、協助您做出有關資源使用率、移轉、備份、安全性及法規遵循程序的決策。</block>
+  <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">資料分類（深度）掃描。</block>
+  <block id="c9e62ad150311eaae555d82e1b8e2076" category="paragraph">在客戶的整個環境中、使用標準傳輸協定和唯讀權限進行資料感應掃描。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</block>
+  <block id="e6955249e6953613536ae08a88475a81" category="paragraph">完整掃描之後、您可以將許多其他Data Sense功能套用至資料、例如在「Data Investigation」（資料調查）頁面中檢視及精簡資料、在檔案中搜尋名稱、複製、移動及刪除來源檔案等。</block>
+  <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">授權與成本</block>
+  <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">下列問題與使用Cloud Data Sense的授權和成本有關。</block>
+  <block id="40b83084f1cee71ca9bea0f92f648ca3" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。達到該限制後、您需要下列其中一項、才能繼續掃描超過1 TB的資料：</block>
+  <block id="d28d4f6cb9334067ba763d5205ef3408" category="list-text">向您的雲端供應商訂購Cloud Manager Marketplace清單、或</block>
+  <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">NetApp的自帶授權（BYOL）</block>
+  <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">請參閱<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">如果我達到BYOL容量上限、會發生什麼事？</block>
+  <block id="58455ce9c1fb7906220e35f5849d83c1" category="paragraph">如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。</block>
+  <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">連接器部署</block>
+  <block id="0c5d4e7461b4c75d3988c9aa8d81ab4f" category="paragraph">下列問題與Cloud Manager Connector有關。</block>
+  <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">什麼是Connector？</block>
+  <block id="99231b2fc9795c596b5574283dc8bb5c" category="paragraph">Connector是在雲端帳戶內或內部部署的運算執行個體上執行的軟體、可讓Cloud Manager安全地管理雲端資源。您必須部署Connector才能使用Cloud Data Sense。</block>
+  <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">連接器需要安裝在何處？</block>
+  <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。</block>
+  <block id="47b38df4edf7a31520897ce7498de0a0" category="paragraph">因此、如果您在這些位置中有許多資料、您可能需要使用<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
+  <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">我可以在自己的主機上部署Connector嗎？</block>
+  <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">是的。您可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。如果您打算在內部部署Data Sense、則可能也想在內部部署安裝Connector、但這不是必要的。</block>
+  <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">沒有網際網路存取的安全網站又如何？</block>
+  <block id="7521d190d3b7edc316bb592221196fcf" category="inline-link">在無法存取網際網路的內部部署Linux主機上部署Connector</block>
+  <block id="7b0dda74db6ec7e3e5eb3ca096c115c2" category="paragraph">是的、這也受到支援。您可以<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。</block>
+  <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">資料感測部署</block>
+  <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">下列問題與個別的Data Sense執行個體有關。</block>
+  <block id="794e12ef176fc9da8e4f9c105c9930df" category="section-title">我可以在自己的主機上部署Data Sense嗎？</block>
+  <block id="3e9b0b67019f2d0b48a4828209573441" category="paragraph">是的。您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切都一樣運作、您也可以透過 Cloud Manager 繼續管理掃描組態和結果。請參閱 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 以取得系統需求和安裝詳細資料。</block>
+  <block id="64f5cbf64bda7d75632e3c56632689f8" category="paragraph">是的、這也受到支援。您可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
+  <block id="24ef8c726486795460d31edd12ab8ed9" category="paragraph">根據預設、Cloud Data Sense儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">資料調查報告</block>
+  <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">深入瞭解資料調查頁面</block>
+  <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">「資料調查報告」是「資料調查」頁面內容的下載內容。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
+  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">您可以將本機機器上的報告儲存為.CSV檔案、最多可包含5、000列資料。如果Data Sense正在掃描資料庫表格（結構化資料）和檔案（非結構化資料）、則最多可下載兩份.CSV報告。</block>
+  <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">產生資料調查報告</block>
+  <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">在「Data Investigation（資料調查）」頁面中、按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
+  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
+  <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每份資料調查報告所包含的內容</block>
+  <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非結構化檔案資料報告*包含下列檔案相關資訊：</block>
+  <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*結構化資料報告*包含下列資料庫表格的相關資訊：</block>
+  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*附註：*報告目前未提供資料夾相關資訊。</block>
+  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
+  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">新增支援在Google雲端硬碟帳戶中掃描資料</block>
+  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">瞭解如何掃描Google雲端硬碟帳戶</block>
+  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
+  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">現有檔案類型</block>
+  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
+  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">目錄層級檢視已新增至「資料調查」頁面</block>
+  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">瞭解如何選取掃描資料的「目錄」檢視</block>
+  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。現在您可以在目錄層級管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
+  <block id="fc923fa1acb929379421a26667fff392" category="section-title">展開群組以顯示具有存取檔案權限的使用者/成員</block>
+  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">瞭解如何檢視具有檔案讀取和/或寫入權限的使用者和群組</block>
+  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
+  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">「資料調查」頁面新增兩個篩選條件</block>
+  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「目錄類型」篩選器可讓您精簡資料、只查看資料夾或共用區。結果將顯示在新的*目錄*索引標籤中。</block>
+  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。T</block>
+  <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
+  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">現在您可以將SharePoint線上帳戶新增至Data Sense、以便從SharePoint網站掃描文件和檔案。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
+  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
+  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和法文驅動程式授權號碼。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">除了您輸入的Active Directory認證資料、以便Data Sense能夠掃描來自特定資料來源的CIFS磁碟區之外、這項新的整合功能還能為其他使用者和系統提供額外的整合功能。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">Data Sense可自動刪除符合您在原則中定義之查詢的檔案。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">從Data Sense刪除整個SharePoint帳戶</block>
+  <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
+  <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
+  <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">此外、您也可以按一下 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 可讓任何群組查看屬於群組的使用者清單。</block>
+  <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
+  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用於儲存.CSV檔案的按鈕。</block>
+  <block id="96b029b0702cef79f31ac1b4c933b4aa" category="list-text">最上層索引標籤可讓您檢視檔案（非結構化資料）、目錄（非結構化資料）或資料庫（結構化資料）的資料。</block>
+  <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
+  <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</block>
+  <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
+  <block id="910acb975ea7aecd9808b83a0cb3e7eb" category="cell">選取工作環境類型。OneDrive、SharePoint和Google雲端磁碟的分類為「Cloud Apps」。</block>
+  <block id="c3a9830be43f6515257f3979e66816fd" category="cell">目錄類型</block>
+  <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">選取目錄類型：「Share（共用）」或「Folder（資料夾）」</block>
+  <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">標記</block>
+  <block id="2ee519be0f1e6f6176e28f4d0dc72a02" category="cell">選取 <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
+  <block id="ce2e33acff157139d73902f7ac835d64" category="summary">請完成幾個步驟、以Cloud Data Sense開始掃描Google雲端硬碟帳戶中的使用者檔案。</block>
+  <block id="7516ed4bcabc82b8b67177aff48fb5b0" category="doc">正在掃描Google雲端硬碟帳戶</block>
+  <block id="df1a99e8a5c605960dde068efb83d492" category="paragraph">確認您擁有登入Google雲端硬碟帳戶的管理認證資料。</block>
+  <block id="50dd69878a50e70f6bb6373a9455f375" category="paragraph">使用管理使用者認證、登入您要存取的Google雲端硬碟帳戶、將其新增為新的資料來源。</block>
+  <block id="89cbb1641d10ee36768bbc7c8550c80e" category="paragraph">選取您要對使用者檔案執行的掃描類型；對應或對應及分類。</block>
+  <block id="f182163b3c8517a6b2c89393d611b9c7" category="section-title">檢視Google雲端硬碟的需求</block>
+  <block id="583b2e69e538cb6ec3d52256a2a1d68c" category="paragraph">請檢閱下列先決條件、確定您已準備好在Google雲端磁碟機帳戶上啟用Cloud Data Sense。</block>
+  <block id="9754d2a3b65dd0a94f6afdf2886da746" category="list-text">您必須擁有Google雲端硬碟帳戶的管理員登入認證、才能提供使用者檔案的讀取存取權</block>
+  <block id="64a474279b0cea9f7d694f643cf24619" category="section-title">目前限制</block>
+  <block id="f1ad1986e292e89eed7397b2f9c4deb6" category="paragraph">Google雲端硬碟檔案目前不支援下列Data Sense功能：</block>
+  <block id="6f160c921b781e470120401e467b3f23" category="list-text">在「資料調查」頁面中檢視檔案時、按鈕列中的動作不會作用。您無法複製、移動、刪除等任何檔案。</block>
+  <block id="b02253f9f4afea389fd44267fbb346ef" category="list-text">無法在Google雲端硬碟的檔案中識別權限、因此「調查」頁面不會顯示任何權限資訊。</block>
+  <block id="d8c999fced9dd06cb3a7dd1ce8fde9ba" category="section-title">新增Google雲端硬碟帳戶</block>
+  <block id="40fd3e316325ce10b9d94e4ee27e6cda" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。</block>
+  <block id="57732082df4aef62ed29defc2be4d0b6" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增Google雲端硬碟帳戶*」。</block>
+  <block id="a06a12818860c5a02fc6cda08aebdef0" category="inline-image-macro">「掃描組態」頁面的快照、您可以按一下「新增Google雲端硬碟」按鈕。</block>
+  <block id="62eceb063c8e8fa286bd62cfff1eaf9e" category="paragraph"><block ref="62eceb063c8e8fa286bd62cfff1eaf9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41afcc0fca08d9d2c28748fc229f8f3d" category="list-text">在「新增Google雲端硬碟帳戶」對話方塊中、按一下*「登入Google雲端硬碟*」。</block>
+  <block id="56022f71b96722f998fe80c000c22d53" category="list-text">在顯示的Google頁面中、選取Google雲端硬碟帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*以允許Cloud Data Sense從這個帳戶讀取資料。</block>
+  <block id="b409ed344f8e93255d57fc76a98be428" category="paragraph">Google雲端硬碟帳戶會新增至工作環境清單。</block>
+  <block id="c814529a7363747226b548d419cbf345" category="section-title">選取使用者資料的掃描類型</block>
+  <block id="da41c773de3c79cd8895af4c1aa8a60d" category="paragraph">選取Cloud Data Sense對使用者資料執行的掃描類型。</block>
+  <block id="00d7735cfe1be11b0d6c0c162ce477f6" category="list-text">在「_Configuration」頁面中、按一下Google雲端硬碟帳戶的*組態*按鈕。</block>
+  <block id="0dc1656c50d90854618395b6a5005845" category="inline-image-macro">「組態」頁面的快照、您可在其中選取「組態」按鈕。</block>
+  <block id="9d94963dd1bda0d610b26873050a7b25" category="paragraph"><block ref="9d94963dd1bda0d610b26873050a7b25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a546beb16c321b4c611cf0b9c297e9de" category="list-text">啟用Google雲端硬碟帳戶中檔案的純對應掃描、或是對應與分類掃描。</block>
+  <block id="85bccfa752b05b9d9a207e10ae71c262" category="inline-image-macro">顯示如何選取掃描資料感應類型的螢幕快照會在Google雲端硬碟資料上執行。</block>
+  <block id="70f5d64b57fcacd567844bffa2a38f18" category="paragraph"><block ref="70f5d64b57fcacd567844bffa2a38f18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f0ec15674b4552f07754843b033c4f0" category="paragraph">Cloud Data Sense會開始掃描所新增Google雲端硬碟帳戶中的檔案、結果會顯示在儀表板和其他位置。</block>
+  <block id="3d61ecb24967db6bd93775c965d8571f" category="section-title">從法規遵循掃描中移除Google雲端硬碟帳戶</block>
+  <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">從Data Sense刪除Google雲端硬碟帳戶</block>
+  <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
+  <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">不支援從資料庫架構、OneDrive帳戶、SharePoint帳戶、Google雲端硬碟帳戶、Amazon S3帳戶、 或使用簡易儲存服務（S3）傳輸協定的物件儲存設備。</block>
+  <block id="1b40edca75269e2cab8c610622d15344" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</block>
+  <block id="6bd1beae17e48797805a36af79f55549" category="section-title">將OneDrive、SharePoint或Google Drive帳戶從Cloud Data Sense移除</block>
+  <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">如果您不想再從特定OneDrive帳戶、特定SharePoint帳戶或Google雲端磁碟機帳戶掃描使用者檔案、您可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。</block>
+  <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">在「_Configuration」頁面中、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下「*移除OneDrive帳戶*」、「*移除SharePoint帳戶*」或「*移除Google雲端硬碟帳戶*」。</block>
+  <block id="9cb5e9a98a61d795839d8b1d8ba8bef7" category="list-text">您必須擁有OneDrive for Business帳戶的管理員登入認證、才能提供使用者檔案的讀取存取權。</block>
+  <block id="eafb114471abfcc072e27d19a53393bf" category="list-text">您需要一份以行分隔的電子郵件地址清單、列出您要掃描OneDrive資料夾的所有使用者。</block>
+  <block id="ac08b5403a9f3f6f1bc720265a802bb3" category="inline-link-macro">從Data Sense刪除整個OneDrive帳戶</block>
+  <block id="af156dc3600ff1945f980accc524de2d" category="paragraph">請注意、您可以 <block ref="bf09e8e84132fcb4a54426c7be95b7c9" category="inline-link-macro-rx"></block> 如果您不想再從OneDrive帳戶掃描任何使用者資料、</block>
+  <block id="37c9303e988a90a91e5799c6d881439b" category="paragraph">內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端硬碟帳戶均可使用下列任何一種Cloud Connector進行掃描。</block>
+  <block id="2cadc69c210f0e599ec0b30a0874e883" category="summary">Cloud Data Sense可在您的磁碟區、Amazon S3儲存區、資料庫、OneDrive資料夾、SharePoint帳戶、 和Google雲端硬碟帳戶。</block>
+  <block id="857f40e1f9389fce6087fb43466bb998" category="paragraph">Cloud Data Sense可在您的磁碟區、Amazon S3儲存區、資料庫、OneDrive資料夾、SharePoint帳戶、 和Google雲端硬碟帳戶。請參閱下列類別。</block>
+  <block id="f0fa14b0913829093cd6b4aeaa24b34d" category="paragraph">當Data Sense部署在黑暗的站台時、目前不支援掃描Cloud Volumes ONTAP 功能的支援功能包括：適用於Azure NetApp Files 下列項目的功能：適用於ONTAP 支援功能的功能：</block>
+  <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">Google雲端硬碟帳戶的資料目前無法使用這些功能。</block>
+  <block id="9c471504c4f66f275b7d110c46622118" category="paragraph">使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。</block>
+  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">掃描您的工作環境</block>
+  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">掃描其他資料來源</block>
+  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
 </blocks>

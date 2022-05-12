@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
 summary: Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源及工作環境、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 深入瞭解Cloud Data Sense
@@ -67,6 +67,7 @@ Cloud Data Sense可掃描下列工作環境和資料來源類型的資料：
 * 資料庫
 * OneDrive 帳戶
 * SharePoint帳戶
+* Google雲端硬碟帳戶
 
 
 Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。
@@ -80,7 +81,7 @@ Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。
 link:task-licensing-datasense.html["瞭解如何取得Cloud Data Sense授權"^]。
 
 * 若要在雲端上安裝Cloud Data Sense、必須部署雲端執行個體、這會導致雲端供應商在部署雲端執行個體時收取費用。請參閱 <<The Cloud Data Sense instance,為每個雲端供應商部署的執行個體類型>>。如果您在內部部署系統上安裝Data Sense、則不需支付任何費用。
-* Cloud Data Sense需要部署Connector。在許多情況下、由於 Cloud Manager 中使用的其他儲存設備和服務、您已經擁有 Connector 。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["為每個雲端供應商部署的執行個體類型"^]。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。
+* Cloud Data Sense需要部署Cloud Manager Connector。在許多情況下、由於 Cloud Manager 中使用的其他儲存設備和服務、您已經擁有 Connector 。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["為每個雲端供應商部署的執行個體類型"^]。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。
 
 
 
@@ -179,7 +180,7 @@ image:diagram_cloud_compliance_scan.png["顯示Cloud Manager執行個體和雲�
 
 Cloud Data Sense可讓您在選定的工作環境和資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。
 
-許多使用者喜歡這項功能、因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能在這些資料來源或磁碟區上進行分類掃描。
+許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。
 
 下表顯示部分差異：
 

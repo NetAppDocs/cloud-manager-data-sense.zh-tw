@@ -55,7 +55,7 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
 
 
-在使用ONTAP 上述任何Cloud Connector時、均可掃描內部的支援系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾和SharePoint帳戶。
+使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。
 
 請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。
 

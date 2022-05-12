@@ -130,3 +130,5 @@ Cloud Data Sense會開始掃描您新增之SharePoint網站中的檔案、結果
 如果您日後移除SharePoint網站、或決定不掃描SharePoint網站中的檔案、您可以隨時移除個別SharePoint網站的檔案掃描功能。只要按一下「組態」頁面中的「*移除SharePoint Site*」即可。
 
 image:screenshot_compliance_sharepoint_remove_site.png["螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。"]
+
+請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["從Data Sense刪除整個SharePoint帳戶"] 如果您不想再從SharePoint帳戶掃描任何使用者資料。

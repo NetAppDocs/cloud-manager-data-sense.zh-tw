@@ -57,7 +57,7 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的連接器。
 
 
-內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾及SharePoint帳戶、均可使用下列任何一種Cloud Connector進行掃描。
+內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端硬碟帳戶均可使用下列任何一種Cloud Connector進行掃描。
 
 請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。
 
@@ -74,7 +74,6 @@ NOTE: 如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部�
 
 * 作業系統： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版
 +
-** 可以使用版本 7.8 、但 Linux 核心版本必須為 4.14 或更新版本
 ** 作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）
 
 

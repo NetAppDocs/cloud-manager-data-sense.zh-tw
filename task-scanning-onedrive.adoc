@@ -40,8 +40,8 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
 
-* 您必須擁有 OneDrive for Business 帳戶的管理登入認證、才能提供所有使用者檔案的讀取存取權。
-* 您需要一份以行分隔的電子郵件地址清單、列出您要掃描 OneDrive 資料夾的所有使用者。
+* 您必須擁有OneDrive for Business帳戶的管理員登入認證、才能提供使用者檔案的讀取存取權。
+* 您需要一份以行分隔的電子郵件地址清單、列出您要掃描OneDrive資料夾的所有使用者。
 
 
 
@@ -130,3 +130,5 @@ Cloud Data Sense會開始掃描您所新增使用者的檔案、結果會顯示�
 如果使用者離開公司或變更其電子郵件地址、您可以隨時將個別 OneDrive 使用者的檔案掃描完畢。只要按一下「組態」頁面中的「 * 移除 OneDrive 使用者 * 」即可。
 
 image:screenshot_compliance_onedrive_remove_user.png["顯示如何移除單一使用者檔案的快照。"]
+
+請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["從Data Sense刪除整個OneDrive帳戶"] 如果您不想再從OneDrive帳戶掃描任何使用者資料、

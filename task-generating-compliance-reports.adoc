@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
-keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa 
+keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
 summary: Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。 
 ---
 = 檢視法規遵循報告
@@ -16,14 +16,15 @@ summary: Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料�
 [role="lead"]
 Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。
 
-根據預設、Cloud Data Sense儀表板會顯示所有工作環境和資料庫的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <<Selecting the working environments for reports,選擇那些工作環境>>。
+根據預設、Cloud Data Sense儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <<Selecting the working environments for reports,選擇那些工作環境>>。
+
+[NOTE]
+====
+* 本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。
+* NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。
 
 
-NOTE: 本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。
-
-
-NOTE: NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。
-
+====
 
 
 == 隱私權風險評估報告
@@ -197,6 +198,65 @@ image:screenshot_compliance_data_mapping_report_button.png["管理儀表板的�
 
 
 Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
+
+
+
+== 資料調查報告
+
+「資料調查報告」是「資料調查」頁面內容的下載內容。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["深入瞭解資料調查頁面"]。
+
+您可以將本機機器上的報告儲存為.CSV檔案、最多可包含5、000列資料。如果Data Sense正在掃描資料庫表格（結構化資料）和檔案（非結構化資料）、則最多可下載兩份.CSV報告。
+
+
+
+=== 產生資料調查報告
+
+.步驟
+. 在「Data Investigation（資料調查）」頁面中、按一下 image:button_download.png["下載按鈕"] 按鈕。
+
+
+對話方塊會顯示正在下載報告的訊息。
+
+
+
+=== 每份資料調查報告所包含的內容
+
+*非結構化檔案資料報告*包含下列檔案相關資訊：
+
+* 檔案名稱
+* 位置類型
+* 工作環境名稱
+* 儲存儲存庫（例如、磁碟區、儲存區、共享區）
+* 工作環境類型
+* 檔案路徑
+* 檔案類型
+* 檔案大小
+* 建立時間
+* 上次修改時間
+* 上次存取
+* 檔案擁有者
+* 類別
+* 個人資訊
+* 敏感的個人資訊
+* 刪除偵測日期
++
+刪除偵測日期可識別檔案刪除或移動的日期。這可讓您識別敏感檔案的移動時間。刪除的檔案不屬於儀表板或「調查」頁面上顯示的檔案編號數。這些檔案只會出現在 CSV 報告中。
+
+
+
+*結構化資料報告*包含下列資料庫表格的相關資訊：
+
+* DB表格名稱
+* 位置類型
+* 工作環境名稱
+* 儲存儲存庫（例如架構）
+* 欄數
+* 列數
+* 個人資訊
+* 敏感的個人資訊
+
+
+*附註：*報告目前未提供資料夾相關資訊。
 
 
 

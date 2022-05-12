@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-google-drive.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
+summary: 請完成幾個步驟、以Cloud Data Sense開始掃描Google雲端硬碟帳戶中的使用者檔案。 
+---
+= 正在掃描Google雲端硬碟帳戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、以Cloud Data Sense開始掃描Google雲端硬碟帳戶中的使用者檔案。
+
+
+
+== 快速入門
+
+請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
+
+[role="quick-margin-para"]
+確認您擁有登入Google雲端硬碟帳戶的管理認證資料。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+
+[role="quick-margin-para"]
+使用管理使用者認證、登入您要存取的Google雲端硬碟帳戶、將其新增為新的資料來源。
+
+[role="quick-margin-para"]
+選取您要對使用者檔案執行的掃描類型；對應或對應及分類。
+
+
+
+== 檢視Google雲端硬碟的需求
+
+請檢閱下列先決條件、確定您已準備好在Google雲端磁碟機帳戶上啟用Cloud Data Sense。
+
+* 您必須擁有Google雲端硬碟帳戶的管理員登入認證、才能提供使用者檔案的讀取存取權
+
+
+
+
+=== 目前限制
+
+Google雲端硬碟檔案目前不支援下列Data Sense功能：
+
+* 在「資料調查」頁面中檢視檔案時、按鈕列中的動作不會作用。您無法複製、移動、刪除等任何檔案。
+* 無法在Google雲端硬碟的檔案中識別權限、因此「調查」頁面不會顯示任何權限資訊。
+
+
+
+
+== 部署Cloud Data Sense
+
+如果尚未部署執行個體、請部署Cloud Data Sense。
+
+資料感測可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+
+只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+
+
+
+== 新增Google雲端硬碟帳戶
+
+新增使用者檔案所在的Google雲端硬碟帳戶。
+
+.步驟
+. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增Google雲端硬碟帳戶*」。
++
+image:screenshot_compliance_add_google_drive_button.png["「掃描組態」頁面的快照、您可以按一下「新增Google雲端硬碟」按鈕。"]
+
+. 在「新增Google雲端硬碟帳戶」對話方塊中、按一下*「登入Google雲端硬碟*」。
+. 在顯示的Google頁面中、選取Google雲端硬碟帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*以允許Cloud Data Sense從這個帳戶讀取資料。
+
+
+Google雲端硬碟帳戶會新增至工作環境清單。
+
+
+
+== 選取使用者資料的掃描類型
+
+選取Cloud Data Sense對使用者資料執行的掃描類型。
+
+.步驟
+. 在「_Configuration」頁面中、按一下Google雲端硬碟帳戶的*組態*按鈕。
++
+image:screenshot_compliance_google_drive_add_sites.png["「組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
+. 啟用Google雲端硬碟帳戶中檔案的純對應掃描、或是對應與分類掃描。
++
+image:screenshot_compliance_google_drive_select_scan.png["顯示如何選取掃描資料感應類型的螢幕快照會在Google雲端硬碟資料上執行。"]
+
++
+[cols="45,45"]
+|===
+| 至： | 請執行下列動作： 
+
+
+| 啟用檔案的純對應掃描 | 按一下*地圖* 
+
+
+| 啟用檔案的完整掃描 | 按一下*地圖與分類* 
+
+
+| 停用檔案掃描 | 按一下「*關*」 
+|===
+
+
+Cloud Data Sense會開始掃描所新增Google雲端硬碟帳戶中的檔案、結果會顯示在儀表板和其他位置。
+
+
+
+== 從法規遵循掃描中移除Google雲端硬碟帳戶
+
+由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["從Data Sense刪除Google雲端硬碟帳戶"]。

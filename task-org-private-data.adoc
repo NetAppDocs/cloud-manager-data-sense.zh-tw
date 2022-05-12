@@ -61,7 +61,7 @@ Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、
 
 [NOTE]
 ====
-* 您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive和SharePoint帳戶、檔案大小上限為4 MB。
+* 您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。
 * 如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。
 * 如果您已將Data Sense執行個體部署在內部部署位置、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。
 

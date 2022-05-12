@@ -44,6 +44,8 @@ sidebar:
         url: "/task-scanning-onedrive.html"
       - title: SharePoint帳戶
         url: "/task-scanning-sharepoint.html"
+      - title: Google雲端硬碟帳戶
+        url: "/task-scanning-google-drive.html"
       - title: 檔案共用
         url: "/task-scanning-file-shares.html"
       - title: 物件儲存
@@ -100,7 +102,7 @@ homepage:
       url: task-add-active-directory-datasense.html
     - title: 設定授權
       url: task-licensing-datasense.html
-  - title: 啟動資料來源的掃描
+  - title: 掃描您的工作環境
     links:
     - title: 資料量Cloud Volumes ONTAP
       url: task-getting-started-compliance.html
@@ -112,6 +114,8 @@ homepage:
       url: task-scanning-fsx.html
     - title: Amazon S3 儲存桶
       url: task-scanning-s3.html
+  - title: 掃描其他資料來源
+    links:
     - title: 一般S3儲存桶
       url: task-scanning-object-storage.html
     - title: 非NetApp檔案共用
@@ -122,34 +126,40 @@ homepage:
       url: task-scanning-onedrive.html
     - title: SharePoint帳戶
       url: task-scanning-sharepoint.html
-  - title: 管理私有資料
+    - title: Google雲端硬碟帳戶
+      url: task-scanning-google-drive.html
+  - title: 檢視資料的詳細資料
     links:
-    - title: 使用AIP標籤將資料分類
-      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
-    - title: 找到不合規的資料時、請建立電子郵件警示
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
-    - title: 新增您自己的自訂個人資料識別碼
-      url: task-managing-data-fusion.html
+    - title: 檢視包含私人資訊的檔案
+      url: task-controlling-private-data.html
+    - title: 檢視儲存設備中重複的檔案
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: 篩選資料以檢視特定檔案
+      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+    - title: 建立原則以檢視您的熱門搜尋
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: 產生法規遵循報告
+      url: task-generating-compliance-reports.html
+  - title: 組織您的私有資料
+    links:
     - title: 將標記和擁有者套用至需要注意的檔案
       url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
-    - title: 回應資料主旨存取要求
-      url: task-responding-to-dsar.html
+    - title: 使用AIP標籤將資料分類
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 新增您自己的自訂個人資料識別碼
+      url: task-managing-data-fusion.html
+  - title: 管理您的私有資料
+    links:
     - title: 複製來源檔案
       url: task-managing-highlights.html#copying-source-files
     - title: 移動來源檔案
       url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
     - title: 刪除來源檔案
       url: task-managing-highlights.html#deleting-source-files
-  - title: 檢視資料的詳細資料
-    links:
-    - title: 建立原則以檢視您的熱門搜尋
-      url: task-org-private-data.html#controlling-your-data-using-policies
-    - title: 檢視包含私人資訊的檔案
-      url: task-controlling-private-data.html
-    - title: 檢視儲存設備中重複的檔案
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
-    - title: 產生法規遵循報告
-      url: task-generating-compliance-reports.html
+    - title: 找到不合規的資料時、請建立電子郵件警示
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: 回應資料主旨存取要求
+      url: task-responding-to-dsar.html
   - title: 部落格社群
     links:
     - title: NetApp社群

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-compliance.html 
 keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
-summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。 
+summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。 
 ---
 = 從Cloud Data感應移除資料來源
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作�
 
 
 [role="lead"]
-如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。
+如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。
 
 
 
@@ -43,12 +43,12 @@ image:screenshot_compliance_remove_db.png["「掃描組態」頁面中「移除 
 
 
 
-== 從Cloud Data感應移除OneDrive或SharePoint帳戶
+== 將OneDrive、SharePoint或Google Drive帳戶從Cloud Data Sense移除
 
-如果您不想再從特定OneDrive帳戶或特定SharePoint帳戶掃描使用者檔案、可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。
+如果您不想再從特定OneDrive帳戶、特定SharePoint帳戶或Google雲端磁碟機帳戶掃描使用者檔案、您可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。
 
 .步驟
-. 在「_Configuration」頁面中、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下「*移除OneDrive帳戶*」或「*移除SharePoint帳戶*」。
+. 在「_Configuration」頁面中、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下「*移除OneDrive帳戶*」、「*移除SharePoint帳戶*」或「*移除Google雲端硬碟帳戶*」。
 +
 image:screenshot_compliance_remove_onedrive.png["「掃描組態」頁面中「移除 OneDrive 」按鈕的快照。"]
 
