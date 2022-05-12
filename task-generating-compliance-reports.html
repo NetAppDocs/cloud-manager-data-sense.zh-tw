@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。">
-  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa"><!-- Icons -->
+  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file"><!-- Icons -->
   <link rel="icon" href="/zh-tw/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google雲端硬碟帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-file-shares.html">
         檔案共用
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:09:16 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
     
   
 
@@ -748,7 +752,7 @@
 <p>Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。</p>
 </div>
 <div class="paragraph">
-<p>根據預設、Cloud Data Sense儀表板會顯示所有工作環境和資料庫的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <a href="#Selecting the working environments for reports">選擇那些工作環境</a>。</p>
+<p>根據預設、Cloud Data Sense儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <a href="#Selecting the working environments for reports">選擇那些工作環境</a>。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -757,19 +761,16 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="附註">
 </td>
 <td class="content">
-本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。</p>
+</li>
+<li>
+<p>NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。</p>
+</li>
+</ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="附註">
-</td>
-<td class="content">
-NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。
 </td>
 </tr>
 </table>
@@ -1090,6 +1091,126 @@ NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準
 </div>
 </div>
 <div class="sect1">
+<h2 id="資料調查報告">資料調查報告</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>「資料調查報告」是「資料調查」頁面內容的下載內容。 <a href="task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"深入瞭解資料調查頁面"</a>。</p>
+</div>
+<div class="paragraph">
+<p>您可以將本機機器上的報告儲存為.CSV檔案、最多可包含5、000列資料。如果Data Sense正在掃描資料庫表格（結構化資料）和檔案（非結構化資料）、則最多可下載兩份.CSV報告。</p>
+</div>
+<div class="sect2">
+<h3 id="產生資料調查報告">產生資料調查報告</h3>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>在「Data Investigation（資料調查）」頁面中、按一下 <span class="image"><img src="./media/button_download.png" alt="下載按鈕"></span> 按鈕。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>對話方塊會顯示正在下載報告的訊息。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="每份資料調查報告所包含的內容">每份資料調查報告所包含的內容</h3>
+<div class="paragraph">
+<p>*非結構化檔案資料報告*包含下列檔案相關資訊：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>檔案名稱</p>
+</li>
+<li>
+<p>位置類型</p>
+</li>
+<li>
+<p>工作環境名稱</p>
+</li>
+<li>
+<p>儲存儲存庫（例如、磁碟區、儲存區、共享區）</p>
+</li>
+<li>
+<p>工作環境類型</p>
+</li>
+<li>
+<p>檔案路徑</p>
+</li>
+<li>
+<p>檔案類型</p>
+</li>
+<li>
+<p>檔案大小</p>
+</li>
+<li>
+<p>建立時間</p>
+</li>
+<li>
+<p>上次修改時間</p>
+</li>
+<li>
+<p>上次存取</p>
+</li>
+<li>
+<p>檔案擁有者</p>
+</li>
+<li>
+<p>類別</p>
+</li>
+<li>
+<p>個人資訊</p>
+</li>
+<li>
+<p>敏感的個人資訊</p>
+</li>
+<li>
+<p>刪除偵測日期</p>
+<div class="paragraph">
+<p>刪除偵測日期可識別檔案刪除或移動的日期。這可讓您識別敏感檔案的移動時間。刪除的檔案不屬於儀表板或「調查」頁面上顯示的檔案編號數。這些檔案只會出現在 CSV 報告中。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*結構化資料報告*包含下列資料庫表格的相關資訊：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>DB表格名稱</p>
+</li>
+<li>
+<p>位置類型</p>
+</li>
+<li>
+<p>工作環境名稱</p>
+</li>
+<li>
+<p>儲存儲存庫（例如架構）</p>
+</li>
+<li>
+<p>欄數</p>
+</li>
+<li>
+<p>列數</p>
+</li>
+<li>
+<p>個人資訊</p>
+</li>
+<li>
+<p>敏感的個人資訊</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*附註：*報告目前未提供資料夾相關資訊。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="選擇報告的工作環境">選擇報告的工作環境</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1130,16 +1251,16 @@ NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

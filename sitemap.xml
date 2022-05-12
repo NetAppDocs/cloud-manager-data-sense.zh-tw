@@ -15,14 +15,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/concept-cloud-compliance.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/faq-cloud-compliance.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -43,21 +43,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/reference-private-data-categories.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense//search.html</loc>
       
-      <lastmod>2022-05-03T06:09:39+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:40+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-add-active-directory-datasense.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -71,35 +71,35 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-controlling-private-data.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-deploy-cloud-compliance.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-deploy-compliance-dark-site.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-deploy-compliance-onprem.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-generating-compliance-reports.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -127,7 +127,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-compliance.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -141,14 +141,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-highlights.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-org-private-data.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -188,6 +188,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-scanning-google-drive.html</loc>
+      
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-scanning-object-storage.html</loc>
       
       <lastmod>2022-05-03T06:09:16+00:00</lastmod>
@@ -197,7 +204,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-scanning-onedrive.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -211,7 +218,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-scanning-sharepoint.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   
@@ -225,7 +232,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/cloud-manager-data-sense/whats-new.html</loc>
       
-      <lastmod>2022-05-03T06:09:16+00:00</lastmod>
+      <lastmod>2022-05-12T13:16:21+00:00</lastmod>
       
     </url>
   

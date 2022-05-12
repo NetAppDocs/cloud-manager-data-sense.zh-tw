@@ -9,14 +9,14 @@
   <meta property="og:title" content="從Cloud Data感應移除資料來源 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-compliance.html" />
-	<meta property="og:description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。" />
+	<meta property="og:description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。">
   <meta name="keywords" content=" remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense"><!-- Icons -->
   <link rel="icon" href="/zh-tw/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google雲端硬碟帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-file-shares.html">
         檔案共用
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:09:16 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
     
   
 
@@ -745,7 +749,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</p>
+<p>如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</p>
 </div>
 </div>
 </div>
@@ -798,16 +802,16 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="從cloud-data感應移除onedrive或sharepoint帳戶">從Cloud Data感應移除OneDrive或SharePoint帳戶</h2>
+<h2 id="將onedrivesharepoint或google-drive帳戶從cloud-data-sense移除">將OneDrive、SharePoint或Google Drive帳戶從Cloud Data Sense移除</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>如果您不想再從特定OneDrive帳戶或特定SharePoint帳戶掃描使用者檔案、可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。</p>
+<p>如果您不想再從特定OneDrive帳戶、特定SharePoint帳戶或Google雲端磁碟機帳戶掃描使用者檔案、您可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步驟</div>
 <ol class="arabic">
 <li>
-<p>在「_Configuration」頁面中、按一下 <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="更多按鈕"></span> 按鈕、然後按一下「<strong>移除OneDrive帳戶</strong>」或「<strong>移除SharePoint帳戶</strong>」。</p>
+<p>在「_Configuration」頁面中、按一下 <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="更多按鈕"></span> 按鈕、然後按一下「<strong>移除OneDrive帳戶</strong>」、「<strong>移除SharePoint帳戶</strong>」或「<strong>移除Google雲端硬碟帳戶</strong>」。</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_remove_onedrive.png" alt="「掃描組態」頁面中「移除 OneDrive 」按鈕的快照。"></span></p>
 </div>
@@ -918,16 +922,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

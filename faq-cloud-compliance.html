@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google雲端硬碟帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-file-shares.html">
         檔案共用
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:09:16 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
     
   
 
@@ -750,19 +754,22 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="什麼是雲端資料意義">什麼是雲端資料意義？</h2>
+<h2 id="雲端資料感應服務">雲端資料感應服務</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、協助組織瞭解資料內容、並識別儲存系統中的敏感資料。這些系統Azure NetApp Files 可以是不完整的組態、Amazon FSX for ONTAP the Sfor the Sfor the、Cloud Volumes ONTAP 支援各種系統的支援（以AWS、Azure或GCP代管）、Amazon S3鏟斗、內部ONTAP 作業系統、 非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive帳戶及SharePoint帳戶。</p>
+<p>下列問題可讓您大致瞭解Cloud Data Sense。</p>
+</div>
+<div class="sect2">
+<h3 id="什麼是雲端資料意義">什麼是雲端資料意義？</h3>
+<div class="paragraph">
+<p>Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至Cloud Manager畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。 <a href="#What sources of data can be scanned with Data Sense">請參閱下列完整清單</a>。</p>
 </div>
 <div class="paragraph">
 <p>Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="為什麼我應該使用cloud-data-sense">為什麼我應該使用Cloud Data Sense？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="為什麼我應該使用cloud-data-sense">為什麼我應該使用Cloud Data Sense？</h3>
 <div class="paragraph">
 <p>Cloud Data Sense可協助您運用資料、協助您：</p>
 </div>
@@ -770,6 +777,9 @@
 <ul>
 <li>
 <p>遵守資料法規遵循與隱私權法規。</p>
+</li>
+<li>
+<p>將資料從舊系統移轉至雲端。</p>
 </li>
 <li>
 <p>遵守資料保留政策。</p>
@@ -780,10 +790,8 @@
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense的常見使用案例為何">Cloud Data Sense的常見使用案例為何？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense的常見使用案例為何">Cloud Data Sense的常見使用案例為何？</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -801,95 +809,17 @@
 <p><a href="https://cloud.netapp.com/cloud-compliance" target="_blank" rel="noopener">"深入瞭解Cloud Data Sense的使用案例"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="使用cloud-data-sense可以掃描哪些類型的資料">使用Cloud Data Sense可以掃描哪些類型的資料？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="雲端資料感測如何運作">雲端資料感測如何運作？</h3>
 <div class="paragraph">
-<p>Cloud Data Sense支援透過NFS和CIFS傳輸協定掃描非結構化資料、這些傳輸協定是Cloud Volumes ONTAP 由以下項目所管理：效益分析、Azure NetApp Files 支援ONTAP 使用Amazon FSX for Sf0、內部ONTAP 支援的不全系統資料、以及非NetApp檔案共用。Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。</p>
-</div>
-<div class="paragraph">
-<p>Data Sense也可以掃描儲存在Amazon S3儲存區和一般S3物件儲存區中的資料。</p>
-</div>
-<div class="paragraph">
-<p>此外、Data Sense可掃描位於任何位置的資料庫、以及OneDrive和SharePoint帳戶的使用者檔案。</p>
-</div>
-<div class="paragraph">
-<p><a href="concept-cloud-compliance.html#how-scans-work" target="_blank" rel="noopener">"瞭解掃描的運作方式"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="支援哪些雲端供應商">支援哪些雲端供應商？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="如何存取cloud-data-sense">如何存取Cloud Data Sense？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense是透過Cloud Manager進行操作與管理。您可以從Cloud Manager的* Data Sense *（資料感測）標籤存取Data Sense（資料感測）功能。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="雲端資料感測如何運作">雲端資料感測如何運作？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫和OneDrive帳戶上的資料、並為找到的資料洞見建立索引。</p>
+<p>Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。</p>
 </div>
 <div class="paragraph">
 <p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"深入瞭解Cloud Data Sense的運作方式"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data合理的成本是多少">Cloud Data合理的成本是多少？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>使用Cloud Data Sense的成本取決於您要掃描的資料量。Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱 <a href="https://cloud.netapp.com/netapp-cloud-data-sense#Pricing" target="_blank" rel="noopener">"定價"</a> 以取得詳細資料。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense需要哪種類型的執行個體或vm">Cloud Data Sense需要哪種類型的執行個體或VM？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>何時 <a href="task-deploy-cloud-compliance.html">"部署於雲端"</a>：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>在AWS中、Cloud Data Sense可在具有500 GB GP2磁碟的m5.4x大型 執行個體上執行。</p>
-</li>
-<li>
-<p>在Azure中、Cloud Data Sense可在具有512 GB磁碟的Standard_D16s_v3 VM上執行。</p>
-</li>
-<li>
-<p>在GCP中、Cloud Data Sense可在具有512 GB標準持續磁碟的n2-Standard-16 VM上執行。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切都一樣運作、您也可以透過 Cloud Manager 繼續管理掃描組態和結果。請參閱 <a href="task-deploy-compliance-onprem.html">"在內部部署Cloud Data Sense"</a> 以取得系統需求和安裝詳細資料。</p>
-</div>
-<div class="paragraph">
-<p>此外、您也可以 <a href="task-deploy-compliance-dark-site.html">"在無法存取網際網路的內部部署網站上部署Data Sense"</a> 完全安全的網站。</p>
-</div>
-<div class="paragraph">
-<p>請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 <a href="concept-cloud-compliance.html#using-a-smaller-instance-type">"使用較小的執行個體類型"</a> 以取得詳細資料。</p>
-</div>
-<div class="paragraph">
-<p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"深入瞭解Cloud Data Sense的運作方式"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense多久掃描一次我的資料">Cloud Data Sense多久掃描一次我的資料？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense多久掃描一次我的資料">Cloud Data Sense多久掃描一次我的資料？</h3>
 <div class="paragraph">
 <p>資料經常變更、因此Cloud Data Sense可持續掃描資料、不會對資料造成任何影響。雖然初次掃描資料可能需要較長時間、但後續掃描只會掃描遞增變更、如此可縮短系統掃描時間。</p>
 </div>
@@ -900,15 +830,22 @@
 <p>資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 <a href="task-managing-compliance.html#reducing-the-data-sense-scan-speed">"瞭解如何降低掃描速度"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense是否提供報告">Cloud Data Sense是否提供報告？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense支援哪些部署模式">Cloud Data Sense支援哪些部署模式？</h3>
 <div class="paragraph">
-<p>是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。</p>
+<p>Cloud Data Sense通常是使用SaaS模式來部署、在這種模式中、服務是透過Cloud Manager介面來啟用。Cloud Data Sense可部署在幾乎任何位置的系統上進行掃描和報告、包括內部部署、雲端和混合式環境。對於安全的安裝、Cloud Manager和Cloud Data Sense可部署在「暗站」模式中、此模式是以套件形式安裝在內部部署環境中、不需要外部網路連線。</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="是否有人能存取在我的瀏覽器和data-sense之間傳送的私有資料">是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？</h3>
 <div class="paragraph">
-<p>下列報告適用於Data Sense：</p>
+<p>不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-data-sense是否提供報告">Cloud Data Sense是否提供報告？</h3>
+<div class="paragraph">
+<p>是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。下列報告適用於Data Sense：</p>
 </div>
 <div class="dlist">
 <dl>
@@ -939,10 +876,8 @@
 </dl>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="掃描效能是否有所差異">掃描效能是否有所差異？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="掃描效能是否有所差異">掃描效能是否有所差異？</h3>
 <div class="paragraph">
 <p>掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。請參閱 <a href="concept-cloud-compliance.html#the-cloud-data-sense-instance">"Cloud Data Sense執行個體"</a> 和 <a href="task-deploy-cloud-compliance.html">"部署Cloud Data Sense"</a> 以取得更多資訊。</p>
 </div>
@@ -950,23 +885,10 @@
 <p>一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <a href="concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans">"瞭解對應與分類掃描之間的差異。"</a></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="支援哪些檔案類型">支援哪些檔案類型？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="如何啟用雲端資料感測">如何啟用雲端資料感測？</h3>
 <div class="paragraph">
-<p>Cloud Data Sense會掃描所有檔案以取得類別和中繼資料深入資訊、並在儀表板的「檔案類型」區段中顯示所有檔案類型。</p>
-</div>
-<div class="paragraph">
-<p>當Data Sense偵測到個人識別資訊（PII）、或執行DSAR搜尋時、僅支援下列檔案格式：.CSV、.dcm、.dicom、.DOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 XLS和.XLSX。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="如何啟用雲端資料感測">如何啟用雲端資料感測？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境和資料庫上啟用服務。</p>
+<p>首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</p>
 </div>
 <div class="paragraph">
 <p><a href="task-getting-started-compliance.html" target="_blank" rel="noopener">"瞭解如何開始使用"</a>。</p>
@@ -978,16 +900,14 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="附註">
 </td>
 <td class="content">
-啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。
+在資料來源上啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。
 </td>
 </tr>
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="如何停用cloud-data-sense">如何停用Cloud Data Sense？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="如何停用cloud-data-sense">如何停用Cloud Data Sense？</h3>
 <div class="paragraph">
 <p>您可以從「Data Sense組態」頁面、停用「Cloud Data Sense」、從掃描個別工作環境、資料庫、檔案共用群組、OneDrive帳戶或SharePoint帳戶。</p>
 </div>
@@ -1007,10 +927,8 @@
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="如果在您的功能區上啟用資料分層會發生什麼情況ontap">如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="如果在您的功能區上啟用資料分層會發生什麼情況ontap">如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？</h3>
 <div class="paragraph">
 <p>您可能想要在ONTAP 將冷資料分層儲存至物件儲存的功能區系統上啟用Cloud Data Sense。如果啟用資料分層、Data Sense會掃描磁碟上的所有資料、並將冷資料階層化至物件儲存設備。</p>
 </div>
@@ -1018,18 +936,8 @@
 <p>法規遵循掃描不會將冷資料加熱、而是維持冷態並分層至物件儲存設備。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="我可以使用cloud-data-sense來掃描內部部署ontap-的效能數據儲存嗎">我可以使用Cloud Data Sense來掃描內部部署ONTAP 的效能數據儲存嗎？</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>是的。只要您在ONTAP Cloud Manager中發現內部使用的叢集是工作環境、就能掃描Volume資料。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense可以傳送通知給我的組織嗎">Cloud Data Sense可以傳送通知給我的組織嗎？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense可以傳送通知給我的組織嗎">Cloud Data Sense可以傳送通知給我的組織嗎？</h3>
 <div class="paragraph">
 <p>是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給Cloud Manager使用者（每日、每週或每月）、以便取得通知來保護資料。深入瞭解 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"原則"</a>。</p>
 </div>
@@ -1037,10 +945,8 @@
 <p>您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="我可以根據組織的需求自訂服務嗎">我可以根據組織的需求自訂服務嗎？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="我可以根據組織的需求自訂服務嗎">我可以根據組織的需求自訂服務嗎？</h3>
 <div class="paragraph">
 <p>Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。</p>
 </div>
@@ -1051,10 +957,8 @@
 <p><a href="task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases" target="_blank" rel="noopener">"深入瞭解"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-data-sense是否能搭配我檔案內嵌的aip標籤運作">Cloud Data Sense是否能搭配我檔案內嵌的AIP標籤運作？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-data-sense是否能搭配我檔案內嵌的aip標籤運作">Cloud Data Sense是否能搭配我檔案內嵌的AIP標籤運作？</h3>
 <div class="paragraph">
 <p>是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） <a href="https://azure.microsoft.com/en-us/services/information-protection/" target="_blank" rel="noopener">"Azure資訊保護（AIP）"</a>。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。</p>
 </div>
@@ -1062,10 +966,8 @@
 <p><a href="task-org-private-data.html#categorizing-your-data-using-aip-labels" target="_blank" rel="noopener">"深入瞭解"</a>。</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="我可以將cloud-data-sense資訊限制在特定使用者身上嗎">我可以將Cloud Data Sense資訊限制在特定使用者身上嗎？</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="我可以將cloud-data-sense資訊限制在特定使用者身上嗎">我可以將Cloud Data Sense資訊限制在特定使用者身上嗎？</h3>
 <div class="paragraph">
 <p>是的、Cloud Data Sense與Cloud Manager完全整合。Cloud Manager 使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。</p>
 </div>
@@ -1074,6 +976,263 @@
 </div>
 <div class="paragraph">
 <p><a href="concept-cloud-compliance.html#user-access-to-compliance-information" target="_blank" rel="noopener">"深入瞭解"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="支援哪些雲端供應商">支援哪些雲端供應商？</h3>
+<div class="paragraph">
+<p>Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="來源系統和資料類型的類型">來源系統和資料類型的類型</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>下列問題與可掃描的儲存設備類型及掃描的資料類型有關。</p>
+</div>
+<div class="sect2">
+<h3 id="哪些資料來源可以透過data-sense進行掃描">哪些資料來源可以透過Data Sense進行掃描？</h3>
+<div class="paragraph">
+<p>Cloud Data Sense可掃描已新增至Cloud Manager畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種資料來源。</p>
+</div>
+<div class="paragraph">
+<p><strong>工作環境：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>（部署於AWS、Azure或GCP）Cloud Volumes ONTAP</p>
+</li>
+<li>
+<p>內部部署 ONTAP 的叢集</p>
+</li>
+<li>
+<p>Azure NetApp Files</p>
+</li>
+<li>
+<p>Amazon FSX for ONTAP Sf</p>
+</li>
+<li>
+<p>Amazon S3</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>資料來源：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>非NetApp檔案共用</p>
+</li>
+<li>
+<p>物件儲存（使用S3傳輸協定）</p>
+</li>
+<li>
+<p>資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）</p>
+</li>
+<li>
+<p>OneDrive 帳戶</p>
+</li>
+<li>
+<p>SharePoint帳戶</p>
+</li>
+<li>
+<p>Google雲端硬碟帳戶</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如果我在沒有網際網路存取的網站上安裝data-sense我可以掃描哪些資料來源">如果我在沒有網際網路存取的網站上安裝Data Sense、我可以掃描哪些資料來源？</h3>
+<div class="paragraph">
+<p>Data Sense只能掃描內部部署站台本機資料來源的資料。此時、Data Sense可掃描「暗」站台中的下列本機資料來源：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>內部部署ONTAP 的作業系統</p>
+</li>
+<li>
+<p>資料庫架構</p>
+</li>
+<li>
+<p>非NetApp NFS或CIFS檔案共用</p>
+</li>
+<li>
+<p>使用簡易儲存服務（S3）傳輸協定的物件儲存設備</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="支援哪些檔案類型">支援哪些檔案類型？</h3>
+<div class="paragraph">
+<p>Cloud Data Sense會掃描所有檔案以取得類別和中繼資料深入資訊、並在儀表板的「檔案類型」區段中顯示所有檔案類型。</p>
+</div>
+<div class="paragraph">
+<p>當Data Sense偵測到個人識別資訊（PII）、或執行DSAR搜尋時、僅支援下列檔案格式：</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-data-sense擷取哪些類型的資料和中繼資料">Cloud Data Sense擷取哪些類型的資料和中繼資料？</h3>
+<div class="paragraph">
+<div class="title">CSV、.dcm、.dicom、.dDOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 .XLS、.XLSX、文件、工作表及Slides +</div>
+<p>Cloud Data Sense可讓您對資料來源執行一般的「對應」掃描或完整的「分類」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>資料對應掃描：</p>
+<div class="paragraph">
+<p>Data Sense只會掃描中繼資料。這對整體資料管理與治理、快速專案範圍規劃、大型產業和優先順序都很有幫助。資料對應是以中繼資料為基礎、視為*快速*掃描。</p>
+</div>
+<div class="paragraph">
+<p>快速掃描之後、您可以產生資料對應報告。本報告概述儲存在企業資料來源中的資料、協助您做出有關資源使用率、移轉、備份、安全性及法規遵循程序的決策。</p>
+</div>
+</li>
+<li>
+<p>資料分類（深度）掃描。</p>
+<div class="paragraph">
+<p>在客戶的整個環境中、使用標準傳輸協定和唯讀權限進行資料感應掃描。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</p>
+</div>
+<div class="paragraph">
+<p>完整掃描之後、您可以將許多其他Data Sense功能套用至資料、例如在「Data Investigation」（資料調查）頁面中檢視及精簡資料、在檔案中搜尋名稱、複製、移動及刪除來源檔案等。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="授權與成本">授權與成本</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>下列問題與使用Cloud Data Sense的授權和成本有關。</p>
+</div>
+<div class="sect2">
+<h3 id="cloud-data合理的成本是多少">Cloud Data合理的成本是多少？</h3>
+<div class="paragraph">
+<p>使用Cloud Data Sense的成本取決於您要掃描的資料量。Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。達到該限制後、您需要下列其中一項、才能繼續掃描超過1 TB的資料：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>向您的雲端供應商訂購Cloud Manager Marketplace清單、或</p>
+</li>
+<li>
+<p>NetApp的自帶授權（BYOL）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>請參閱 <a href="https://cloud.netapp.com/netapp-cloud-data-sense#Pricing" target="_blank" rel="noopener">"定價"</a> 以取得詳細資料。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如果我達到byol容量上限會發生什麼事">如果我達到BYOL容量上限、會發生什麼事？</h3>
+<div class="paragraph">
+<p>如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="連接器部署">連接器部署</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>下列問題與Cloud Manager Connector有關。</p>
+</div>
+<div class="sect2">
+<h3 id="什麼是connector">什麼是Connector？</h3>
+<div class="paragraph">
+<p>Connector是在雲端帳戶內或內部部署的運算執行個體上執行的軟體、可讓Cloud Manager安全地管理雲端資源。您必須部署Connector才能使用Cloud Data Sense。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="連接器需要安裝在何處">連接器需要安裝在何處？</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。</p>
+</li>
+<li>
+<p>在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。</p>
+</li>
+<li>
+<p>在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。</p>
+</li>
+<li>
+<p>在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>因此、如果您在這些位置中有許多資料、您可能需要使用 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"多個連接器"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="我可以在自己的主機上部署connector嗎">我可以在自己的主機上部署Connector嗎？</h3>
+<div class="paragraph">
+<p>是的。您可以 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"在內部部署連接器"</a> 在網路或雲端的Linux主機上。如果您打算在內部部署Data Sense、則可能也想在內部部署安裝Connector、但這不是必要的。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="沒有網際網路存取的安全網站又如何">沒有網際網路存取的安全網站又如何？</h3>
+<div class="paragraph">
+<p>是的、這也受到支援。您可以 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html">"在無法存取網際網路的內部部署Linux主機上部署Connector"</a>。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="資料感測部署">資料感測部署</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>下列問題與個別的Data Sense執行個體有關。</p>
+</div>
+<div class="sect2">
+<h3 id="cloud-data-sense需要哪種類型的執行個體或vm">Cloud Data Sense需要哪種類型的執行個體或VM？</h3>
+<div class="paragraph">
+<p>何時 <a href="task-deploy-cloud-compliance.html">"部署於雲端"</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在AWS中、Cloud Data Sense可在具有500 GB GP2磁碟的m5.4x大型 執行個體上執行。</p>
+</li>
+<li>
+<p>在Azure中、Cloud Data Sense可在具有512 GB磁碟的Standard_D16s_v3 VM上執行。</p>
+</li>
+<li>
+<p>在GCP中、Cloud Data Sense可在具有512 GB標準持續磁碟的n2-Standard-16 VM上執行。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 <a href="concept-cloud-compliance.html#using-a-smaller-instance-type">"使用較小的執行個體類型"</a> 以取得詳細資料。</p>
+</div>
+<div class="paragraph">
+<p><a href="concept-cloud-compliance.html" target="_blank" rel="noopener">"深入瞭解Cloud Data Sense的運作方式"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="我可以在自己的主機上部署data-sense嗎">我可以在自己的主機上部署Data Sense嗎？</h3>
+<div class="paragraph">
+<p>是的。您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切都一樣運作、您也可以透過 Cloud Manager 繼續管理掃描組態和結果。請參閱 <a href="task-deploy-compliance-onprem.html">"在內部部署Cloud Data Sense"</a> 以取得系統需求和安裝詳細資料。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="沒有網際網路存取的安全網站又如何-2">沒有網際網路存取的安全網站又如何？</h3>
+<div class="paragraph">
+<p>是的、這也受到支援。您可以 <a href="task-deploy-compliance-dark-site.html">"在無法存取網際網路的內部部署網站上部署Data Sense"</a> 完全安全的網站。</p>
+</div>
 </div>
 </div>
 </div>
@@ -1096,16 +1255,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱雲端資料在資料中的類別和檔案類型、以獲得可見度。">
-  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, highlights, policies"><!-- Icons -->
+  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies"><!-- Icons -->
   <link rel="icon" href="/zh-tw/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google雲端硬碟帳戶
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-file-shares.html">
         檔案共用
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:09:16 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
     
   
 
@@ -806,7 +810,7 @@
 <li>
 <p>搜尋、排序、展開特定檔案的詳細資料、按一下 * 調查結果 * 查看遮罩資訊、或下載檔案清單、即可調查資料。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.gif" alt="按一下「調查結果」後的詳細資訊快照。"></span></p>
+<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.png" alt="按一下「調查結果」後的詳細資訊快照。"></span></p>
 </div>
 </li>
 </ol>
@@ -976,13 +980,16 @@
 <p>若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的檔案。</p>
 </div>
 <div class="paragraph">
+<p>請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 <a href="task-add-active-directory-datasense.html">"瞭解如何做到這一點"</a>。</p>
+</div>
+<div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_permissions.png" alt="顯示詳細檔案權限的快照。"></span></p>
 </div>
 <div class="paragraph">
 <p>您可以按一下使用者或群組的名稱、「調查」頁面會以該使用者或群組的名稱顯示在「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案。</p>
 </div>
 <div class="paragraph">
-<p>請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 <a href="task-add-active-directory-datasense.html">"瞭解如何做到這一點"</a>。</p>
+<p>此外、您也可以按一下 <span class="image"><img src="./media/button_down_caret.png" alt="減少需求"></span> 可讓任何群組查看屬於群組的使用者清單。</p>
 </div>
 </div>
 </div>
@@ -1059,7 +1066,10 @@
 <h2 id="篩選資料調查頁面中的資料">篩選資料調查頁面中的資料</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>您可以篩選調查頁面的內容、只顯示您要查看的結果。如果您想要在精簡內容之後、將 CSV 版本的內容另存為報告、請按一下 <span class="image"><img src="./media/button_download.png" alt="下載按鈕"></span> 按鈕。</p>
+<p>您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</p>
+</div>
+<div class="paragraph">
+<p>如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <span class="image"><img src="./media/button_download.png" alt="下載按鈕"></span> 用於儲存.CSV檔案的按鈕。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_investigation_filtered.png" alt="在調查頁面中調整結果時可用篩選器的快照。"></span></p>
@@ -1067,7 +1077,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>最上層索引標籤可讓您檢視來自檔案（非結構化資料）或來自資料庫（結構化資料）的資料。</p>
+<p>最上層索引標籤可讓您檢視檔案（非結構化資料）、目錄（非結構化資料）或資料庫（結構化資料）的資料。</p>
 </li>
 <li>
 <p>每欄頂端的控制項可讓您依照數字或字母順序來排序結果。</p>
@@ -1088,7 +1098,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">原則</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">選取原則。行動 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"請按這裡"</a> 可查看現有策略列表並創建自己的策略。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取原則。行動 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"請按這裡"</a> 可查看現有策略列表並創建您自己的自定義策略。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">開啟權限</p></td>
@@ -1096,7 +1106,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">使用者/群組權限</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">輸入使用者名稱或群組名稱、或部分名稱</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">檔案擁有者</p></td>
@@ -1104,11 +1114,11 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">標籤</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">選取AIP標籤</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取 <a href="task-org-private-data.html#categorizing-your-data-using-aip-labels">"AIP標籤"</a> 指派給您的檔案</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">工作環境類型</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">選取工作環境類型。請注意、OneDrive和SharePoint的分類為「Cloud Apps」。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取工作環境類型。OneDrive、SharePoint和Google雲端磁碟的分類為「Cloud Apps」。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">工作環境名稱</p></td>
@@ -1141,6 +1151,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">資料主旨</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">輸入資料主旨的完整名稱或已知識別碼</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">目錄類型</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取目錄類型：「Share（共用）」或「Folder（資料夾）」</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">檔案類型</p></td>
@@ -1176,7 +1190,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">標記</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">選取標記或標記</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取 <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"標記"</a> 指派給您的檔案</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">指派給</p></td>
@@ -1184,109 +1198,6 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>「篩選器」窗格頂端的_Policies篩選器會列出提供常用篩選組合的自訂篩選器、例如儲存的資料庫查詢或「我的最愛」清單。行動 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"請按這裡"</a> 可查看預定義策略的列表，並查看如何創建自己的自定義策略。</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="每份檔案清單報告中所包含的內容-csv-檔案">每份檔案清單報告中所包含的內容（ CSV 檔案）</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>在每個「調查」頁面中、您可以按一下 <span class="image"><img src="./media/button_download.png" alt="下載按鈕"></span> 按鈕下載檔案清單（CSV格式）、其中包含已識別檔案的詳細資料。如果Data Sense同時掃描結構化（資料庫表格）和非結構化（檔案）資料、則下載的ZIP檔案中會包含兩份報告。</p>
-</div>
-<div class="paragraph">
-<p>如果結果超過 10 、 000 項、則清單中只會出現前 10 、 000 項。</p>
-</div>
-<div class="paragraph">
-<p>*非結構化資料報告*包含下列資訊：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>檔案名稱</p>
-</li>
-<li>
-<p>位置類型</p>
-</li>
-<li>
-<p>工作環境名稱</p>
-</li>
-<li>
-<p>儲存儲存庫（例如、磁碟區、儲存區、共享區）</p>
-</li>
-<li>
-<p>工作環境類型</p>
-</li>
-<li>
-<p>檔案路徑</p>
-</li>
-<li>
-<p>檔案類型</p>
-</li>
-<li>
-<p>檔案大小</p>
-</li>
-<li>
-<p>建立時間</p>
-</li>
-<li>
-<p>上次修改時間</p>
-</li>
-<li>
-<p>上次存取</p>
-</li>
-<li>
-<p>檔案擁有者</p>
-</li>
-<li>
-<p>類別</p>
-</li>
-<li>
-<p>個人資訊</p>
-</li>
-<li>
-<p>敏感的個人資訊</p>
-</li>
-<li>
-<p>刪除偵測日期</p>
-<div class="paragraph">
-<p>刪除偵測日期可識別檔案刪除或移動的日期。這可讓您識別敏感檔案的移動時間。刪除的檔案不屬於儀表板或「調查」頁面上顯示的檔案編號數。這些檔案只會出現在 CSV 報告中。</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>*結構化資料報告*包含下列資訊：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>DB表格名稱</p>
-</li>
-<li>
-<p>位置類型</p>
-</li>
-<li>
-<p>工作環境名稱</p>
-</li>
-<li>
-<p>儲存儲存庫（例如架構）</p>
-</li>
-<li>
-<p>欄數</p>
-</li>
-<li>
-<p>列數</p>
-</li>
-<li>
-<p>個人資訊</p>
-</li>
-<li>
-<p>敏感的個人資訊</p>
 </li>
 </ul>
 </div>
@@ -1311,16 +1222,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
