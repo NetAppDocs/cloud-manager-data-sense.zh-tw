@@ -9,15 +9,15 @@
   <meta property="og:title" content="從Cloud Data感應移除資料來源 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-compliance.html" />
-	<meta property="og:description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。" />
+	<meta property="og:description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。">
-  <meta name="keywords" content=" remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。">
+  <meta name="keywords" content=" remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense"><!-- Icons -->
   <link rel="icon" href="/zh-tw/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-manager-data-sense/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-compliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-compliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-compliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-compliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-compliance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-compliance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-compliance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-compliance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-compliance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-compliance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-tw/cloud-manager-data-sense/pdfs/fullsite-sidebar/Cloud_Data_Sense文件.pdf" >
           <img src="/zh-tw/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
-
-
 
 
 
@@ -506,6 +496,37 @@
 
 
 
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloud-manager-data-sense/pdfs/sidebar/管理雲端資料感測.pdf" 
+            
+          >
+            <img src="/zh-tw/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
+            管理雲端資料感測
+          </a>
+          
+
+
+
+
+
+
+
 
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
   <a target="_blank" href="/zh-tw/cloud-manager-data-sense/pdfs/pages/task-managing-compliance.pdf" >
@@ -516,6 +537,8 @@
 
 </ul>
   
+
+
 
 
 
@@ -594,10 +617,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-manager-data-sense/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/index.html">
         Cloud Data Sense文件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/whats-new.html">
         版本資訊
@@ -655,16 +678,27 @@
         組織您的私有資料
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-highlights.html">
         管理您的私有資料
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-data-fusion.html">
-        新增自訂個人資料識別碼
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-generating-compliance-reports.html">
         產生報告
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-responding-to-dsar.html">
         回應 DSAR
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/reference-private-data-categories.html">
         私有資料類別
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理雲端資料感測</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-data-fusion.html">
+        新增自訂個人資料識別碼
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-view-compliance-actions.html">
+        檢視Data Sense行動的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-audit-data-sense-actions.html">
+        稽核「資料感測」行動的歷史記錄
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-reduce-scan-speed.html">
+        降低資料感應掃描速度
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-compliance.html">
         從Data Sense移除資料來源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-uninstall-data-sense.html">
+        解除安裝Data Sense
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知識與支援</div>
       </a>
@@ -743,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 13:28:10 +0000">06/13/2022</time>
     
   
 
@@ -753,7 +787,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</p>
+<p>如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。</p>
 </div>
 </div>
 </div>
@@ -844,64 +878,6 @@
 </li>
 <li>
 <p>按一下確認對話方塊中的*刪除共用群組*。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="降低資料感應掃描速度">降低資料感應掃描速度</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。啟用時、所有資料來源都會使用慢速掃描、您無法設定單一工作環境或資料來源的慢速掃描。</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/tip.svg" alt="提示">
-</td>
-<td class="content">
-掃描資料庫時、掃描速度無法降低。
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<div class="title">步驟</div>
-<ol class="arabic">
-<li>
-<p>從「_Configuration」頁面底部、將滑桿移到右側以啟動慢速掃描。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_slow_scan_enable.png" alt="顯示如何啟用緩慢的法規遵循掃描的快照。"></span></p>
-</div>
-<div class="paragraph">
-<p>「組態」頁面頂端表示已啟用慢速掃描。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_slow_scan_disable.png" alt="顯示如何啟用緩慢的法規遵循掃描的快照。"></span></p>
-</div>
-</li>
-<li>
-<p>您可以按一下此訊息中的*停用*來停用慢速掃描。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="刪除cloud-data-sense執行個體">刪除Cloud Data Sense執行個體</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>如果您不想再使用Data Sense、可以刪除Cloud Data Sense執行個體。刪除執行個體也會刪除索引資料所在的相關磁碟。</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>移至雲端供應商的主控台、然後刪除Cloud Data Sense執行個體。</p>
-<div class="paragraph">
-<p>此執行個體的名稱為 <em>CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7</em></p>
-</div>
 </li>
 </ol>
 </div>
@@ -1053,4 +1029,5 @@
     </script>
     <script src='/zh-tw/cloud-manager-data-sense/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-manager-data-sense/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-manager-data-sense/js/sidebar.js'></script>
   </body></html>

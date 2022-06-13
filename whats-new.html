@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-manager-data-sense/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/whats-new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/whats-new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/whats-new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/whats-new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-tw/cloud-manager-data-sense/pdfs/fullsite-sidebar/Cloud_Data_Sense文件.pdf" >
           <img src="/zh-tw/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
-
-
 
 
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
@@ -515,6 +505,39 @@
 
 
 
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/cloud-manager-data-sense/pdfs/sidebar/管理雲端資料感測.pdf" 
+            
+          >
+            <img src="/zh-tw/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
+            管理雲端資料感測
+          </a>
+          
+
+
+
+
+
+
+
+
+
 
 
 
@@ -594,10 +617,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-manager-data-sense/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/index.html">
         Cloud Data Sense文件
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/whats-new.html">
         版本資訊
@@ -655,16 +678,27 @@
         組織您的私有資料
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-highlights.html">
         管理您的私有資料
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-data-fusion.html">
-        新增自訂個人資料識別碼
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-generating-compliance-reports.html">
         產生報告
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-responding-to-dsar.html">
         回應 DSAR
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/reference-private-data-categories.html">
         私有資料類別
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理雲端資料感測</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-data-fusion.html">
+        新增自訂個人資料識別碼
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-view-compliance-actions.html">
+        檢視Data Sense行動的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-audit-data-sense-actions.html">
+        稽核「資料感測」行動的歷史記錄
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-reduce-scan-speed.html">
+        降低資料感應掃描速度
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-managing-compliance.html">
         從Data Sense移除資料來源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-data-sense/task-uninstall-data-sense.html">
+        解除安裝Data Sense
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知識與支援</div>
       </a>
@@ -743,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 17:52:33 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 13:28:10 +0000">06/13/2022</time>
     
   
 
@@ -754,6 +788,47 @@
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>瞭解Cloud Data意義上的新功能。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022年6月12日">2022年6月12日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="現在您可以從資料調查頁面下載結果做為-json報告">現在您可以從「資料調查」頁面下載結果、做為.Json報告</h3>
+<div class="paragraph">
+<p>在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report">"請參閱如何從「資料調查」頁面建立報告"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="能夠從data-sense-ui解除安裝data-sense">能夠從Data Sense UI解除安裝Data Sense</h3>
+<div class="paragraph">
+<p>您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html">"瞭解方法"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="稽核記錄功能現在可用來追蹤data-sense所執行的行動記錄">稽核記錄功能現在可用來追蹤Data Sense所執行的行動記錄</h3>
+<div class="paragraph">
+<p>稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html">"如需稽核記錄的詳細資料、請參閱"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="在data-investigation資料調查頁面中新增敏感識別碼的篩選器">在「Data Investigation」（資料調查）頁面中新增敏感識別碼的篩選器</h3>
+<div class="paragraph">
+<p>「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"請參閱所有篩選器清單、以供您調查資料"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="現在您可以編輯所建立的現有原則">現在您可以編輯所建立的現有原則</h3>
+<div class="paragraph">
+<p>如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies">"瞭解如何編輯原則"</a>。</p>
+</div>
 </div>
 </div>
 </div>
@@ -847,7 +922,7 @@
 <div class="sect2">
 <h3 id="支援在黑暗站台部署onedrive和sharepoint資料時掃描">支援在黑暗站台部署OneDrive和SharePoint資料時掃描</h3>
 <div class="paragraph">
-<p>當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements">"您必須允許存取下列端點。"</a></p>
+<p>當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <a href="task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements">"您必須允許存取下列端點。"</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1167,23 +1242,6 @@
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="2021年5月5日">2021年5月5日</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="能夠掃描儲存在azure-blob上的資料">能夠掃描儲存在Azure Blob上的資料</h3>
-<div class="paragraph">
-<p>使用時、現在支援掃描儲存在Azure Blob上的資料 <a href="https://min.io/" target="_blank" rel="noopener">"MinIO服務"</a>。請參閱 <a href="task-scanning-object-storage.html">"掃描使用S3傳輸協定的物件儲存設備"</a> 以取得詳細資料。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="其他類型的個人資料可透過data-sense識別">其他類型的個人資料可透過Data Sense識別</h3>
-<div class="paragraph">
-<p>Cloud Data Sense現在可以在檔案中找到奧地利SSN。</p>
-</div>
-</div>
-</div>
-</div>
 
     </article>
     <!-- Page Container -->
@@ -1330,4 +1388,5 @@
     </script>
     <script src='/zh-tw/cloud-manager-data-sense/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-manager-data-sense/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-manager-data-sense/js/sidebar.js'></script>
   </body></html>
