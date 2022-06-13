@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: task-view-compliance-actions.html 
+keywords: compliance, actions, view progress 
+summary: 當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。 
+---
+= 檢視法規遵循行動的狀態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些非同步動作的狀態、以便得知何時已將其套用至所有檔案。
+
+這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。
+
+狀態可以是：
+
+* 已完成
+* 進行中
+* 已佇列
+* 已取消
+* 失敗
+
+
+請注意、您可以取消任何狀態為「佇列中」或「進行中」的動作。
+
+.步驟
+. 在Data Sense UI的右下角、您可以看到* Actions Status（動作狀態）*按鈕 image:button_actions_status.png[""]。
+. 按一下此按鈕、就會列出最近的20個動作。
++
+image:screenshot_compliance_action_status.png["在「組態」頁面中顯示最後20個動作及其狀態的快照。"]
+
+
+
+您可以按一下某個動作的名稱、以檢視對應於該作業的詳細資料。

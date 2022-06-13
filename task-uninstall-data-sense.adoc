@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-data-sense.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud data sense, delete cloud data sense, terminate, deactivate, data sense 
+summary: 您可以解除安裝Data Sense軟體來疑難排解問題、或是從主機上永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊「Data Sense」（資料感測）都會永久刪除。 
+---
+= 解除安裝Cloud Data Sense
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以解除安裝Data Sense軟體來疑難排解問題、或是從主機上永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊「Data Sense」（資料感測）都會永久刪除。
+
+您需要使用的步驟取決於您是在雲端或內部部署主機上部署Data Sense。
+
+
+
+== 從雲端部署中解除安裝Data Sense
+
+如果您不想再使用Data Sense、可以從雲端供應商解除安裝並刪除Cloud Data Sense執行個體。
+
+. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下*解除安裝Data檢測*。
++
+image:screenshot_compliance_uninstall.png["解除安裝Data Sense軟體按鈕的快照。"]
+
+. 在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要刪除執行個體及所有相關資料、然後按一下「*解除安裝*」。
+
+
+請注意、您也可以前往雲端供應商的主控台、從該處刪除Cloud Data Sense執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+== 從內部部署中解除安裝Data Sense
+
+如果您不想再使用Data Sense、或是發生需要重新安裝的問題、可以從主機解除安裝Data Sense。
+
+. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下*解除安裝Data檢測*。
++
+image:screenshot_compliance_uninstall.png["解除安裝Data Sense軟體按鈕的快照。"]
+
+. 在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要清除所有組態資訊、然後按一下「*解除安裝*」。
+. 若要從主機完成解除安裝、請在主機上執行解除安裝指令碼、例如：
++
+[source, cli]
+----
+uninstall.sh
+----
+

@@ -205,7 +205,9 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 
 「資料調查報告」是「資料調查」頁面內容的下載內容。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["深入瞭解資料調查頁面"]。
 
-您可以將本機機器上的報告儲存為.CSV檔案、最多可包含5、000列資料。如果Data Sense正在掃描資料庫表格（結構化資料）和檔案（非結構化資料）、則最多可下載兩份.CSV報告。
+您可以將報告儲存至本機機器、做為.CSV檔案（最多可包含5、000列資料）、或匯出至NFS共用的.Json檔案（可包含無限列數）。如果Data Sense正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）、則最多可下載三個報告檔案。
+
+匯出至檔案共用時、請確認Data有意義擁有正確的匯出存取權限。
 
 
 
@@ -213,9 +215,18 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 
 .步驟
 . 在「Data Investigation（資料調查）」頁面中、按一下 image:button_download.png["下載按鈕"] 按鈕。
+. 選取您要下載資料的.CSV報告或.Json報告、然後按一下*下載報告*。
++
+image:screenshot_compliance_investigation_report.png["下載調查報告頁面的快照、內含多個選項。"]
+
++
+選取.Json報告時、請以「<host_name>//<share_path>'的格式輸入要下載報告的NFS共用名稱。
+
 
 
 對話方塊會顯示正在下載報告的訊息。
+
+您可以在中檢視Json報告產生的進度 <<Viewing the status of your compliance actions,「行動狀態」窗格>>。
 
 
 
@@ -244,6 +255,21 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 
 
 
+*非結構化目錄資料報告*包含下列資料夾與檔案共用的相關資訊：
+
+* 工作環境名稱
+* 儲存儲存庫（例如資料夾或檔案共用）
+* 工作環境類型
+* 檔案路徑（目錄名稱）
+* 檔案擁有者
+* 建立時間
+* 探索到的時間
+* 上次修改時間
+* 上次存取
+* 開放式權限
+* 目錄類型
+
+
 *結構化資料報告*包含下列資料庫表格的相關資訊：
 
 * DB表格名稱
@@ -255,8 +281,6 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 * 個人資訊
 * 敏感的個人資訊
 
-
-*附註：*報告目前未提供資料夾相關資訊。
 
 
 

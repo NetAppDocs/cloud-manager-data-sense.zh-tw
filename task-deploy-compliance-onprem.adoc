@@ -72,7 +72,7 @@ NOTE: 如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部�
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* 作業系統： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版
+* 作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
 +
 ** 作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）
 

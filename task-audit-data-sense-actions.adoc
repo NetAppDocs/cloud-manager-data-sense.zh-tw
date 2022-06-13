@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: task-audit-data-sense-actions.html 
+keywords: compliance, actions, view progress 
+summary: Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。 
+---
+= 稽核Data Sense動作的歷程記錄
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。
+
+例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。
+
+
+
+== 記錄檔內容
+
+稽核記錄中的每一行都包含下列格式的資訊：
+
+「<完整日期>|<STATUS>| datasense_nit_logger |<module>| 0 | 0 |檔案<完整檔案路徑>已從裝置<裝置路徑>-<result>'中刪除
+
+* 日期與時間–事件的完整時間戳記
+* 狀態-資訊、警告
+* 行動類型（刪除、複製、移動、建立原則、更新原則、 下載Json報告等）
+* 檔案名稱（如果動作與檔案相關）
+* 行動的詳細資料–做了什麼：取決於行動
++
+** 原則名稱
+** 用於移動-來源和目的地
+** 複本：來源和目的地
+** 用於標記–標記名稱
+** 指派給–使用者名稱
+** 電子郵件警示：電子郵件地址/帳戶
+
+
+
+
+例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。
+
+....
+2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /idanCIFS_share/data/dop1/random_positives.tsv from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
+2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /idanCIFS_share/data/compliance-netapp.tar.gz from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== 存取記錄檔
+
+稽核日誌位於Data Sense機器上的：「/opt/netapp/nap_logs/<date/DataSense_nap_log_<dat>_<procedure_name>.log」
+
+對於內部部署、您可以直接瀏覽至記錄檔。
+
+當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用Cloud Manager Connector安裝期間提供的SSH金鑰、對系統進行SSH。SSH命令是：
+
+ ssh -i <path to the ssh key> <machine user>@<datasense ip>
+* = ssh驗證金鑰的位置
+* <機器使用者>：
++
+** 對於AWS =使用<EC2-user>
+** Azure：使用為Cloud Manager執行個體建立的使用者
+** GCP：使用為Cloud Manager執行個體建立的使用者
+
+
+* =虛擬機器執行個體的IP位址
+
+
+請注意、您必須修改安全性群組傳入規則、才能存取系統。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["連接埠和安全性群組"^] 以取得更多資訊。

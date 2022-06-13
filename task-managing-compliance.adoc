@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-compliance.html 
-keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
-summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。 
 ---
 = 從Cloud Data感應移除資料來源
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果需要、您可以停止Cloud Data Sense掃描一或多個工作�
 
 
 [role="lead"]
-如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。
+如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。
 
 
 
@@ -67,39 +67,4 @@ image:screenshot_compliance_remove_onedrive.png["「掃描組態」頁面中「�
 image:screenshot_compliance_remove_fileshare_group.png["「掃描組態」頁面中「移除檔案共用群組」按鈕的快照。"]
 
 . 按一下確認對話方塊中的*刪除共用群組*。
-
-
-
-
-== 降低資料感應掃描速度
-
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。啟用時、所有資料來源都會使用慢速掃描、您無法設定單一工作環境或資料來源的慢速掃描。
-
-
-TIP: 掃描資料庫時、掃描速度無法降低。
-
-.步驟
-. 從「_Configuration」頁面底部、將滑桿移到右側以啟動慢速掃描。
-+
-image:screenshot_slow_scan_enable.png["顯示如何啟用緩慢的法規遵循掃描的快照。"]
-
-+
-「組態」頁面頂端表示已啟用慢速掃描。
-
-+
-image:screenshot_slow_scan_disable.png["顯示如何啟用緩慢的法規遵循掃描的快照。"]
-
-. 您可以按一下此訊息中的*停用*來停用慢速掃描。
-
-
-
-
-== 刪除Cloud Data Sense執行個體
-
-如果您不想再使用Data Sense、可以刪除Cloud Data Sense執行個體。刪除執行個體也會刪除索引資料所在的相關磁碟。
-
-. 移至雲端供應商的主控台、然後刪除Cloud Data Sense執行個體。
-+
-此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
-
 

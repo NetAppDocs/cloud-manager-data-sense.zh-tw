@@ -10,8 +10,6 @@ settings:
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
 sidebar:
   entries:
-  - title: 所有Cloud Manager文件
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: Cloud Data Sense文件
     url: "/index.html"
   - title: 版本資訊
@@ -66,16 +64,26 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: 管理您的私有資料
       url: "/task-managing-highlights.html"
-    - title: 新增自訂個人資料識別碼
-      url: "/task-managing-data-fusion.html"
     - title: 產生報告
       url: "/task-generating-compliance-reports.html"
     - title: 回應 DSAR
       url: "/task-responding-to-dsar.html"
     - title: 私有資料類別
       url: "/reference-private-data-categories.html"
+  - title: 管理雲端資料感測
+    entries:
+    - title: 新增自訂個人資料識別碼
+      url: "/task-managing-data-fusion.html"
+    - title: 檢視Data Sense行動的狀態
+      url: "/task-view-compliance-actions.html"
+    - title: 稽核「資料感測」行動的歷史記錄
+      url: "/task-audit-data-sense-actions.html"
+    - title: 降低資料感應掃描速度
+      url: "/task-reduce-scan-speed.html"
     - title: 從Data Sense移除資料來源
       url: "/task-managing-compliance.html"
+    - title: 解除安裝Data Sense
+      url: "/task-uninstall-data-sense.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
@@ -173,3 +181,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

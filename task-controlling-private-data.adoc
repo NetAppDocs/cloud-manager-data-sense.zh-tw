@@ -141,15 +141,15 @@ image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中�
 
 == 檢視檔案的權限
 
-若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的檔案。
+若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。
 
 請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 link:task-add-active-directory-datasense.html["瞭解如何做到這一點"]。
 
 image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照。"]
 
-您可以按一下使用者或群組的名稱、「調查」頁面會以該使用者或群組的名稱顯示在「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案。
+您可以按一下 image:button_down_caret.png["減少需求"] 可讓任何群組查看屬於群組的使用者清單。
 
-此外、您也可以按一下 image:button_down_caret.png["減少需求"] 可讓任何群組查看屬於群組的使用者清單。
+此外，您可以按一下使用者或群組的名稱，「調查」頁面會顯示該使用者或群組的名稱，並填入「使用者/群組權限」篩選器中，以便查看使用者或群組可以存取的所有檔案。
 
 
 
@@ -203,7 +203,7 @@ image:screenshot_cloud_compliance_filter.gif["顯示如何篩選特定工作環�
 
 您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。
 
-如果您想要在調整頁面內容之後、將其下載為報告、請按一下 image:button_download.png["下載按鈕"] 用於儲存.CSV檔案的按鈕。
+如果您想要在調整頁面內容之後、將其下載為報告、請按一下 image:button_download.png["下載按鈕"] 按鈕。您可以將報告本機儲存為.CSV檔案（最多可包含5、000列資料）、或儲存為匯出至NFS共用的.Json檔案（可包含不限數量的列）。 link:task-generating-compliance-reports.html#data-investigation-report["如需資料調查報告的詳細資訊、請前往此處"]。
 
 image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整結果時可用篩選器的快照。"]
 
@@ -247,6 +247,9 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 
 
 | 敏感度等級 | 選取敏感度等級 
+
+
+| 識別碼數目 | 選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。 
 
 
 | 個人資料 | 選取 link:reference-private-data-categories.html#types-of-personal-data["個人資料類型"^] 

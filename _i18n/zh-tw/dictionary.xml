@@ -263,11 +263,6 @@
   <block id="03edddfdd703f81e66c3ec945cdf1ae4" category="list-text">按一下「*儲存原則*」、電子郵件傳送的時間間隔會出現在「原則」說明中。</block>
   <block id="adae64945c95a64a4e7460741eaad566" category="paragraph">如果原則有任何結果、則會立即傳送第一封電子郵件、但只有在任何檔案符合原則條件時才會傳送。通知電子郵件中不會傳送任何個人資訊。電子郵件指出有符合原則條件的檔案、並提供原則結果的連結。</block>
   <block id="e3aca2a1f52769c86959db59de5c8e57" category="section-title">編輯原則</block>
-  <block id="748ced29e31022654db753839aedd2f2" category="paragraph">根據原則類型、您可以修改原則的某些部分：</block>
-  <block id="b680e735a9062785f9b3ea50ac1112fb" category="list-text">自訂原則：您可以修改_Name_、_Description_、是否傳送電子郵件通知、以及是否新增AIP標籤。</block>
-  <block id="86eee73ea0e272c0cd3f90d8203c6a0d" category="list-text">預先定義的原則：您只能修改是否傳送電子郵件通知、以及是否新增AIP標籤。</block>
-  <block id="97ffdfbf5e9deac597be1e5d4153f954" category="admonition">如果您需要變更自訂原則的篩選參數、則必須使用所需的參數建立新原則、然後刪除舊原則。</block>
-  <block id="b2c89d2794787a68bd6e7c963e8c9025" category="paragraph">若要修改原則、請按一下*編輯*按鈕、在「編輯原則」頁面輸入您的變更、然後按一下*儲存原則*。</block>
   <block id="8a5b49145936e154af1faea833484a85" category="section-title">刪除原則</block>
   <block id="725f2bee980781415fd1a5062a4c3e0c" category="paragraph">如果不再需要自訂原則、您可以刪除所建立的任何自訂原則。您無法刪除任何預先定義的原則。</block>
   <block id="4f414b6a5ed633d6213d3e02617aa919" category="paragraph">若要刪除原則、請按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、按一下*刪除原則*、然後在確認對話方塊中再次按一下*刪除原則*。</block>
@@ -443,7 +438,6 @@
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">如果您的離線內部部署站台上尚未安裝Cloud Manager Connector、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備Linux主機系統</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
-  <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">作業系統： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">磁碟：SSD搭載500 GiB、可在/、或上使用</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB可在/op</block>
@@ -836,7 +830,6 @@
   <block id="51c2d4938751d6c3f51457f19cc10961" category="list-text">輸入NFS共用的名稱、所有選取的檔案將以「&lt;host_name&gt;//&lt;share_path&gt;」格式複製、然後按一下「* Copy*（複製*）」。</block>
   <block id="99177e3b96a67622c04b51dfdd5fec8f" category="paragraph">此時會出現一個對話方塊、顯示複製作業的狀態。</block>
   <block id="cc75424be9093c04dbea9cfae5ba1d31" category="inline-xref">「行動狀態」窗格</block>
-  <block id="d52fbf3ceb54a191d6979856ec4a2aab" category="paragraph">您可以在中檢視複製作業的進度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="577f7e077dfc06e3803431bf95bd8d3b" category="paragraph">請注意、您也可以在檢視檔案的中繼資料詳細資料時複製個別檔案。只要按一下*複製檔案*即可。</block>
   <block id="0847b25e23803d73ff0a2e412a366eef" category="inline-image-macro">快照顯示從「資料調查」頁面中檔案的中繼資料詳細資料中選取的「複製檔案」按鈕。</block>
   <block id="fb1ff7732bccd8da11bd09f898a27956" category="paragraph"><block ref="fb1ff7732bccd8da11bd09f898a27956" category="inline-image-macro-rx" type="image"></block></block>
@@ -858,7 +851,6 @@
   <block id="a35070ddc55ef50caa6aec72156a840e" category="list-text">輸入新磁碟區的名稱、然後按一下* FlexClone *。</block>
   <block id="34f7fc61a9c74f5c37e24b622428b631" category="paragraph">此時會出現一個對話方塊、顯示實體複本作業的狀態。</block>
   <block id="2fe40b402eb4dc28515dfbbf411e5e9e" category="paragraph">新的複製磁碟區會建立在與來源磁碟區相同的集合體中。</block>
-  <block id="b87a1e127824b80403e07e9d8a5a84d8" category="paragraph">您可以在中檢視複製作業的進度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="d25aba80994e98cacd011b113628101b" category="inline-link-macro">手動在磁碟區上啟用掃描</block>
   <block id="871c824f9ea91b20e876e2d652878ef1" category="paragraph">如果您一開始為來源磁碟區所在的工作環境啟用「Data」（資料感測）、選擇*「Map all Volumes」（對應所有磁碟區）或*「Map &amp;分類所有磁碟區」*、則「Data Sense」（資料感測）會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">將來源檔案複製並同步至目標系統</block>
@@ -917,7 +909,6 @@
   <block id="fa916febf7aa4a958c6501999c66524c" category="paragraph"><block ref="fa916febf7aa4a958c6501999c66524c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="174a6c8e755b5a7f6259938ded9d4651" category="list-text">在按鈕列中、按一下*刪除*。</block>
   <block id="1db5d13f843879dd255fa015b1199eb9" category="list-text">由於刪除作業是永久性的、因此您必須在後續的「刪除檔案」對話方塊中輸入「*永久刪除*」、然後按一下「*刪除檔案*」。</block>
-  <block id="043c72eeeca657a7a4144bcc32c8b64d" category="paragraph">您可以在中檢視刪除作業的進度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="73b79920d299fa15b37932692eeed2d3" category="paragraph">請注意、您也可以在檢視檔案的中繼資料詳細資料時刪除個別檔案。只要按一下*刪除檔案*即可。</block>
   <block id="78933a7726c13f608f7d7da25c47d184" category="inline-image-macro">快照顯示「資料調查」頁面中檔案的中繼資料詳細資料中選取的「刪除檔案」按鈕。</block>
   <block id="1ae48305acc0dd19cfd8f7461fcc887a" category="paragraph"><block ref="1ae48305acc0dd19cfd8f7461fcc887a" category="inline-image-macro-rx" type="image"></block></block>
@@ -928,9 +919,7 @@
   <block id="31d61da3269b125b8a056a011eb7348b" category="list-text">核取「自動刪除符合此原則的檔案」方塊、然後輸入*永久刪除*、確認您要使用此原則永久刪除檔案。</block>
   <block id="b18b5ed7ee8041b5b3352b045b657ed7" category="paragraph"><block ref="b18b5ed7ee8041b5b3352b045b657ed7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7f492f36c4defa8b0e4d929c63c51cc" category="paragraph">新原則會出現在原則索引標籤中。符合原則的檔案會在原則執行時每天刪除一次。</block>
-  <block id="6c22d0031e430efa4ca5b58a96c9aaec" category="paragraph">您可以在中檢視已刪除的檔案清單 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="43ed2558da29e111d7b394e516d927d4" category="section-title">檢視法規遵循行動的狀態</block>
-  <block id="a62dfb18de7f3ea157530c125ea78d5f" category="paragraph">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些非同步動作的狀態、以便得知何時已將其套用至所有檔案。這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">狀態可以是：</block>
   <block id="8f3d10eb21bd36347c258679eba9e92b" category="list-text">已完成</block>
   <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">進行中</block>
@@ -1008,10 +997,8 @@
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">您可以將檔案指派給Cloud Manager使用者、負責執行任何需要在檔案上執行的後續行動。請參閱 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">如果您已將AIP標籤與Cloud Data Sense整合、您可以為此檔案指派標籤、或是變更為其他標籤（如果已經存在）。請參閱 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">檢視檔案的權限</block>
-  <block id="e3231cf2e2415bcd0249cbb511e9a32b" category="paragraph">若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的檔案。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">顯示詳細檔案權限的快照。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4347b685b5c16d885cd8c8be71e60ada" category="paragraph">您可以按一下使用者或群組的名稱、「調查」頁面會以該使用者或群組的名稱顯示在「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案。</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">瞭解如何做到這一點</block>
   <block id="776e05731889ae28ba97961b420d577f" category="paragraph">請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="c928af120c06b9565d871ba33db1c7f5" category="section-title">正在檢查儲存系統中的重複檔案</block>
@@ -1420,7 +1407,6 @@
   <block id="7457180e95a424d146842587474ec483" category="list-text">密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料&gt;密碼*」在「調查」窗格中搜尋包含密碼的檔案。</block>
   <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">支援在黑暗站台部署OneDrive和SharePoint資料時掃描</block>
   <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">您必須允許存取下列端點。</block>
-  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="536f48524e36a16593703c5d8d108b79" category="section-title">此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022年2月9日</block>
   <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">新增掃描Microsoft SharePoint線上帳戶的支援</block>
@@ -1538,11 +1524,6 @@
   <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">Cloud Data Sense可在兩種其他檔案類型中掃描個人識別資訊（PII）：.dcm和.dicom。</block>
   <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">Data Sense現在會追蹤檔案的其他屬性</block>
   <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">檔案大小、建立日期和上次修改日期值已新增至您以CSV格式輸出的報告。「建立日期」也是一種新的篩選條件、可用來縮小「調查」頁面搜尋結果範圍。</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021年5月5日</block>
-  <block id="a201b1b21bb34cfc3cf0328307173ba5" category="section-title">能夠掃描儲存在Azure Blob上的資料</block>
-  <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">使用時、現在支援掃描儲存在Azure Blob上的資料<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。請參閱 <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
-  <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">其他類型的個人資料可透過Data Sense識別</block>
-  <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data Sense現在可以在檔案中找到奧地利SSN。</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
   <block id="cd7afa87e9e8523b4b9129d2a8cc9511" category="doc">Cloud Data Sense for Azure NetApp Files 功能入門</block>
   <block id="01535c40d93547d31c8b2009475a404e" category="paragraph">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
@@ -2033,7 +2014,6 @@
   <block id="23785f6732c3c514916bbd8928a06972" category="paragraph"><block ref="23785f6732c3c514916bbd8928a06972" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4eeea4d2c00cd83e33db552c5d9445b2" category="list-text">按一下確認對話方塊中的*刪除共用群組*。</block>
   <block id="ffd152fc5917f52ef3b83a2479d7e43a" category="section-title">降低資料感應掃描速度</block>
-  <block id="7a68da847fdc7dec71b9f001ce567774" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。啟用時、所有資料來源都會使用慢速掃描、您無法設定單一工作環境或資料來源的慢速掃描。</block>
   <block id="83e4655bb04cddd049332fa141876018" category="admonition">掃描資料庫時、掃描速度無法降低。</block>
   <block id="534fda8c6840073b9aad1d6a07eb75ee" category="list-text">從「_Configuration」頁面底部、將滑桿移到右側以啟動慢速掃描。</block>
   <block id="9b896829aaf5dfc57d627f09890833f8" category="inline-image-macro">顯示如何啟用緩慢的法規遵循掃描的快照。</block>
@@ -2041,9 +2021,6 @@
   <block id="35f6be59ab1f3be265059cbd3545a2c5" category="paragraph">「組態」頁面頂端表示已啟用慢速掃描。</block>
   <block id="5b9fb0ae0b4de0994505f2df03117498" category="paragraph"><block ref="5b9fb0ae0b4de0994505f2df03117498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8afeb311b4ff23155bae9b80ec79273f" category="list-text">您可以按一下此訊息中的*停用*來停用慢速掃描。</block>
-  <block id="5ee0f63f04b6fd8ec079b0d478106fe2" category="section-title">刪除Cloud Data Sense執行個體</block>
-  <block id="602c0f168f5130e35b0d30a889274cc5" category="paragraph">如果您不想再使用Data Sense、可以刪除Cloud Data Sense執行個體。刪除執行個體也會刪除索引資料所在的相關磁碟。</block>
-  <block id="a427a619de4af09b97757f735c05ecd9" category="list-text">移至雲端供應商的主控台、然後刪除Cloud Data Sense執行個體。</block>
   <block id="33b8c7d67d1544ae9cd892551b3430a1" category="summary">您可以將全域Active Directory與Cloud Data Sense整合、以增強Data Sense針對檔案擁有者及哪些使用者和群組有權存取您檔案的結果。</block>
   <block id="ed06836223030df4ecc67bba1d86278b" category="doc">將Active Directory與Cloud Data Sense整合</block>
   <block id="314b7309bb9558a39ff073ff2bc91550" category="paragraph">當您設定特定資料來源（如下所列）時、您需要輸入Active Directory認證資料、以便Data Sense能夠掃描CIFS磁碟區。這項整合提供資料認知功能、可讓檔案擁有者和這些資料來源中資料的權限詳細資料。針對這些資料來源輸入的Active Directory可能與您在此輸入的全域Active Directory認證不同。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。</block>
@@ -2259,7 +2236,6 @@
   <block id="cc939570e2fbb3d7e526d9e3e757a5f0" category="inline-image-macro">「掃描組態」頁面的快照、您可以在其中選擇要掃描的架構。</block>
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e191243cd37652db5017290fc6fa5418" category="paragraph">Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「狀態」欄中、以及修正錯誤所需的動作。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -2373,14 +2349,11 @@
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">資料調查報告</block>
   <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">深入瞭解資料調查頁面</block>
   <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">「資料調查報告」是「資料調查」頁面內容的下載內容。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
-  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">您可以將本機機器上的報告儲存為.CSV檔案、最多可包含5、000列資料。如果Data Sense正在掃描資料庫表格（結構化資料）和檔案（非結構化資料）、則最多可下載兩份.CSV報告。</block>
   <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">產生資料調查報告</block>
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">在「Data Investigation（資料調查）」頁面中、按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
-  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每份資料調查報告所包含的內容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非結構化檔案資料報告*包含下列檔案相關資訊：</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*結構化資料報告*包含下列資料庫表格的相關資訊：</block>
-  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*附註：*報告目前未提供資料夾相關資訊。</block>
   <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">新增支援在Google雲端硬碟帳戶中掃描資料</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">瞭解如何掃描Google雲端硬碟帳戶</block>
@@ -2407,9 +2380,7 @@
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
   <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">此外、您也可以按一下 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 可讓任何群組查看屬於群組的使用者清單。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
-  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用於儲存.CSV檔案的按鈕。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
@@ -2450,7 +2421,6 @@
   <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">從Data Sense刪除Google雲端硬碟帳戶</block>
   <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
   <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">不支援從資料庫架構、OneDrive帳戶、SharePoint帳戶、Google雲端硬碟帳戶、Amazon S3帳戶、 或使用簡易儲存服務（S3）傳輸協定的物件儲存設備。</block>
-  <block id="1b40edca75269e2cab8c610622d15344" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。如果您不再想在工作環境中使用Data Sense、也可以刪除Cloud Data Sense執行個體。</block>
   <block id="6bd1beae17e48797805a36af79f55549" category="section-title">將OneDrive、SharePoint或Google Drive帳戶從Cloud Data Sense移除</block>
   <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">如果您不想再從特定OneDrive帳戶、特定SharePoint帳戶或Google雲端磁碟機帳戶掃描使用者檔案、您可以從Cloud Data Sense介面刪除帳戶、並停止所有掃描。</block>
   <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">在「_Configuration」頁面中、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下「*移除OneDrive帳戶*」、「*移除SharePoint帳戶*」或「*移除Google雲端硬碟帳戶*」。</block>
@@ -2472,4 +2442,114 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">選取資料內及資料夾/共用內的權限類型</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">請注意、「目錄」層級目前不支援按鈕列和原則中可用的動作。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。如果您想要掃描多位使用者的檔案、您必須為每位使用者執行此步驟。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
+  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
+  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
+  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">能夠從Data Sense UI解除安裝Data Sense</block>
+  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
+  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">稽核記錄功能現在可用來追蹤Data Sense所執行的行動記錄</block>
+  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。</block>
+  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">如需稽核記錄的詳細資料、請參閱</block>
+  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
+  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">在「Data Investigation」（資料調查）頁面中新增敏感識別碼的篩選器</block>
+  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。</block>
+  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">現在您可以編輯所建立的現有原則</block>
+  <block id="61e409921fe798c5667689af4656a112" category="inline-link">瞭解如何編輯原則</block>
+  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
+  <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
+  <block id="a26fd963c8509a271edf19a08fc0d3ae" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版</block>
+  <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。</block>
+  <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">您可以解除安裝Data Sense軟體來疑難排解問題、或是從主機上永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊「Data Sense」（資料感測）都會永久刪除。</block>
+  <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">解除安裝Cloud Data Sense</block>
+  <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">您需要使用的步驟取決於您是在雲端或內部部署主機上部署Data Sense。</block>
+  <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">從雲端部署中解除安裝Data Sense</block>
+  <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">如果您不想再使用Data Sense、可以從雲端供應商解除安裝並刪除Cloud Data Sense執行個體。</block>
+  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">在「Data Sense（資料感測）」頁面頂端、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下*解除安裝Data檢測*。</block>
+  <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">解除安裝Data Sense軟體按鈕的快照。</block>
+  <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要刪除執行個體及所有相關資料、然後按一下「*解除安裝*」。</block>
+  <block id="8a129f2a844adcda53d83e0efbb2042c" category="paragraph">請注意、您也可以前往雲端供應商的主控台、從該處刪除Cloud Data Sense執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
+  <block id="ab908ccd0c2e8ea5774ac96a839d9ca4" category="section-title">從內部部署中解除安裝Data Sense</block>
+  <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">如果您不想再使用Data Sense、或是發生需要重新安裝的問題、可以從主機解除安裝Data Sense。</block>
+  <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要清除所有組態資訊、然後按一下「*解除安裝*」。</block>
+  <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">若要從主機完成解除安裝、請在主機上執行解除安裝指令碼、例如：</block>
+  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。</block>
+  <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以按一下 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 可讓任何群組查看屬於群組的使用者清單。</block>
+  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">此外，您可以按一下使用者或群組的名稱，「調查」頁面會顯示該使用者或群組的名稱，並填入「使用者/群組權限」篩選器中，以便查看使用者或群組可以存取的所有檔案。</block>
+  <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">如需資料調查報告的詳細資訊、請前往此處</block>
+  <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。您可以將報告本機儲存為.CSV檔案（最多可包含5、000列資料）、或儲存為匯出至NFS共用的.Json檔案（可包含不限數量的列）。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">識別碼數目</block>
+  <block id="5eea9611e0978b939581b9bb18ff1a29" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。</block>
+  <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">您可以在中檢視複製作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">您可以在中檢視複製作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fdb52ff740ba099a079361368705733" category="paragraph">您可以在中檢視刪除作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="91411654c19db8fe1770ccfce29af494" category="paragraph">您可以在中檢視已刪除的檔案清單 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">您可以修改先前建立之現有原則的任何準則。如果您想要變更查詢（您使用「篩選器」定義的項目）以新增或移除特定參數、這項功能就特別有用。</block>
+  <block id="06e09be9c5d10de07a221aa29c84e398" category="paragraph">請注意、對於預先定義的原則、您只能修改是否傳送電子郵件通知、以及是否新增AIP標籤。無法變更其他值。</block>
+  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">在「原則清單」頁面中、針對您要變更的原則按一下「*編輯*」。</block>
+  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">顯示如何對現有原則進行編輯的快照。</block>
+  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">如果您只想變更此頁面上的項目（名稱、說明、是否傳送電子郵件通知、以及是否新增AIP標籤）、請進行變更、然後按一下「*儲存原則*」。</block>
+  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">如果您要變更已儲存查詢的篩選條件、請按一下*編輯查詢*。</block>
+  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">選取「編輯原則」頁面上「編輯查詢」按鈕的快照。</block>
+  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">在定義該查詢的調查頁面中，通過添加、刪除或自定義篩選器來編輯查詢，然後單擊*保存更改*。</block>
+  <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">顯示如何變更篩選設定來編輯查詢的快照。</block>
+  <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">原則會立即變更。為該原則定義的任何傳送電子郵件、新增AIP標籤或刪除檔案的動作、都會在下一個內部發生。</block>
+  <block id="f7ed3633a3e848b0d67caa9326d256b6" category="summary">Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。</block>
+  <block id="5de1b662853ab92b885225780d3125b7" category="doc">稽核Data Sense動作的歷程記錄</block>
+  <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
+  <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">記錄檔內容</block>
+  <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">稽核記錄中的每一行都包含下列格式的資訊：</block>
+  <block id="727fb114deba541b53a0b54311e03930" category="paragraph">「&lt;完整日期&gt;|&lt;STATUS&gt;| datasense_nit_logger |&lt;module&gt;| 0 | 0 |檔案&lt;完整檔案路徑&gt;已從裝置&lt;裝置路徑&gt;-&lt;result&gt;'中刪除</block>
+  <block id="5e6b85294dad6f04a041aa32199d996d" category="list-text">日期與時間–事件的完整時間戳記</block>
+  <block id="79480e26f983c197c4338ae916966c93" category="list-text">狀態-資訊、警告</block>
+  <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 下載Json報告等）</block>
+  <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">檔案名稱（如果動作與檔案相關）</block>
+  <block id="b5afb88a144b5f1d8fef11e9d449b1ed" category="list-text">行動的詳細資料–做了什麼：取決於行動</block>
+  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">原則名稱</block>
+  <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">用於移動-來源和目的地</block>
+  <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">複本：來源和目的地</block>
+  <block id="9291a80cf17849a4539e082f526f27ad" category="list-text">用於標記–標記名稱</block>
+  <block id="f23528dfcdf994100f2eae046bc926bb" category="list-text">指派給–使用者名稱</block>
+  <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
+  <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。</block>
+  <block id="4892afff6c12a31702739804f9402dd2" category="section-title">存取記錄檔</block>
+  <block id="d59821cfb2e317baf0245fb19951e0ab" category="paragraph">稽核日誌位於Data Sense機器上的：「/opt/netapp/nap_logs/&lt;date/DataSense_nap_log_&lt;dat&gt;_&lt;procedure_name&gt;.log」</block>
+  <block id="e5eca4fc7ad5570fad3191bed0884198" category="paragraph">對於內部部署、您可以直接瀏覽至記錄檔。</block>
+  <block id="98f328f96d0161df06aca21d942ebe0f" category="paragraph">當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用Cloud Manager Connector安裝期間提供的SSH金鑰、對系統進行SSH。SSH命令是：</block>
+  <block id="68949c94f1832ab05cf85f6b69ec229e" category="list-text">= ssh驗證金鑰的位置</block>
+  <block id="6201afe97e09ec3e016aaa1892aba5f8" category="list-text">&lt;機器使用者&gt;：</block>
+  <block id="00652c6d951c09819e4a6a53b108211b" category="list-text">對於AWS =使用&lt;EC2-user&gt;</block>
+  <block id="cb993b12f83c5591a219738eee794717" category="list-text">Azure：使用為Cloud Manager執行個體建立的使用者</block>
+  <block id="d2086bc9ec16fb03f22bf35d5eba0661" category="list-text">GCP：使用為Cloud Manager執行個體建立的使用者</block>
+  <block id="e472530054de00e342edd7e4c55b3cbb" category="list-text">=虛擬機器執行個體的IP位址</block>
+  <block id="3ca10cbf1786d683696248daeef7a67c" category="inline-link">連接埠和安全性群組</block>
+  <block id="ee12d73176832fa8b8e8c95cacc10226" category="paragraph">請注意、您必須修改安全性群組傳入規則、才能存取系統。請參閱<block ref="5475739789a5b3429571b56a0421c3e8" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
+  <block id="70669aa10fb7138a5de7f7526f548131" category="paragraph">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些非同步動作的狀態、以便得知何時已將其套用至所有檔案。</block>
+  <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。</block>
+  <block id="0b11e28340112432b7a51a8bf0bb5fbf" category="paragraph">您可以將報告儲存至本機機器、做為.CSV檔案（最多可包含5、000列資料）、或匯出至NFS共用的.Json檔案（可包含無限列數）。如果Data Sense正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
+  <block id="1f48130430181607c67c25cf69b5768e" category="paragraph">匯出至檔案共用時、請確認Data有意義擁有正確的匯出存取權限。</block>
+  <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">選取您要下載資料的.CSV報告或.Json報告、然後按一下*下載報告*。</block>
+  <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">下載調查報告頁面的快照、內含多個選項。</block>
+  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">選取.Json報告時、請以「&lt;host_name&gt;//&lt;share_path&gt;'的格式輸入要下載報告的NFS共用名稱。</block>
+  <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
+  <block id="2bbb59657134248b81caacac241c5f02" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">*非結構化目錄資料報告*包含下列資料夾與檔案共用的相關資訊：</block>
+  <block id="76cbd87b5322b897c255d541785ad658" category="list-text">儲存儲存庫（例如資料夾或檔案共用）</block>
+  <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">檔案路徑（目錄名稱）</block>
+  <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="list-text">探索到的時間</block>
+  <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">開放式權限</block>
+  <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">目錄類型</block>
+  <block id="78e0e9962072075c2d4f339eb9afa286" category="summary">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。</block>
+  <block id="5108bf4a4931cd23ea67515ca4dda122" category="paragraph">啟用時、所有資料來源都會使用慢速掃描、您無法設定單一工作環境或資料來源的慢速掃描。</block>
+  <block id="6e9e29956db54618d5e8ec6b0eff1198" category="sidebar">管理雲端資料感測</block>
+  <block id="de7c2221ebd4bb34920ea78443597b07" category="sidebar">檢視Data Sense行動的狀態</block>
+  <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">稽核「資料感測」行動的歷史記錄</block>
+  <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">降低資料感應掃描速度</block>
+  <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">解除安裝Data Sense</block>
 </blocks>

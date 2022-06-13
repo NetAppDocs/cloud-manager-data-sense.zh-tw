@@ -86,7 +86,7 @@ image:screenshot_compliance_copy_files_dialog.png["顯示「複製檔案」對�
 
 
 
-您可以在中檢視複製作業的進度 <<Viewing the status of your compliance actions,「行動狀態」窗格>>。
+您可以在中檢視複製作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
 請注意、您也可以在檢視檔案的中繼資料詳細資料時複製個別檔案。只要按一下*複製檔案*即可。
 
@@ -139,7 +139,7 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 
 新的複製磁碟區會建立在與來源磁碟區相同的集合體中。
 
-您可以在中檢視複製作業的進度 <<Viewing the status of your compliance actions,「行動狀態」窗格>>。
+您可以在中檢視複製作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
 如果您一開始為來源磁碟區所在的工作環境啟用「Data」（資料感測）、選擇*「Map all Volumes」（對應所有磁碟區）或*「Map &分類所有磁碟區」*、則「Data Sense」（資料感測）會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["手動在磁碟區上啟用掃描"]。
 
@@ -273,7 +273,7 @@ image:screenshot_compliance_delete_multi_files.png["顯示如何從「資料調�
 . 由於刪除作業是永久性的、因此您必須在後續的「刪除檔案」對話方塊中輸入「*永久刪除*」、然後按一下「*刪除檔案*」。
 
 
-您可以在中檢視刪除作業的進度 <<Viewing the status of your compliance actions,「行動狀態」窗格>>。
+您可以在中檢視刪除作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
 請注意、您也可以在檢視檔案的中繼資料詳細資料時刪除個別檔案。只要按一下*刪除檔案*即可。
 
@@ -307,31 +307,4 @@ image:screenshot_compliance_delete_files_using_policies.png["顯示如何設定�
 
 新原則會出現在原則索引標籤中。符合原則的檔案會在原則執行時每天刪除一次。
 
-您可以在中檢視已刪除的檔案清單 <<Viewing the status of your compliance actions,「行動狀態」窗格>>。
-
-
-
-== 檢視法規遵循行動的狀態
-
-當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些非同步動作的狀態、以便得知何時已將其套用至所有檔案。這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。
-
-狀態可以是：
-
-* 已完成
-* 進行中
-* 已佇列
-* 已取消
-* 失敗
-
-
-請注意、您可以取消任何狀態為「佇列中」或「進行中」的動作。
-
-.步驟
-. 在Data Sense UI的右下角、您可以看到* Actions Status（動作狀態）*按鈕 image:button_actions_status.png[""]。
-. 按一下此按鈕、就會列出最近的20個動作。
-+
-image:screenshot_compliance_action_status.png["在「組態」頁面中顯示最後20個動作及其狀態的快照。"]
-
-
-
-您可以按一下某個動作的名稱、以檢視對應於該作業的詳細資料。
+您可以在中檢視已刪除的檔案清單 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
