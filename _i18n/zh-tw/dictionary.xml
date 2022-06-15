@@ -555,7 +555,6 @@
   <block id="ec8f27d568c4acb2dfb698669f1f9bc0" category="section-title">升級Data Sense軟體</block>
   <block id="c840103d2ed2c5f7278ba8cf28f45f9a" category="paragraph">由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
-  <block id="fa37bb19179b71af06bce755af1b96d1" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝1.9.x版、則只能升級至1.10.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
   <block id="6ecb62a68c1483e5e7f2d6eb6088821e" category="inline-link">請參閱連接器升級步驟</block>
   <block id="1512503c318779a183367c2326a24f21" category="list-text">確認您的內部部署Connector軟體已升級至最新版本。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">將軟體套裝組合複製到安裝Data Sense的Linux主機、</block>
@@ -1392,13 +1391,11 @@
   <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">瞭解Cloud Data意義上的新功能。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data Sense的新功能</block>
-  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022年4月5日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">現在全域Active Directory伺服器可以是LDAP伺服器</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
-  <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
   <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案</block>
   <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。</block>
@@ -2354,7 +2351,6 @@
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每份資料調查報告所包含的內容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非結構化檔案資料報告*包含下列檔案相關資訊：</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*結構化資料報告*包含下列資料庫表格的相關資訊：</block>
-  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">新增支援在Google雲端硬碟帳戶中掃描資料</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">瞭解如何掃描Google雲端硬碟帳戶</block>
   <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
@@ -2442,7 +2438,6 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">選取資料內及資料夾/共用內的權限類型</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">請注意、「目錄」層級目前不支援按鈕列和原則中可用的動作。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。如果您想要掃描多位使用者的檔案、您必須為每位使用者執行此步驟。</block>
-  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
   <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
@@ -2552,4 +2547,9 @@
   <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">稽核「資料感測」行動的歷史記錄</block>
   <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">降低資料感應掃描速度</block>
   <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">解除安裝Data Sense</block>
+  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（1.13.1版）</block>
+  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（1.12.1版）</block>
+  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
+  <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（版本1.10.0）</block>
+  <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本1.11.x、則只能升級至1.12.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
 </blocks>

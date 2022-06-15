@@ -194,7 +194,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在內部部
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.10.0.tar.gz
+tar -xzf cc_onprem_installer_1.13.1.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
 +
