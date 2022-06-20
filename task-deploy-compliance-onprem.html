@@ -777,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-15 20:30:08 +0000">06/15/2022</time>
+    <time datetime="2022-06-20 14:18:10 +0000">06/20/2022</time>
     
   
 
@@ -839,6 +839,13 @@
 </li>
 <li>
 <p>在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的連接器。</p>
@@ -854,18 +861,6 @@
 <div class="paragraph">
 <p>如您所見、您可能需要使用某些情況 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"多個連接器"</a>。</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="附註">
-</td>
-<td class="content">
-如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部署的區域與您想要掃描的Volume相同。
-</td>
-</tr>
-</table>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -880,6 +875,9 @@
 <p>作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版</p>
 <div class="ulist">
 <ul>
+<li>
+<p>可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本</p>
+</li>
 <li>
 <p>作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 <em>firewalld</em> 服務）</p>
 </li>

@@ -777,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:16:21 +0000">05/12/2022</time>
+    <time datetime="2022-06-20 14:18:10 +0000">06/20/2022</time>
     
   
 
@@ -836,6 +836,13 @@
 </li>
 <li>
 <p>在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。</p>
@@ -851,17 +858,21 @@
 <div class="paragraph">
 <p>如您所見、您可能需要使用某些情況 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"多個連接器"</a>。</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="附註">
-</td>
-<td class="content">
-如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部署的區域與您想要掃描的Volume相同。
-</td>
-</tr>
-</table>
+<div class="sect2">
+<h3 id="政府區域支援">政府區域支援</h3>
+<div class="paragraph">
+<p>當連接器部署於政府區域（AWS GovCloud、Azure Gov或Azure DoD）時、即可支援Cloud Data Sense。以這種方式部署時、Data Sense會有下列限制：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</p>
+</li>
+<li>
+<p>Microsoft Azure資訊保護（AIP）標籤功能無法整合。</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
