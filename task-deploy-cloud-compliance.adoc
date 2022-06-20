@@ -52,6 +52,10 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 
 * 在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。
 * 在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。
++
+** 若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files
+
+
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
 
 
@@ -62,7 +66,14 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"]。
 
 
-NOTE: 如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部署的區域與您想要掃描的Volume相同。
+
+=== 政府區域支援
+
+當連接器部署於政府區域（AWS GovCloud、Azure Gov或Azure DoD）時、即可支援Cloud Data Sense。以這種方式部署時、Data Sense會有下列限制：
+
+* 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
+* Microsoft Azure資訊保護（AIP）標籤功能無法整合。
+
 
 
 

@@ -87,7 +87,6 @@
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。Data Sense可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已經存在時變更標籤。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、.PPTX、.XLS、 XLSX：</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。</block>
-  <block id="96f521b8aea6752795f47a3b35a11055" category="list-text">如果您已將Data Sense執行個體部署在內部部署位置、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">將AIP標籤整合到工作區中</block>
   <block id="1cf1610064af8e4e2f1e19dd3c88e17e" category="inline-link-macro">工作環境與資料來源</block>
   <block id="88ba72e4480ca144a6e0a862060d4009" category="paragraph">在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 <block ref="64b3b5ab9e2ec3786a437d32b22f89c6" category="inline-link-macro-rx"></block> 在Cloud Manager工作區中。</block>
@@ -1809,7 +1808,6 @@
   <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">請注意、您也可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">多個連接器</block>
   <block id="8e952431e2e27533e34593f63c959513" category="paragraph">如您所見、您可能需要使用某些情況<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
-  <block id="1a83ca7115bf26c65d9d3182c4ef30fa" category="admonition">如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部署的區域與您想要掃描的Volume相同。</block>
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">檢閱先決條件</block>
   <block id="14689ae888aa02beef451d07d59a62a7" category="paragraph">在雲端部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
   <block id="e8b81a3fe00f3db6bf029fe691d52b19" category="list-text">從Cloud Data Sense啟用傳出網際網路存取</block>
@@ -2552,4 +2550,12 @@
   <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
   <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（版本1.10.0）</block>
   <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本1.11.x、則只能升級至1.12.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
+  <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">如果您已在政府區域或內部部署Data Sense、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
+  <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</block>
+  <block id="87ebc84b19af9756bbc43a1c3850a080" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本</block>
+  <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府區域支援</block>
+  <block id="1c8dc4f89ff17cff9b19b208d74ea4a3" category="paragraph">當連接器部署於政府區域（AWS GovCloud、Azure Gov或Azure DoD）時、即可支援Cloud Data Sense。以這種方式部署時、Data Sense會有下列限制：</block>
+  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
+  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
+  <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府區域部署時、是否有任何限制？</block>
 </blocks>

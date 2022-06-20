@@ -54,6 +54,10 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 
 * 在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。
 * 在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。
++
+** 若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files
+
+
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的連接器。
 
 
@@ -64,9 +68,6 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"]。
 
 
-NOTE: 如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部署的區域與您想要掃描的Volume相同。
-
-
 
 == 準備Linux主機系統
 
@@ -74,6 +75,7 @@ NOTE: 如果您計畫掃描Azure NetApp Files Sure Volume、則必須確保部�
 
 * 作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
 +
+** 可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本
 ** 作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）
 
 
