@@ -77,7 +77,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 您可以在Azure NetApp Files 您的功能區上啟用Cloud Data Sense。
 
-. 在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
 

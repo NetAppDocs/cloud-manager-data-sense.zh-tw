@@ -18,6 +18,40 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2022年7月6日（1.14版）
+
+
+
+=== 現在您可以檢視擁有目錄存取權的使用者和群組
+
+過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組"]。
+
+
+
+=== 您可以「暫停」掃描儲存庫、暫時停止掃描特定內容
+
+暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["瞭解如何暫停和繼續掃描"]。
+
+
+
+=== 美國駕駛人的授權資料來自其他三種狀態、可透過Data Sense識別
+
+Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 link:reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
+
+
+
+=== 原則現在會傳回符合搜尋條件的目錄
+
+過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["深入瞭解如何建立原則"]。
+
+
+
+=== Data Sense現在一次最多可移動100、000個檔案
+
+如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["瞭解如何使用Data Sense移動檔案"]。
+
+
+
 == 2022年6月12日（1.13.1版）
 
 
@@ -96,13 +130,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 === Data Sense可識別四種新類型的澳洲個人資料
 
-Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
+Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 link:reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
 
 
 
 === 現在全域Active Directory伺服器可以是LDAP伺服器
 
-除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["如需詳細資料、請前往此處"]。
+除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 link:task-add-active-directory-datasense.html["如需詳細資料、請前往此處"]。
 
 
 

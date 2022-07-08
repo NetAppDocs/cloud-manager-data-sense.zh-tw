@@ -43,7 +43,7 @@ Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權�
 移至「Data Sense（資料感測）」索引標籤以產生報告。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data Sense *。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測*）。
 . 按一下「* Compliance *（*法規遵循*）」、然後按一下「* Reports*（*報告*）」下「*隱私風險評估*」旁的下載圖示。
 +
 image:screenshot_privacy_risk_assessment.gif["Cloud Manager 中法規遵循索引標籤的螢幕擷取畫面、會顯示「報告」窗格、您可在其中按一下「隱私風險評估」。"]
@@ -122,7 +122,7 @@ Cloud Data Sense會根據三個變數來計算隱私風險評估報告的嚴重�
 移至「Data Sense（資料感測）」索引標籤以產生報告。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data Sense *。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測*）。
 . 按一下「* Compliance *（*符合性*）」、然後按一下「* Reports *（*報告*）」下「* PCI DSS Report*（* PCI DSS報告*）」旁的下
 +
 image:screenshot_pci_dss.gif["Cloud Manager 中法規遵循索引標籤的螢幕擷取畫面、會顯示「報告」窗格、您可在其中按一下「隱私風險評估」。"]
@@ -160,7 +160,7 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 移至「Data Sense（資料感測）」索引標籤以產生報告。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data Sense *。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測*）。
 . 按一下「* Compliance *（*法規遵循*）」、然後按一下「* Reports*（*報告*）」下「* HIPAA Report*（* HIPAA報告*）」旁的
 +
 image:screenshot_hipaa.gif["Cloud Manager 中法規遵循索引標籤的螢幕擷取畫面、顯示您可按一下 HIPAA 的「報告」窗格。"]
@@ -190,7 +190,7 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 移至「Data Sense（資料感測）」索引標籤以產生報告。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data Sense *。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測*）。
 . 按一下「*管理*」、然後按一下「管理儀表板」中的「*完整資料對應總覽報告*」按鈕。
 +
 image:screenshot_compliance_data_mapping_report_button.png["管理儀表板的螢幕擷取畫面、顯示如何啟動資料對應報告。"]

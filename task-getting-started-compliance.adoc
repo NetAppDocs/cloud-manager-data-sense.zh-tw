@@ -80,9 +80,9 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 == 在您的工作環境中實現雲端資料的意義
 
-您可以在Cloud Volumes ONTAP AWS、Azure和GCP等系統上、以及內部部署ONTAP 的叢集上啟用Cloud Data Sense。
+您可以在Cloud Volumes ONTAP 任何受支援的雲端供應商及內部部署ONTAP 的支援叢集上、啟用「Cloud Data Sense」（雲端資料感）功能。
 
-. 在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
 +
 image:screenshot_cloud_compliance_we_scan_config.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
 

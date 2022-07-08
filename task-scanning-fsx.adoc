@@ -91,7 +91,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 您可以啟用ONTAP 適用於FSX的Cloud Data Sense for FSX for Sf6 Volume。
 
-. 在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
 +
 image:screenshot_fsx_scanning_activate.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
 

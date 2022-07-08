@@ -64,6 +64,8 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: 管理您的私有資料
       url: "/task-managing-highlights.html"
+    - title: 變更掃描設定
+      url: task-managing-repo-scanning.html
     - title: 產生報告
       url: "/task-generating-compliance-reports.html"
     - title: 回應 DSAR

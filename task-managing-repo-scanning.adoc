@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
+summary: 您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。 
+---
+= 變更儲存庫的掃描設定
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。
+
+您可以變更的部分內容包括是否掃描儲存庫、以及Data Sense是否執行 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應掃描或對應&分類掃描"]。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。
+
+
+
+== 檢視正在掃描的儲存庫
+
+您可以檢視Data Sense針對每個工作環境和資料來源所掃描的個別儲存庫。
+
+.步驟
+. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
++
+image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
+
+. 在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。
++
+image:screenshot_compliance_repo_scan_settings.png[""]
+
+
+
+
+
+== 變更儲存庫的掃描類型
+
+您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。
+
+
+TIP: 資料庫無法設定為僅對應掃描。資料庫掃描可以是關閉或開啟、相當於地圖和分類。
+
+.步驟
+. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
++
+image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
+
+. 在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）以執行*地圖*或*地圖與分類*掃描、或選取*關閉*以停止掃描特定儲存庫。
++
+image:screenshot_compliance_repo_scanning.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
+
+
+
+某些類型的工作環境可讓您使用頁面頂端的按鈕列、變更所有儲存庫的全域掃描類型。此功能僅適用於Cloud Volumes ONTAP 內部部署ONTAP 的不支援功能、不支援使用的功能僅供Azure NetApp Files 支援部分系統的功能之用。ONTAP
+
+以下範例顯示Azure NetApp Files 適用於整個系統的按鈕列。
+
+image:screenshot_compliance_repo_scan_all.png["螢幕快照顯示如何為工作環境中的所有Volume設定相同的掃描設定。"]
+
+
+
+== 暫停及繼續掃描儲存庫
+
+如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示「Data Sense」（資料感測）不會在未來掃描儲存庫的任何變更或新增項目、但系統仍會顯示所有目前的結果。
+
+您可以隨時「恢復」掃描。
+
+.步驟
+. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
++
+image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
+
+. 在「Scan Configuration（掃描組態）」頁面中、按一下「Pause（暫停）」按鈕暫停掃描某個Volume、或按「恢復」按鈕繼續掃描先前暫停的Volume。
++
+image:screenshot_compliance_repo_pause_resume.png["螢幕快照顯示如何暫停及繼續在Volume上掃描。"]
+
+

@@ -21,7 +21,7 @@ summary: 您可以將全域Active Directory與Cloud Data Sense整合、以增強
 此整合可在Data意義上於下列位置提供額外資訊：
 
 * 您可以使用「檔案擁有者」 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["篩選器"] 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
-* 您可以看到 link:task-controlling-private-data.html#viewing-permissions-for-files["完整檔案權限"] 按一下「檢視所有權限」按鈕即可檢視每個檔案。
+* 您可以看到 link:task-controlling-private-data.html#viewing-permissions-for-files-and-directories["完整檔案權限"] 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。
 * 在中 link:task-controlling-governance-data.html["治理儀表板"]、「開啟權限」面板會顯示更多資料的詳細資料。
 
 
@@ -51,6 +51,8 @@ Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資
 
 Active Directory認證可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提高權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
 
+如果您想要確保「上次存取時間」的檔案不會因資料感應分類掃描而改變、建議使用者具有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+
 .需求
 * 您必須已為公司中的使用者設定Active Directory。
 * 您必須擁有Active Directory的資訊：
@@ -70,7 +72,7 @@ LDAP伺服器IP位址或多個IP位址
 
 * Data Sense執行個體必須開啟下列連接埠、才能進行傳出通訊：
 +
-[cols="15,15,25,25"]
+[cols="20,20,30,30"]
 |===
 | 傳輸協定 | 連接埠 | 目的地 | 目的 
 

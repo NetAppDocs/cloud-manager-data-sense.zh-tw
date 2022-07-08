@@ -203,12 +203,16 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 
 您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。NFS共用區不需要與Data Sense整合（請參閱） link:task-scanning-file-shares.html["正在掃描檔案共用"]）。
 
+如果目的地位置存在名稱相同的檔案、則不會移動該檔案。
+
 
 TIP: 您無法移動位於資料庫中的檔案。
 
-您必須具有「帳戶管理」或「工作區管理」角色、才能移動檔案。
+.需求
+* 您必須具有「帳戶管理」或「工作區管理」角色、才能移動檔案。
+* 移動檔案需要NFS共用區允許從Data Sense執行個體IP位址存取。
+* 一次最多可移動100、000個檔案。
 
-移動檔案需要NFS共用區允許從Data Sense執行個體存取。
 
 .步驟
 . 在「資料調查結果」窗格中、選取您要移動的檔案。

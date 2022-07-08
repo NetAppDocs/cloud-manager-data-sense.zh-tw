@@ -119,7 +119,7 @@ image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「
 購買Cloud Manager帳戶的Cloud Data Sense授權後、您必須將授權新增至Cloud Manager、才能使用Data Sense服務。
 
 .步驟
-. 按一下「*所有服務>數位錢包>資料服務授權*」。
+. 在Cloud Manager左側導覽功能表中、按一下* Digital Wallet *、然後選取* Data Services Licenses*索引標籤。
 . 按一下「 * 新增授權 * 」。
 . 在_新增授權_對話方塊中、輸入授權資訊、然後按一下*新增授權*：
 +

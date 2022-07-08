@@ -38,7 +38,7 @@ Cloud Data Sense會自動識別資料內部的特定字詞、字串和模式（R
 對於某些類型的個人資料、Data Sense會使用_特殊 警示驗證來驗證其發現結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如、Data Sense可識別美國社會安全號碼（ SSN ）若在 SSN 旁看到鄰近的詞彙、例如 _SSN_ 或 _Social SECURITY 。 link:reference-private-data-categories.html#types-of-personal-data["個人資料表格"^] 顯示Data Sense何時使用接近驗證。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data檢測*、然後按一下* Compliance *（*法規遵循*）索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Th感應*、然後按一下* Compliance *（*法規遵循*）索引標籤。
 . 若要調查所有個人資料的詳細資料、請按一下個人資料百分比旁的圖示。
 +
 image:screenshot_compliance_personal.gif["選取個人資料百分比的快照。"]
@@ -67,7 +67,7 @@ Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）、機�
 NOTE: 掃描敏感的個人資料時、僅支援英文。稍後將新增更多語言支援。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data檢測*、然後按一下* Compliance *（*法規遵循*）索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Th感應*、然後按一下* Compliance *（*法規遵循*）索引標籤。
 . 若要調查所有敏感個人資料的詳細資料、請按一下敏感個人資料百分比旁的圖示。
 +
 image:screenshot_compliance_sensitive_personal.gif["選取敏感個人資料百分比的快照。"]
@@ -91,7 +91,7 @@ Cloud Data Sense會將掃描的資料分成不同類型的類別。類別是以 
 NOTE: 類別支援英文、德文和西班牙文。稍後將新增更多語言支援。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data檢測*、然後按一下* Compliance *（*法規遵循*）索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Th感應*、然後按一下* Compliance *（*法規遵循*）索引標籤。
 . 直接從主畫面按一下前 4 大類別之一的 * 調查結果 * 圖示、或按一下 * 檢視全部 * 、然後按一下任何類別的圖示。
 +
 image:screenshot_categories.gif["類別對話方塊的快照、您可在其中按一下類別旁的調查結果圖示。"]
@@ -108,7 +108,7 @@ Cloud Data Sense會將掃描的資料取走、並依檔案類型加以細分。�
 例如、您可能會儲存 CAD 檔案、其中包含有關組織的非常敏感資訊。如果機密資料不安全、您可以限制權限或將檔案移至其他位置、以取得機密資料的控制權。
 
 .步驟
-. 在Cloud Manager頂端、按一下* Data檢測*、然後按一下* Compliance *（*法規遵循*）索引標籤。
+. 在Cloud Manager左側導覽功能表中、按一下* Data Th感應*、然後按一下* Compliance *（*法規遵循*）索引標籤。
 . 直接從主畫面按一下前 4 大檔案類型之一的 * 調查結果 * 圖示、或按一下 * 檢視全部 * 、然後按一下任何檔案類型的圖示。
 +
 image:screenshot_file_types.gif["檔案類型對話方塊的快照、您可以在其中按一下檔案類型旁的調查結果圖示。"]
@@ -139,9 +139,9 @@ image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中�
 
 
 
-== 檢視檔案的權限
+== 檢視檔案和目錄的權限
 
-若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。
+若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。
 
 請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 link:task-add-active-directory-datasense.html["瞭解如何做到這一點"]。
 
@@ -149,7 +149,7 @@ image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照�
 
 您可以按一下 image:button_down_caret.png["減少需求"] 可讓任何群組查看屬於群組的使用者清單。
 
-此外，您可以按一下使用者或群組的名稱，「調查」頁面會顯示該使用者或群組的名稱，並填入「使用者/群組權限」篩選器中，以便查看使用者或群組可以存取的所有檔案。
+此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。
 
 
 

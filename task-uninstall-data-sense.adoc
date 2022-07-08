@@ -24,7 +24,7 @@ summary: 您可以解除安裝Data Sense軟體來疑難排解問題、或是從�
 
 如果您不想再使用Data Sense、可以從雲端供應商解除安裝並刪除Cloud Data Sense執行個體。
 
-. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下*解除安裝Data檢測*。
+. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 然後按一下*解除安裝Data檢測*。
 +
 image:screenshot_compliance_uninstall.png["解除安裝Data Sense軟體按鈕的快照。"]
 
@@ -39,7 +39,7 @@ image:screenshot_compliance_uninstall.png["解除安裝Data Sense軟體按鈕的
 
 如果您不想再使用Data Sense、或是發生需要重新安裝的問題、可以從主機解除安裝Data Sense。
 
-. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下*解除安裝Data檢測*。
+. 在「Data Sense（資料感測）」頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 然後按一下*解除安裝Data檢測*。
 +
 image:screenshot_compliance_uninstall.png["解除安裝Data Sense軟體按鈕的快照。"]
 

@@ -233,7 +233,6 @@
   <block id="255e1125d849f7edda6bed80ac46496e" category="inline-image-macro">從「原則」索引標籤中選取「調查特定原則的結果」的快照。</block>
   <block id="81d6d5b017dce15ac441154a1942e517" category="paragraph"><block ref="81d6d5b017dce15ac441154a1942e517" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0449a02f1a4c60439d939f1f9e382e5" category="section-title">建立自訂原則</block>
-  <block id="54493f05733c09f82465526928da246f" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">篩選資料調查頁面中的資料</block>
   <block id="e79836025e6c80215ec3756e85223edb" category="list-text">在「資料調查」頁面中、選取您要使用的所有篩選條件、以定義您的搜尋。請參閱 <block ref="d1293e68d9fa9285793720fd1947772e" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">當您以所需的方式擁有所有篩選特性之後、請按一下*從此搜尋建立原則*。</block>
@@ -587,7 +586,6 @@
   <block id="1be367688fc23bb032651eb31109ed8b" category="paragraph">*附註：*掃描S3儲存區時、目前不支援在內部部署位置部署Cloud Data Sense。</block>
   <block id="837c1bb1176f89b108bb8eed4314592a" category="section-title">在S3工作環境中啟動Data Sense</block>
   <block id="5f276b0eb14937eeb24e212fa7a0e43b" category="paragraph">驗證先決條件之後、請在Amazon S3上啟用Cloud Data Sense。</block>
-  <block id="61c2f2d570697060ba80bae6ffdd50f8" category="list-text">在 Cloud Manager 頂端、按一下 * Canvas* 。</block>
   <block id="d65142db38828c0dd5d365061085a9bf" category="list-text">選取 Amazon S3 工作環境。</block>
   <block id="0935819aba236aea3b813f76e288f13a" category="inline-image-macro">Amazon S3 工作環境圖示的快照</block>
   <block id="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="paragraph"><block ref="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="inline-image-macro-rx" type="image"></block></block>
@@ -679,7 +677,6 @@
   <block id="e1069df757a31d652ec754c6cbb4304c" category="paragraph">*附註：*掃描FSX Volume時、目前不支援在內部部署位置部署Cloud Data Sense。</block>
   <block id="f77e8a45486f483464f5f52dca10d70c" category="section-title">在您的工作環境中實現雲端資料的意義</block>
   <block id="33502566bba570165badc9d5bf6fd90f" category="paragraph">您可以啟用ONTAP 適用於FSX的Cloud Data Sense for FSX for Sf6 Volume。</block>
-  <block id="d270db2bb61d015b27718ed8c1f25b57" category="list-text">在Cloud Manager頂端、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。</block>
   <block id="b6599bf453dd513e01762c7781050350" category="inline-image-macro">部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。</block>
   <block id="66c36e0e5f92e1f0aa1157f90291e1fa" category="paragraph"><block ref="66c36e0e5f92e1f0aa1157f90291e1fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">深入瞭解對應與分類掃描</block>
@@ -880,7 +877,6 @@
   <block id="f196c67b757c83b8c5a1d80a1da79e14" category="paragraph">您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。NFS共用區不需要與Data Sense整合（請參閱） <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="4ae80798b0ef194ea50cfe00aa1b363c" category="admonition">您無法移動位於資料庫中的檔案。</block>
   <block id="362922d3096f2a8f75a966c92ac6d984" category="paragraph">您必須具有「帳戶管理」或「工作區管理」角色、才能移動檔案。</block>
-  <block id="c571c996a76d770b0c1d1febba3ad20f" category="paragraph">移動檔案需要NFS共用區允許從Data Sense執行個體存取。</block>
   <block id="cc7802d7dd00fcef6b110f6c11d254d0" category="list-text">在「資料調查結果」窗格中、選取您要移動的檔案。</block>
   <block id="9ec28b3e8959ec52791e2484cca2dae5" category="inline-image-macro">顯示如何從「資料調查」頁面選取要移動的檔案、以及「移動」按鈕的快照。</block>
   <block id="9c17966e66e119d1fcd44440de888f1b" category="paragraph"><block ref="9c17966e66e119d1fcd44440de888f1b" category="inline-image-macro-rx" type="image"></block></block>
@@ -944,7 +940,6 @@
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">此外、如果您已新增要掃描的資料庫伺服器、則「 _Data Fusion SUR__ 」功能可讓您掃描檔案、以識別資料庫中的唯一識別碼是否存在於這些檔案或其他資料庫中。請參閱 <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人資料表格</block>
   <block id="0b89e2aeea46e7ca57ab15ff5bbc7f74" category="paragraph">對於某些類型的個人資料、Data Sense會使用_特殊 警示驗證來驗證其發現結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如、Data Sense可識別美國社會安全號碼（ SSN ）若在 SSN 旁看到鄰近的詞彙、例如 _SSN_ 或 _Social SECURITY 。 <block ref="62bae47b4917c28b4ad589ca12fe7ebd" category="inline-link-macro-rx"></block> 顯示Data Sense何時使用接近驗證。</block>
-  <block id="df4c66c4f63f4c5e874acda3b86c5b2c" category="list-text">在Cloud Manager頂端、按一下* Data檢測*、然後按一下* Compliance *（*法規遵循*）索引標籤。</block>
   <block id="60ad0ad2112ed7d01c4169fe8dd4d46c" category="list-text">若要調查所有個人資料的詳細資料、請按一下個人資料百分比旁的圖示。</block>
   <block id="819ca50f7f9d152780e0af73aca0ddf8" category="inline-image-macro">選取個人資料百分比的快照。</block>
   <block id="d09574e77dd26bea3b96a734447bbe75" category="paragraph"><block ref="d09574e77dd26bea3b96a734447bbe75" category="inline-image-macro-rx" type="image"></block></block>
@@ -994,7 +989,6 @@
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">指派使用者至檔案</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">您可以將檔案指派給Cloud Manager使用者、負責執行任何需要在檔案上執行的後續行動。請參閱 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">如果您已將AIP標籤與Cloud Data Sense整合、您可以為此檔案指派標籤、或是變更為其他標籤（如果已經存在）。請參閱 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
-  <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">檢視檔案的權限</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">顯示詳細檔案權限的快照。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">瞭解如何做到這一點</block>
@@ -1145,7 +1139,6 @@
   <block id="630b1746cba34ee88564bdc613bf0b35" category="paragraph">您可以從Cloud Manager頂端選取* Account*下拉式清單、然後按一下帳戶旁的* Manage Account*、即可找到Cloud Manager帳戶ID。您的帳戶ID位於「總覽」索引標籤。</block>
   <block id="5926b237f59ca274742cde276b6a5bac" category="section-title">將Cloud Data Sense BYOL授權新增至您的帳戶</block>
   <block id="02c6444ad614e59dee7ae1689fab2801" category="paragraph">購買Cloud Manager帳戶的Cloud Data Sense授權後、您必須將授權新增至Cloud Manager、才能使用Data Sense服務。</block>
-  <block id="14e73879f741aacd67e792f34954460d" category="list-text">按一下「*所有服務&gt;數位錢包&gt;資料服務授權*」。</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">按一下「 * 新增授權 * 」。</block>
   <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">在_新增授權_對話方塊中、輸入授權資訊、然後按一下*新增授權*：</block>
   <block id="7f7c5e4ae2c507e186a653433fed0cd3" category="list-text">如果您擁有Data Sense授權序號並知道您的nss帳戶、請選取* Enter Serial Number*（輸入序號*）選項、然後輸入該資訊。</block>
@@ -1201,7 +1194,6 @@
   <block id="d56c40a575de98938d6b1b6814e422d2" category="inline-link-macro">位於內部部署位置、可存取網際網路</block>
   <block id="cee01e26d9873a492cd26708c55925af" category="paragraph">如果您要掃描Cloud Volumes ONTAP 可ONTAP 透過網際網路存取的內部功能不全的功能、您可以 <block ref="c89857d519a71c77b0c6382714aad98b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="bad250383d747755d4698187d23fbd63" category="paragraph">如果您正在掃描ONTAP 安裝在沒有網際網路連線的黑暗站台上的內部部署的資訊系統、您需要 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。這也需要將Cloud Manager Connector部署在同一個內部部署位置。</block>
-  <block id="f947968927432b4644f18d2ac33b09e9" category="paragraph">您可以在Cloud Volumes ONTAP AWS、Azure和GCP等系統上、以及內部部署ONTAP 的叢集上啟用Cloud Data Sense。</block>
   <block id="817ea177fc4419cc549ce831aeafb435" category="paragraph"><block ref="817ea177fc4419cc549ce831aeafb435" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c8c10f51d29fb41b7b29d1f5bbef9031" category="paragraph">請檢查您的網路、安全性群組和匯出原則、確保Cloud Data Sense能夠存取磁碟區。您必須提供資料認證、以利資料認證、讓IT能夠存取CIFS磁碟區。</block>
   <block id="472e7a83931581b62865caa4abc4d063" category="list-text">請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含Cloud Volumes ONTAP 適用於下列ONTAP 叢集的Volume或內部的叢集。</block>
@@ -1392,9 +1384,7 @@
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data Sense的新功能</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
-  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">現在全域Active Directory伺服器可以是LDAP伺服器</block>
-  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案</block>
   <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。</block>
@@ -2023,14 +2013,12 @@
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">篩選器</block>
   <block id="24f4168fd88693a87618a03db8811608" category="list-text">您可以使用「檔案擁有者」 <block ref="58ee51d48568237ca49c41cc2a7a829a" category="inline-link-macro-rx"></block> 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。</block>
   <block id="5f91c0845412e72586ca4ccff087de46" category="inline-link-macro">完整檔案權限</block>
-  <block id="76a2568d44aedbfacc35617822e95485" category="list-text">您可以看到 <block ref="2eb65e0132f8d42218742a4af3905e1d" category="inline-link-macro-rx"></block> 按一下「檢視所有權限」按鈕即可檢視每個檔案。</block>
   <block id="81e5b92aee0f8f905eee80ff5eb977c0" category="inline-link-macro">治理儀表板</block>
   <block id="42489059db009c868dd8059af06dcec7" category="list-text">在中 <block ref="f7adeeb4ba56b793f51d27ca048d717a" category="inline-link-macro-rx"></block>、「開啟權限」面板會顯示更多資料的詳細資料。</block>
   <block id="84f064335aeff156ccda8eb3c64109d6" category="admonition">來自未知網域的本機使用者SID和SID不會轉譯為實際的使用者名稱。</block>
   <block id="4a919c0fe6ccdcc43ad4d3dc9a232b18" category="paragraph">Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資料：</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX ONTAP</block>
-  <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">連線至Active Directory伺服器</block>
   <block id="f0c4b852ec6811b9151a600864775755" category="paragraph">在您部署Data Sense並啟動資料來源掃描之後、就可以將Data Sense與Active Directory整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory認證可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提高權限的資料。認證資料儲存在Cloud Data Sense執行個體上。</block>
@@ -2458,7 +2446,6 @@
   <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">您需要使用的步驟取決於您是在雲端或內部部署主機上部署Data Sense。</block>
   <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">從雲端部署中解除安裝Data Sense</block>
   <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">如果您不想再使用Data Sense、可以從雲端供應商解除安裝並刪除Cloud Data Sense執行個體。</block>
-  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">在「Data Sense（資料感測）」頁面頂端、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下*解除安裝Data檢測*。</block>
   <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">解除安裝Data Sense軟體按鈕的快照。</block>
   <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要刪除執行個體及所有相關資料、然後按一下「*解除安裝*」。</block>
@@ -2467,9 +2454,7 @@
   <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">如果您不想再使用Data Sense、或是發生需要重新安裝的問題、可以從主機解除安裝Data Sense。</block>
   <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要清除所有組態資訊、然後按一下「*解除安裝*」。</block>
   <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">若要從主機完成解除安裝、請在主機上執行解除安裝指令碼、例如：</block>
-  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">若要檢視具有檔案存取權的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以按一下 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 可讓任何群組查看屬於群組的使用者清單。</block>
-  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">此外，您可以按一下使用者或群組的名稱，「調查」頁面會顯示該使用者或群組的名稱，並填入「使用者/群組權限」篩選器中，以便查看使用者或群組可以存取的所有檔案。</block>
   <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">如需資料調查報告的詳細資訊、請前往此處</block>
   <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。您可以將報告本機儲存為.CSV檔案（最多可包含5、000列資料）、或儲存為匯出至NFS共用的.Json檔案（可包含不限數量的列）。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">識別碼數目</block>
@@ -2558,4 +2543,70 @@
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府區域部署時、是否有任何限制？</block>
+  <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。</block>
+  <block id="cb73c564126960ae6ca282e79abf7c40" category="doc">變更儲存庫的掃描設定</block>
+  <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">對應掃描或對應&amp;amp;分類掃描</block>
+  <block id="4645b000842c59ed1aaeb9e534c34e85" category="paragraph">您可以變更的部分內容包括是否掃描儲存庫、以及Data Sense是否執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。</block>
+  <block id="1c4489a47397251870bd0d51f8701063" category="section-title">檢視正在掃描的儲存庫</block>
+  <block id="bdedbcd07e14573fe6ff9e61fa471628" category="paragraph">您可以檢視Data Sense針對每個工作環境和資料來源所掃描的個別儲存庫。</block>
+  <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">在「組態」索引標籤中、按一下工作環境的*組態*按鈕。</block>
+  <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">顯示如何按一下工作環境的「組態」按鈕的快照。</block>
+  <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。</block>
+  <block id="2767187e50c5d0cd06a373007090d513" category="paragraph"><block ref="2767187e50c5d0cd06a373007090d513" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">變更儲存庫的掃描類型</block>
+  <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。</block>
+  <block id="d2ec03a8c1a8422301c71b6c3e6e8b4c" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描可以是關閉或開啟、相當於地圖和分類。</block>
+  <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）以執行*地圖*或*地圖與分類*掃描、或選取*關閉*以停止掃描特定儲存庫。</block>
+  <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">螢幕快照顯示如何選取儲存區的掃描類型。</block>
+  <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4bff1a8423db1d5e3d7178be9560749" category="paragraph">某些類型的工作環境可讓您使用頁面頂端的按鈕列、變更所有儲存庫的全域掃描類型。此功能僅適用於Cloud Volumes ONTAP 內部部署ONTAP 的不支援功能、不支援使用的功能僅供Azure NetApp Files 支援部分系統的功能之用。ONTAP</block>
+  <block id="648f292c272072450d20c88db515b454" category="paragraph">以下範例顯示Azure NetApp Files 適用於整個系統的按鈕列。</block>
+  <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">螢幕快照顯示如何為工作環境中的所有Volume設定相同的掃描設定。</block>
+  <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">暫停及繼續掃描儲存庫</block>
+  <block id="73344c9ec25564b49b1fcd623ff60d92" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示「Data Sense」（資料感測）不會在未來掃描儲存庫的任何變更或新增項目、但系統仍會顯示所有目前的結果。</block>
+  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">您可以隨時「恢復」掃描。</block>
+  <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">在「Scan Configuration（掃描組態）」頁面中、按一下「Pause（暫停）」按鈕暫停掃描某個Volume、或按「恢復」按鈕繼續掃描先前暫停的Volume。</block>
+  <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">螢幕快照顯示如何暫停及繼續在Volume上掃描。</block>
+  <block id="9b0105a4da00bc6036dcb389d0f65890" category="paragraph"><block ref="9b0105a4da00bc6036dcb389d0f65890" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bbd24be95708f4b5983476f6dfe9842a" category="paragraph">您可以在Cloud Volumes ONTAP 任何受支援的雲端供應商及內部部署ONTAP 的支援叢集上、啟用「Cloud Data Sense」（雲端資料感）功能。</block>
+  <block id="d1344a7442837afc7dec09106074db55" category="list-text">在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。</block>
+  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（1.14版）</block>
+  <block id="45b5235b8c737e18e646514c30664517" category="section-title">現在您可以檢視擁有目錄存取權的使用者和群組</block>
+  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組</block>
+  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
+  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</block>
+  <block id="1c32547b30cc36869742df049964326d" category="inline-link">瞭解如何暫停和繼續掃描</block>
+  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">美國駕駛人的授權資料來自其他三種狀態、可透過Data Sense識別</block>
+  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">原則現在會傳回符合搜尋條件的目錄</block>
+  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">深入瞭解如何建立原則</block>
+  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
+  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">Data Sense現在一次最多可移動100、000個檔案</block>
+  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">瞭解如何使用Data Sense移動檔案</block>
+  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
+  <block id="b71c8f6fc8800b6bd7a829954617c2fb" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
+  <block id="7d3fd85c1133d516ea08b3afb6e176b0" category="list-text">您可以看到 <block ref="48c020a7f60397cfd78a107333e0da79" category="inline-link-macro-rx"></block> 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。</block>
+  <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
+  <block id="4f872362ba4f34050c74d7c25062ac0d" category="paragraph">如果您想要確保「上次存取時間」的檔案不會因資料感應分類掃描而改變、建議使用者具有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
+  <block id="5f5211c62ad18524e9e94e7a1524c835" category="list-text">在「Data Sense（資料感測）」頁面頂端、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 然後按一下*解除安裝Data檢測*。</block>
+  <block id="58c8e0b1374b7f5b507570dc0385f473" category="cell">印第安納州駕駛授權</block>
+  <block id="0e03a64a4a78cbeacfa2d9a80a300d92" category="cell">New York Driver's License</block>
+  <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德州驅動程式授權</block>
+  <block id="10d5fcf016b4a73801915a21a00696c8" category="list-text">在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測*）。</block>
+  <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
+  <block id="f466f17a82f9ca3b39b50be85ceb8395" category="list-text">移動檔案需要NFS共用區允許從Data Sense執行個體IP位址存取。</block>
+  <block id="32e8c942a25aad00e497d3bf394f59d4" category="list-text">一次最多可移動100、000個檔案。</block>
+  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
+  <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">請注意、根據原則結果刪除資料及指派AIP標籤的動作僅對檔案有效。無法自動刪除符合搜尋條件的目錄、或指派AIP標籤。</block>
+  <block id="ebfefcd98f010a948a1d7251ef132972" category="list-text">在Cloud Manager左側導覽功能表中、按一下* Digital Wallet *、然後選取* Data Services Licenses*索引標籤。</block>
+  <block id="2b54a7ae07982e70cef31bd5b16e720e" category="list-text">在Cloud Manager左側導覽功能表中、按一下* Canvas*。</block>
+  <block id="51b8dedb8a5e2f213889cf52ba25b5a0" category="list-text">在Cloud Manager左側導覽功能表中、按一下* Data Th感應*、然後按一下* Compliance *（*法規遵循*）索引標籤。</block>
+  <block id="90915c385560094095567649cbd732aa" category="section-title">檢視檔案和目錄的權限</block>
+  <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。</block>
+  <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。</block>
+  <block id="5fbc192bfa4a81daea4e7a6b15e2ade8" category="sidebar">變更掃描設定</block>
 </blocks>

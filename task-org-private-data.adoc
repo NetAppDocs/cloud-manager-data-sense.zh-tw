@@ -378,7 +378,9 @@ image:screenshot_compliance_highlights_investigate.png["從「原則」索引標
 
 === 建立自訂原則
 
-您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。
+您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。
+
+請注意、根據原則結果刪除資料及指派AIP標籤的動作僅對檔案有效。無法自動刪除符合搜尋條件的目錄、或指派AIP標籤。
 
 .步驟
 . 在「資料調查」頁面中、選取您要使用的所有篩選條件、以定義您的搜尋。請參閱 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["篩選資料調查頁面中的資料"^] 以取得詳細資料。
