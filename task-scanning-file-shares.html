@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-tw/cloud-manager-data-sense/search.html"
           data-type="widget" 
-          data-placeholder="搜尋文件" 
-          data-no-results-found="找不到符合 {query} 的相關結果。" 
-          data-did-you-mean="搜尋 {suggestion}。" 
-          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
-          data-results-found="找到 {hitCount} 筆結果"  
+          data-placeholder="搜尋文件"
+          data-no-results-found="找不到符合 {query} 的相關結果。"
+          data-did-you-mean="搜尋 {suggestion}。"
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？"
+          data-results-found="找到 {hitCount} 筆結果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -761,7 +763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:09:16 +0000">05/03/2022</time>
+    <time datetime="2022-07-12 19:40:31 +0000">07/12/2022</time>
     
   
 
@@ -827,6 +829,9 @@
 </li>
 <li>
 <p>若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果Cloud Data Sense需要掃描任何需要提高權限的資料、則首選管理認證。</p>
+<div class="paragraph">
+<p>如果您想要確保「上次存取時間」的檔案不會因資料感應分類掃描而改變、建議使用者具有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</p>
+</div>
 </li>
 </ul>
 </div>
