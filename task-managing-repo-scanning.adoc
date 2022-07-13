@@ -78,4 +78,10 @@ image:screenshot_compliance_config_button.png["顯示如何按一下工作環境
 +
 image:screenshot_compliance_repo_pause_resume.png["螢幕快照顯示如何暫停及繼續在Volume上掃描。"]
 
++
+請注意、有些資料來源會在功能表中提供暫停與恢復功能、如下所示、適用於SharePoint網站。
+
++
+image:screenshot_compliance_repo_pause_resume2.png["顯示如何在SharePoint網站上暫停及繼續掃描的螢幕快照。"]
+
 
